@@ -1,0 +1,11 @@
+nav{
+    display: flex;
+    text-align: right;
+    text-justify: auto;
+    height: 30%;
+    width: 100%;
+}
+nav a {
+    text-align: right;
+    top: 50%;
+}
