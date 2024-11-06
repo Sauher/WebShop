@@ -1,11 +1,59 @@
-nav{
+menu {
     display: flex;
-    text-align: right;
-    text-justify: auto;
-    height: 30%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: white;
+    padding: 8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 7.82vh;
     width: 100%;
-}
-nav a {
-    text-align: right;
-    top: 50%;
+    margin-bottom: 0px;
+  }
+  .menuitem {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2vw;
+    color: black;
+    text-decoration: none;
+  }
+  .elso{
+    margin-left: auto;
+  }
+  .flex-containeri {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  h1{
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5vw;
+  }
+  .utso{
+    margin-right: 10%;
+  }
+  .melyikoldal{
+    margin-top: 0px;
+    margin-left: -8px;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 7.82vh;
+    width: 102%;
+  }
+  #hol{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    font-size: 1.2vw;
+    padding: 8px;
 }
