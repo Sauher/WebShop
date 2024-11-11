@@ -1,7 +1,7 @@
 menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background: white;
     padding: 8px;
     margin-top: -8px;
@@ -56,4 +56,17 @@ menu {
     margin-left: 10%;
     font-size: 1.2vw;
     padding: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: black ;
+    padding: 8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    height: 7.82vh;
+    width: 100%;
+    margin-bottom: 0px;
+    color: azure;
 }
