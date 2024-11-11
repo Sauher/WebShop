@@ -77,9 +77,8 @@ footer> div{
 }
 .card {
   transition: 0.3s;
-  width: 17%;
+  width: 30%;
   background-color: rgb(247, 244, 244);
-  margin-left: 30px;
   margin-top: 30px;
   }
   
@@ -87,15 +86,16 @@ footer> div{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  margin-left: 100px;
+  justify-content: space-around;
   }
-  .container {
+  .ruha {
   padding: 2px 16px;
   background-color: rgb(247, 244, 244);
   }
   
   #kep1{
   height: 200px;
+  width: 30%;
   }
   
   .ar{
@@ -115,3 +115,28 @@ footer> div{
   color: gray;
   padding-right: 45px;
   }
+
+  h2{
+    border-bottom: 1px solid gray;
+    font-size: 1.5vw;
+    color: gray;
+  }
+ 
+h2::after{
+    content: '';
+    border-bottom: 4px solid orangered;
+    display: block;
+    margin-bottom: -1px;
+    max-width: 5%;
+    padding-top: 0.5%;
+}
+
+.bal {
+  width: 70%;
+  margin-right: 2%;
+}
+
+.container {
+  display: flex;
+  margin: 20px 15%;
+}
