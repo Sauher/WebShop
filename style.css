@@ -79,35 +79,39 @@ footer> div{
   transition: 0.3s;
   width: 17%;
   background-color: rgb(247, 244, 244);
-  margin-bottom: 50px;
-}
-
-.flex{
+  margin-left: 30px;
+  margin-top: 30px;
+  }
+  
+  .flex{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-}
-.container {
+  margin-left: 100px;
+  }
+  .container {
   padding: 2px 16px;
   background-color: rgb(247, 244, 244);
-}
-
-#kep1{
+  }
+  
+  #kep1{
   height: 200px;
-}
-
-.ar{
+  }
+  
+  .ar{
   margin-top: -10%;
   color: #FF4852;
-}
-
-.ar2{
+  padding-right: 45px;
+  }
+  
+  .ar2{
   margin-top: -10%;
   color: #FF4852;
-  padding-left: 50px;
-}
-
-s{
+  padding-left: 60px;
+  }
+  
+  s{
   margin-top: -10%;
   color: gray;
-}
+  padding-right: 45px;
+  }
