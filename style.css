@@ -42,7 +42,7 @@ menu {
   .melyikoldal{
     margin-top: 0px;
     margin-left: -8px;
-    background-color: red;
+    background-color: #FF4852;
     color: white;
     display: flex;
     flex-direction: row;
@@ -122,16 +122,16 @@ footer> div > h1{
 
   h2{
     border-bottom: 1px solid gray;
-    font-size: 1.5vw;
-    color: gray;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
   }
  
 h2::after{
     content: '';
-    border-bottom: 4px solid orangered;
+    border-bottom: 4px solid #FF4852;
     display: block;
     margin-bottom: -1px;
-    max-width: 5%;
+    max-width: 7%;
     padding-top: 0.5%;
 }
 
@@ -149,4 +149,16 @@ footer> div{
 }
 #ikon{
   width: 50px;
+}
+
+.jobboldal{
+  float: right;
+  width: 20%;
+  margin-right: 15%;
+  margin-left: 0px;
+  margin-top: 3%;
+}
+.arak{
+  margin-top: 0px;
+  color:  gray;
 }
