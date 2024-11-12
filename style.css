@@ -67,13 +67,17 @@ footer{
     margin-left: -8px;
     width: 100%;
     margin-bottom: 0px;
-    color: azure;
+    color: lightslategray;
+
 }
 footer> div{
   width: calc(55% / 3);
   margin-left: auto;
   margin-right: auto;
 
+}
+footer> div > h1{
+  color: azure;
 }
 .card {
   transition: 0.3s;
@@ -139,4 +143,10 @@ h2::after{
 .container {
   display: flex;
   margin: 20px 15%;
+}
+footer> div{
+  margin: auto;
+}
+#ikon{
+  width: 50px;
 }
