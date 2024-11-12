@@ -136,13 +136,15 @@ h2::after{
 }
 
 .bal {
-  width: 70%;
+  width: 100%;
   margin-right: 2%;
 }
 
 .container {
   display: flex;
-  margin: 20px 15%;
+  margin-left:10%;
+  margin-top: 17px;
+  margin-bottom: 20px;
 }
 footer> div{
   margin: auto;
@@ -153,10 +155,10 @@ footer> div{
 
 .jobboldal{
   float: right;
-  width: 20%;
-  margin-right: 15%;
+  width: 22%;
+  margin-right: 12%;
   margin-left: 0px;
-  margin-top: 3%;
+  margin-top: 20px;
 }
 .arak{
   margin-top: 0px;
