@@ -153,6 +153,25 @@ h2::after{
   margin-top: 0px;
   color:  gray;
 }
+
+.pontok{
+  border-top: 1px dashed rgb(145, 144, 144);
+  color: white;
+  
+}
+.jobboldali{
+ 
+}
+.res{
+  color: gray;
+}
+
+#sort{
+  float: right;
+  width: 25%;
+  height: 3.5%;
+  color: gray;
+}
 #icon{
   width: 15%;
 }
