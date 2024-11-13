@@ -173,3 +173,13 @@ footer> div{
 .jobboldali{
  
 }
+.res{
+  color: gray;
+}
+
+#sort{
+  float: right;
+  width: 25%;
+  height: 3.5%;
+  color: gray;
+}
