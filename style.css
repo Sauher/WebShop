@@ -164,3 +164,14 @@ footer> div{
   margin-top: 0px;
   color:  gray;
 }
+
+.res{
+  color: gray;
+}
+
+#sort{
+  float: right;
+  width: 25%;
+  height: 3.5%;
+  color: gray;
+}
