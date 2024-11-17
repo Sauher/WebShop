@@ -98,13 +98,13 @@ menu {
   padding-right: 45px;
   }
 
-  h2{
+  .alcim{
     border-bottom: 1px solid gray;
     font-size: 20px;
     color: rgb(75, 75, 75);
   }
  
-h2::after{
+.alcim::after{
     content: '';
     border-bottom: 4px solid #FF4852;
     display: block;
@@ -212,19 +212,21 @@ input[type="range"]::-moz-range-thumb{
   background: #FF4852;
 }
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: #1a1a2e;
   color: #d3d3d3;
   margin: auto;
-  padding: 20px;
+  padding: 1%;
 }
 
-.footer-container {
-  margin: auto;
-  display: flex;
-}
 
 .footer-section {
   width: 30%;
+  margin: auto;
+  margin-top: 0.2vw;
 }
 
 .footer-section h3 {
@@ -241,4 +243,20 @@ footer {
 
 .footer-section p i {
   margin-right: 8px;
+  font-size: 1vw;
+}
+.footerelso{
+  margin-left: 9%;
+  margin-right: auto;
+}
+.shipszoveg{
+  text-indent: 4%;
+}
+.felnyil{
+  color: #d3d3d3 ;
+  float: right;
+  margin-right: 10%;
+  font-size: 2vw;
+  border: #d3d3d3 1px solid;
+  padding: 1%;
 }
