@@ -159,9 +159,7 @@ h2::after{
   color: white;
   
 }
-.jobboldali{
- 
-}
+
 .res{
   color: gray;
 }
@@ -180,4 +178,62 @@ h2::after{
 }
 .hszin{
   color: azure;
+}
+ul{
+  padding: 15px;
+}
+.filterarak{
+  float: right;
+  margin-right: 5px;
+  margin-top: 8px;
+}
+.button{
+  height: 30px;
+  width: 80px;
+  font-size: 18px;
+  
+  color: #464646;
+}
+.slider{
+  height: 5px;
+  border-radius: 5px;
+  background: #808080;
+  position: relative;
+}
+.slider .progress{
+  height: 5px;
+  
+  
+  width: 100%;
+  border-radius: 5px;
+  position: absolute;
+  background: #FF4852;
+}
+.range-input{
+  position: relative;
+}
+.range-input input{
+  position: absolute;
+  top: -5px;
+  height: 10px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  
+}
+input[type="range"]::-webkit-slider-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  background: #FF4852;
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+  background: #FF4852;
 }
