@@ -194,17 +194,19 @@ ul{
 .range-input input{
   position: absolute;
   top: -5px;
+  margin-left: -2px;
   height: 10px;
-  width: 100%;
+  width: 102%;
   background: none;
   pointer-events: none;
   
 }
 input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  -webkit-appearance: none;
+  
   pointer-events: auto;
   background: #FF4852;
 }
@@ -212,7 +214,7 @@ input[type="range"]::-moz-range-thumb{
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  -webkit-appearance: none;
+  
   pointer-events: auto;
   background: #FF4852;
 }
@@ -266,3 +268,8 @@ footer {
   font-size: 2vw;
   border: #d3d3d3 1px solid;
 }
+.card:hover{
+  background: rgb(228,12,12);
+  background: linear-gradient(90deg, rgba(228,12,12,0.5438550420168067) 100%, rgba(2,0,36,1) 100%);
+}
+
