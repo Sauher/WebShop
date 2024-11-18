@@ -189,17 +189,19 @@ ul{
 .range-input input{
   position: absolute;
   top: -5px;
+  margin-left: -2px;
   height: 10px;
-  width: 100%;
+  width: 102%;
   background: none;
   pointer-events: none;
   
 }
 input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance: none;
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  -webkit-appearance: none;
+  
   pointer-events: auto;
   background: #FF4852;
 }
@@ -207,7 +209,7 @@ input[type="range"]::-moz-range-thumb{
   height: 17px;
   width: 17px;
   border-radius: 50%;
-  -webkit-appearance: none;
+  
   pointer-events: auto;
   background: #FF4852;
 }
@@ -260,3 +262,4 @@ footer {
   border: #d3d3d3 1px solid;
   padding: 1%;
 }
+
