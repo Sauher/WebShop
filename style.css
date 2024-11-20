@@ -198,6 +198,7 @@ ul{
   height: 10px;
   width: 102%;
   background: none;
+  -webkit-appearance: none;
   pointer-events: none;
   
 }
