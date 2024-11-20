@@ -147,6 +147,29 @@ menu {
   color: white;
   
 }
+.filterezes{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.filterarak{
+  margin-top: 3%;
+  width: 100%;
+  text-align: right;
+}
+.topratedflex{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.topkep{
+  
+  width: 40%;
+
+}
+.toparak{
+  width: 60%;
+}
 
 .res{
   color: gray;
@@ -161,11 +184,7 @@ menu {
 ul{
   padding: 15px;
 }
-.filterarak{
-  float: right;
-  margin-right: 5px;
-  margin-top: 8px;
-}
+
 .button{
   height: 30px;
   width: 80px;
@@ -272,6 +291,14 @@ footer {
 .card:hover{
   background: rgb(228,12,12);
   background: linear-gradient(90deg, rgba(228,12,12,0.5438550420168067) 100%, rgba(2,0,36,1) 100%);
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (max-width: 850px) {
