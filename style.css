@@ -1,14 +1,19 @@
+body{
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+header{
+  width: 100%;
+}
 menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background: white;
-    padding: 8px;
-    margin-top: -8px;
-    margin-left: -8px;
     height: 7.82vh;
-    width: 100%;
     margin-bottom: 0px;
+    padding-left: 0;
   }
   .menuitem {
     margin-left: 1vw;
@@ -48,7 +53,7 @@ menu {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 7.82vh;
-    width: 102%;
+    width: 100%;
   }
   #hol{
     margin-top: auto;
@@ -222,7 +227,9 @@ footer {
   background-color: #1a1a2e;
   color: #d3d3d3;
   margin: auto;
-  padding: 1%;
+  margin-bottom: -8px;
+  margin-left: -8px;
+  width: 100%;
 }
 
 
@@ -261,6 +268,9 @@ footer {
   margin-right: 10%;
   font-size: 2vw;
   border: #d3d3d3 1px solid;
-  padding: 1%;
+}
+.card:hover{
+  background: rgb(228,12,12);
+  background: linear-gradient(90deg, rgba(228,12,12,0.5438550420168067) 100%, rgba(2,0,36,1) 100%);
 }
 
