@@ -155,7 +155,7 @@ menu {
 #sort{
   float: right;
   width: 25%;
-  height: 3.5%;
+  height: 30px;
   color: gray;
 }
 ul{
@@ -274,3 +274,14 @@ footer {
   background: linear-gradient(90deg, rgba(228,12,12,0.5438550420168067) 100%, rgba(2,0,36,1) 100%);
 }
 
+@media only screen and (max-width: 850px) {
+  .card   {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .card   {
+    width: 70%;
+  }
+}
