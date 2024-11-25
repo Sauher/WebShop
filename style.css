@@ -4,10 +4,13 @@ body{
   margin: 0;
 }
 header{
+  top: 0;
   width: 100%;
 }
 menu {
     display: flex;
+    position:sticky;
+    top: 0;
     flex-direction: row;
     flex-wrap: wrap;
     background: white;
@@ -301,6 +304,11 @@ a{
   color: black;
 }
 
+@media only screen and (max-width: 900px) {
+  footer{
+    font-size: 1.5vw;
+  }
+}
 @media only screen and (max-width: 850px) {
   .card   {
     width: 45%;
@@ -310,5 +318,26 @@ a{
 @media only screen and (max-width: 650px) {
   .card   {
     width: 70%;
+  }
+  .footer-section{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  footer{
+    font-size: 3vw;
+    margin: auto;
+  }
+  .felnyil{
+    font-size: 5vw;
+  }
+  .menuitem{
+    font-size: 1.6vw;
+  }
+  menu h1{
+    font-size: 2vw;
+  }
+  #hol{
+    font-size: 2vw;
   }
 }
