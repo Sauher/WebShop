@@ -109,7 +109,7 @@ menu {
   .alcim{
     border-bottom: 1px solid gray;
     font-size: 20px;
-    color: rgb(75, 75, 75);
+    color: #515151;
   }
  
 .alcim::after{
@@ -142,11 +142,11 @@ menu {
 }
 .arak{
   margin-top: 0px;
-  color:  gray;
+  color:  #515151;
 }
 
 .pontok{
-  border-top: 1px dashed rgb(207, 207, 207);
+  border-top: 1px dashed  #e2e2e2;
   color: white;
   
 }
@@ -159,6 +159,7 @@ menu {
   margin-top: 3%;
   width: 100%;
   text-align: right;
+  color: #515151;
 }
 .topratedflex{
   display: flex;
@@ -172,21 +173,24 @@ menu {
 }
 .toparak{
   width: 60%;
+  color: #303030;
 }
 
 .res{
-  color: gray;
+  color: #515151;
 }
 
 #sort{
   float: right;
   width: 25%;
   height: 30px;
-  color: gray;
+  color: #515151;
 }
 ul{
   padding: 15px;
+  
 }
+
 
 .button{
   height: 30px;
@@ -198,7 +202,7 @@ ul{
 .slider{
   height: 5px;
   border-radius: 5px;
-  background: #808080;
+  background: #602053;
   position: relative;
 }
 .slider .progress{
@@ -297,11 +301,11 @@ footer {
 }
 a:visited{
   text-decoration: none;
-  color: black;
+  color: #303030;
 }
 a{
   text-decoration: none;
-  color: black;
+  color: #303030;
 }
 
 @media only screen and (max-width: 900px) {
