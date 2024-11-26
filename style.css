@@ -300,11 +300,11 @@ footer {
 }
 a:visited{
   text-decoration: none;
-  color: #303030;
+  color: #525252;
 }
 a{
   text-decoration: none;
-  color: #303030;
+  color: #525252;
 }
 
 @media only screen and (max-width: 900px) {
