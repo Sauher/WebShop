@@ -83,7 +83,7 @@ menu {
   background-color: rgb(247, 244, 244);
   }
   
-  #kep1{
+  .kep1{
   height: 200px;
   width: 30%;
   }
@@ -296,9 +296,8 @@ footer {
   font-size: 2vw;
   border: #d3d3d3 2px solid;
 }
-.card:hover{
-  background: rgb(228,12,12);
-  background: linear-gradient(90deg, rgba(228,12,12,0.5438550420168067) 100%, rgba(2,0,36,1) 100%);
+.kep1:hover{
+  opacity: 0.3;
 }
 .category:visited{
   text-decoration: none;
