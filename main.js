@@ -1,15 +1,30 @@
-/*let rangeInput = document.querySelectorAll(".range-input input")
-let progress = document.querySelector(".slider .progress");
+const range1 = document.getElementById("range1");
+const range2 = document.getElementById("range2");
+const sliderTrack = document.querySelector(".slider-track");
+const minGap = 10;
+const sliderMaxValue = 100;
 
-rangeInput.forEach(
-    input => { input.addEventListener("input", ()=>{
+function updateSlider() {
+  const range1Value = parseInt(range1.value);
+  const range2Value = parseInt(range2.value);
 
-        let Minval = parseInt(rangeInput[0].value)
-        let Maxval = parseInt(rangeInput[1].value)
-        
-        progress.style.left = ( Minval / rangeInput[0].value *100 + "%")
+ 
+  if (range2Value - range1Value < minGap) {
+    if (this.id === "range1") {
+      range1.value = range2Value - minGap;
+    } else {
+      range2.value = range1Value + minGap;
+    }
+  }
 
-    }) 
+  
+  sliderTrack.style.left = `${(range1.value / sliderMaxValue) * 100}%`;
+  sliderTrack.style.width = `${((range2.value - range1.value) / sliderMaxValue) * 100}%`;
+}
 
 
-})*/
+range1.addEventListener("input", updateSlider);
+range2.addEventListener("input", updateSlider);
+
+
+updateSlider();
