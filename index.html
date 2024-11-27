@@ -12,7 +12,8 @@
 
         <menu>
           <div class="flex-containeri">
-            <h1>RihiRuha webáruház</h1>
+            <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
+            
             <a href="" class="menuitem elso">HOME</a>
             <i class="fas fa-arrow-down"></i>
             <a href="index.html" class="menuitem">SHOP</a>
@@ -31,21 +32,19 @@
         <h2 class="alcim">Filter by price</h2>
         
           
-        <div class="slider">
-          <div class="progress">
-            <div class="range-input" >
-              <input type="range" class="range-min" min="0" max="100" value="1000" >
-              <input type="range" class="range-max" min="0" max="100" value="7000" >
-            </div>
-          </div>
+        <div class="slider-container">
+          <input type="range" id="range1" class="range" min="0" max="100" value="20">
+          <input type="range" id="range2" class="range" min="0" max="100" value="80">
+          <div class="slider-track"></div>
         </div>
+        
         <br>
         
         
         <div class="filterezes">
-          <button class="button" type="submit">Filter</button>
+          <button class="button" type="submit"><b class="filterszov">Filter</b></button>
           <div class="filterarak">
-            Price: 0-70$
+            Price: $0-$70
           </div>
           
 
@@ -235,5 +234,6 @@
           </div>
       </footer>
       <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
+      <script src="./main.js"></script>
 </body>
 </html>
