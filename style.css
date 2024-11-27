@@ -328,6 +328,24 @@ footer {
 .menuitem:hover{
   color: #FF4852;
 }
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropgomb1:hover .dropdown-content1 {display: block;}
+.dropgomb2:hover .dropdown-content2 {display: block;}
 @media only screen and (max-width: 900px) {
   footer{
     font-size: 1.5vw;
