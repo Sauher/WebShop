@@ -1,7 +1,7 @@
 const range1 = document.getElementById("range1");
 const range2 = document.getElementById("range2");
 const sliderTrack = document.querySelector(".slider-track");
-const minGap = 10;
+const minGap = 1;
 const sliderMaxValue = 100;
 
 function updateSlider() {
@@ -28,3 +28,8 @@ range2.addEventListener("input", updateSlider);
 
 
 updateSlider();
+
+const button = document.getElementsByClassName(".button");
+function Filter(){
+  console.log("A gomb meg lett nyomva")
+}
