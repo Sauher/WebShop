@@ -318,7 +318,16 @@ footer {
   text-decoration: none;
   color: #525252;
 }
-
+.menugomb{
+  border: none;
+  background-color: white;
+}
+.menugomb:hover{
+  background-color: #d3d3d3;
+}
+.menuitem:hover{
+  color: #FF4852;
+}
 @media only screen and (max-width: 900px) {
   footer{
     font-size: 1.5vw;
