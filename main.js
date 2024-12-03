@@ -4,7 +4,7 @@ const range1 = document.getElementById("range1");
 const range2 = document.getElementById("range2");
 const sliderTrack = document.querySelector(".slider-track");
 const minGap = 1;
-const sliderMaxValue = 100;
+const sliderMaxValue = 75;
 
 const minar = document.getElementById("minar");
 const maxar = document.getElementById("maxar");
@@ -27,8 +27,8 @@ function updateSlider() {
   }
 
   
-  sliderTrack.style.left = `${((range1.value) / sliderMaxValue) * 100}%`;
-  sliderTrack.style.width = `${((range2.value - range1.value) / sliderMaxValue) * 100}%`;
+  sliderTrack.style.left = `${(((range1.value) / sliderMaxValue)* 100)-1.3}%`;
+  sliderTrack.style.width = `${(((range2.value - range1.value) / sliderMaxValue) * 100)+2}%`;
   minar.innerHTML = `${range1.value}$`;
   maxar.innerHTML = `${range2.value}$`;
 

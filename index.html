@@ -36,203 +36,211 @@
             <p id="hol">Home / Shop</p>
         </div>
 
+      <div class="tartalom">
+        <div class="container">
 
-      <div class="jobboldal" >
-        <h2 class="alcim">Filter by price</h2>
-        
+          <div class="bal">
+    
+            <h2 class="alcim">Casual</h2>
+            <select name="sort" id="sort">
+              <option value="def">Default sorting</option>
+            </select>
+            <p class="res">Showing all 6 results</p>
+            <div class="flex">
+      
+              <div class="card">
+                  <img src="./kepek/ralph.png" alt="Avatar" style="width:100%" class="kep1">
+                  <div class="cardb"> <button>Add to Cart</button> </div>
+                  <div class="ruha">
+                      <h4><b>Collar T-Shirt</b></h4> 
+                      <span class="ar">$35.00</span> 
+                  </div>
+              </div>
           
-        <div class="slider-container">
-          <div class="track"></div>
-          <input type="range" id="range1" class="range" min="0" max="100" value="17">
-          <input type="range" id="range2" class="range" min="0" max="100" value="75">
-          <div class="slider-track"></div>
+              <div class="card">
+                  <img src="./kepek/ralphT.jpg" alt="Avatar" style="width:100%" class="kep1">
+                  <div class="cardb"> <button>Add to Cart</button> </div>
+                  <div class="ruha">
+                      <h4><b>Gents T-Shirt</b></h4> 
+                      <span class="ar">$49.00</span> 
+                      
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <img src="./kepek/ralphHat.png" alt="Avatar" style="width:100%" class="kep1">
+                  <div class="cardb"> <button>Add to Cart</button> </div>
+                  <div class="ruha">
+                      <h4><b>Ladies Hat</b></h4> 
+                      <span class="athuz"><s>$22.00</s></span> 
+                      <span class="ar2 athuz">$17.00</span> 
+                  </div>
+              </div>
+              
+              
+              <div class="card">
+                <img src="./kepek/ralphJack.png" alt="Avatar" style="width:100%" class="kep1">
+                <div class="cardb"> <button>Add to Cart</button> </div>
+                <div class="ruha">
+                  <h4><b>Leather jacket</b></h4> 
+                  <span class="athuz"><s>$100.00</s></span>
+                  <span class="ar2 athuz">$50.00</span>
+                </div>
+              </div>
+              
+              <div class="card">
+                <img src="./kepek/ralphTop.png" alt="Avatar" style="width:100%" class="kep1">
+                <div class="cardb"> <button>Add to Cart</button> </div>
+                <div class="ruha">
+                  <h4><b>Printed Tops</b></h4> 
+                  <span class="ar">$75.00</span> 
+                </div>
+              </div>
+              
+              <div class="card">
+                <img src="./kepek/ralphTop2.png" alt="Avatar" style="width:100%" class="kep1">
+                <div class="cardb"> <button>Add to Cart</button> </div>
+                <div class="ruha">
+                  <h4><b>Women Tops</b></h4> 
+                  <span class="ar">$45.00</span> 
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
         
-        <br>
-        
-        
-        <div class="filterezes">
-          <button class="button" type="submit" onclick="Filter()"><b class="filterszov">Filter</b></button>
-          <div class="filterarak">
-            Price:
-            <span id="minar">4$</span>
-            -
-            <span id="maxar">19$</span>
+
+
+        <div class="jobboldal" >
+          <h2 class="alcim">Filter by price</h2>
+          
+            
+          <div class="slider-container">
+            <div class="track"></div>
+            <input type="range" id="range1" class="range" min="1" max="75" value="17">
+            <input type="range" id="range2" class="range" min="1" max="75" value="75">
+            <div class="slider-track"></div>
           </div>
           
-
-        </div>
-        
-        
-        <h2 class="alcim">Product categories</h2>
-        
-        <ul class="jobboldali">
-          <li><a href="http://" class="category">Accessories</a> </li>
-          <hr class="pontok">
-          <li><a href="http://" class="category">Casual</a></li>
-          <hr class="pontok">
-          <li><a href="" class="category">Clothing</a></li>
-          <hr class="pontok">
-          <li><a href="" class="category">Man</a></li>
-          <hr class="pontok">
-          <li><a href="http://" class="category">Woman</a></li>
-          <hr class="pontok">
-        </ul>
-        <h2 class="alcim">Top rated products</h2>
-        
-        <ul>
-          <li>
-            <div class="topratedflex">
-
-              <div class="toparak">
-                <b>Jeans jacket</b>
-                <p class="arak">$59</p>
-              </div>
-              <div class="topkep">
-                <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
-              </div>
-              
-              
+          <br>
+          
+          
+          <div class="filterezes">
+            <button class="button" type="submit" onclick="Filter()"><b class="filterszov">Filter</b></button>
+            <div class="filterarak">
+              Price:
+              <span id="minar">4$</span>
+              -
+              <span id="maxar">19$</span>
             </div>
             
-            
-          </li>
-          <hr class="pontok">
-          
-          <li>
-            <div class="topratedflex">
-
-              <div class="toparak">
-                <b>Black shorts</b>
-                <p class="arak">$59</p>
-              </div>
-              <div class="topkep">
-                <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
-              </div>
-              
-              
-            </div>
-          </li>
-          <hr class="pontok">
-          
-          <li>
-            <div class="topratedflex">
-
-              <div class="toparak">
-                <b>Leather jacket</b>
-                <p class="arak">$59</p>
-              </div>
-              <div class="topkep">
-                <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
-              </div>
-              
-              
-            </div>
-          </li>
-          <hr class="pontok">
-          <li>
-            <div class="topratedflex">
-
-              <div class="toparak">
-                <b>Women tops</b>
-                <p class="arak">$59</p>
-              </div>
-              <div class="topkep">
-                <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
-              </div>
-              
-              
-            </div>
-          </li>
-          <hr class="pontok">
-          <li>
-            <div class="topratedflex">
-
-              <div class="toparak">
-                <b>Collar T-shirt</b>
-                <p class="arak">$59</p>
-              </div>
-              <div class="topkep">
-                <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
-              </div>
-              
-              
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="container">
-
-        <div class="bal">
   
-          <h2 class="alcim">Casual</h2>
-          <select name="sort" id="sort">
-            <option value="def">Default sorting</option>
-          </select>
-          <p class="res">Showing all 6 results</p>
-          <div class="flex">
-    
-            <div class="card">
-                <img src="./kepek/ralph.png" alt="Avatar" style="width:100%" class="kep1">
-                <div class="cardb"> <button>Add to Cart</button> </div>
-                <div class="ruha">
-                    <h4><b>Collar T-Shirt</b></h4> 
-                    <span class="ar">$35.00</span> 
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="./kepek/ralphT.jpg" alt="Avatar" style="width:100%" class="kep1">
-                <div class="cardb"> <button>Add to Cart</button> </div>
-                <div class="ruha">
-                    <h4><b>Gents T-Shirt</b></h4> 
-                    <span class="ar">$49.00</span> 
-                    
-                </div>
-            </div>
-    
-            <div class="card">
-                <img src="./kepek/ralphHat.png" alt="Avatar" style="width:100%" class="kep1">
-                <div class="cardb"> <button>Add to Cart</button> </div>
-                <div class="ruha">
-                    <h4><b>Ladies Hat</b></h4> 
-                    <span class="athuz"><s>$22.00</s></span> 
-                    <span class="ar2 athuz">$17.00</span> 
-                </div>
-            </div>
-            
-            
-            <div class="card">
-              <img src="./kepek/ralphJack.png" alt="Avatar" style="width:100%" class="kep1">
-              <div class="cardb"> <button>Add to Cart</button> </div>
-              <div class="ruha">
-                <h4><b>Leather jacket</b></h4> 
-                <span class="athuz"><s>$100.00</s></span>
-                <span class="ar2 athuz">$50.00</span>
-              </div>
-            </div>
-            
-            <div class="card">
-              <img src="./kepek/ralphTop.png" alt="Avatar" style="width:100%" class="kep1">
-              <div class="cardb"> <button>Add to Cart</button> </div>
-              <div class="ruha">
-                <h4><b>Printed Tops</b></h4> 
-                <span class="ar">$75.00</span> 
-              </div>
-            </div>
-            
-            <div class="card">
-              <img src="./kepek/ralphTop2.png" alt="Avatar" style="width:100%" class="kep1">
-              <div class="cardb"> <button>Add to Cart</button> </div>
-              <div class="ruha">
-                <h4><b>Women Tops</b></h4> 
-                <span class="ar">$45.00</span> 
-              </div>
-            </div>
           </div>
           
+          
+          <h2 class="alcim">Product categories</h2>
+          
+          <ul class="jobboldali">
+            <li><a href="http://" class="category">Accessories</a> </li>
+            <hr class="pontok">
+            <li><a href="http://" class="category">Casual</a></li>
+            <hr class="pontok">
+            <li><a href="" class="category">Clothing</a></li>
+            <hr class="pontok">
+            <li><a href="" class="category">Man</a></li>
+            <hr class="pontok">
+            <li><a href="http://" class="category">Woman</a></li>
+            <hr class="pontok">
+          </ul>
+          <h2 class="alcim">Top rated products</h2>
+          
+          <ul>
+            <li>
+              <div class="topratedflex">
+  
+                <div class="toparak">
+                  <b>Jeans jacket</b>
+                  <p class="arak">$59</p>
+                </div>
+                <div class="topkep">
+                  <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
+                </div>
+                
+                
+              </div>
+              
+              
+            </li>
+            <hr class="pontok">
+            
+            <li>
+              <div class="topratedflex">
+  
+                <div class="toparak">
+                  <b>Black shorts</b>
+                  <p class="arak">$59</p>
+                </div>
+                <div class="topkep">
+                  <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
+                </div>
+                
+                
+              </div>
+            </li>
+            <hr class="pontok">
+            
+            <li>
+              <div class="topratedflex">
+  
+                <div class="toparak">
+                  <b>Leather jacket</b>
+                  <p class="arak">$59</p>
+                </div>
+                <div class="topkep">
+                  <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
+                </div>
+                
+                
+              </div>
+            </li>
+            <hr class="pontok">
+            <li>
+              <div class="topratedflex">
+  
+                <div class="toparak">
+                  <b>Women tops</b>
+                  <p class="arak">$59</p>
+                </div>
+                <div class="topkep">
+                  <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
+                </div>
+                
+                
+              </div>
+            </li>
+            <hr class="pontok">
+            <li>
+              <div class="topratedflex">
+  
+                <div class="toparak">
+                  <b>Collar T-shirt</b>
+                  <p class="arak">$59</p>
+                </div>
+                <div class="topkep">
+                  <img src="./kepek/jordanbarrett.jpg" alt="" srcset="" style="width: 50px; float: right; ">
+                </div>
+                
+                
+              </div>
+            </li>
+          </ul>
         </div>
+
+
       </div>
+      
+      
       <footer>
           <div class="footer-section footerelso">
             <h2>Rólunk</h2>
