@@ -386,7 +386,9 @@ footer {
   footer{
     font-size: 1.5vw;
   }
+  
 }
+
 @media only screen and (max-width: 850px) {
   .card   {
     width: 45%;
@@ -399,6 +401,28 @@ footer {
   }
   #hol{
     font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  #price{
+    font-size: large;
+    right: 60%;
+  }
+  #minar{
+    margin-left: 37%;
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 730px){
+  #price{
+    font-size: large;
+    right: 60%;
+  }
+  #minar{
+    margin-left: 32%;
+    font-size: large;
   }
 }
 
@@ -444,6 +468,24 @@ footer {
     margin: 0 auto;
 
   }
+  .filterarak{
+    font-size: large;
+    margin-top: 1%;
+    
+  }
+  #minar{
+    margin-left: 0%;
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    .card   {
+      width: 200px;
+    }
+
+
+  }
+
   
 }
 
