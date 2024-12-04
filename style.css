@@ -383,6 +383,10 @@ footer {
 .dropgomb1:hover .dropdown-content1 {display: block;}
 .dropgomb2:hover .dropdown-content2 {display: block;}
 @media only screen and (max-width: 900px) {
+  #price{
+    font-size: large;
+    right: 60%;
+  }
   footer{
     font-size: 1.5vw;
   }
@@ -402,7 +406,24 @@ footer {
   #hol{
     font-size: 2vw;
   }
+  #minar{
+    margin-left: 40%;
+    
+  }
 }
+@media only screen and (max-width: 800px){
+  #minar{
+    margin-left: 34%;
+    
+  }
+}
+@media only screen and (max-width: 780px){
+  #minar{
+    margin-left: 30%;
+    
+  }
+}
+
 
 @media only screen and (max-width: 750px){
   #price{
@@ -410,9 +431,10 @@ footer {
     right: 60%;
   }
   #minar{
-    margin-left: 37%;
-    font-size: large;
+    margin-left: 30%;
+    
   }
+  
 }
 
 @media only screen and (max-width: 730px){
@@ -421,7 +443,13 @@ footer {
     right: 60%;
   }
   #minar{
-    margin-left: 32%;
+    margin-left: 23%;
+    font-size: large;
+  }
+}
+@media only screen and (max-width: 700px){
+  #minar{
+    margin-left: 20%;
     font-size: large;
   }
 }

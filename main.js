@@ -43,7 +43,7 @@ updateSlider();
 
 const button = document.getElementsByClassName(".button");
 function Filter(){
-  console.log("A gomb meg lett nyomva")
+  console.log(`Keresett árak: ${range1.value} - ${range2.value}`)
 }
 
 
