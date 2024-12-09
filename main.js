@@ -45,6 +45,14 @@ const button = document.getElementsByClassName(".button");
 function Filter(){
   console.log(`Keresett árak: ${range1.value} - ${range2.value}`)
 }
+function myFunction() {
+  let x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 
 

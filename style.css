@@ -3,6 +3,9 @@ body{
   min-width: 100%;
   margin: 0;
 }
+.topnav{
+  display: none;
+}
 header{
   top: 0;
   width: 100%;
@@ -303,7 +306,9 @@ footer {
   margin-bottom: -8px;
   width: 100%;
 }
-
+.az2{
+  width: 100%;
+}
 
 .footer-section {
   width: 30%;
@@ -458,6 +463,7 @@ footer {
   .card   {
     width: 40%;
   }
+  
   .footer-section{
     width: 100%;
     margin-left: 10%;
@@ -469,12 +475,6 @@ footer {
   }
   .felnyil{
     font-size: 5vw;
-  }
-  .menuitem{
-    font-size: 1.8vw;
-  }
-  menu h1{
-    font-size: 2.2vw;
   }
   #hol{
     font-size: 2.2vw;
@@ -501,10 +501,76 @@ footer {
     margin-top: 1%;
     
   }
+  .melyikoldal{
+    display: none;
+  }
   #minar{
     margin-left: 0%;
   }
+  
+  menu{
+    display: none;
+  }
+  .topnav h1{
+    font-size: 3.5vw;
 
+  }
+   .topnav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 4.1vh;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    float: left;
+    background-color: #FF4852;
+    width: 100%;
+  }
+
+  .topnav a {
+    padding-left: 5px;
+    border: none;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    display: block;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    margin-left: 5%;
+  }
+
+  .topnav a:first-child {
+    padding-top: 5px;
+  }
+
+  .topnav a:last-child {
+    padding-bottom: 5px;
+  }
+
+  .topnav a.icon {
+    top: 0;
+    right: 0;
+    font-size: 2vh;
+    height: 100%;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    color: #FF4852;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
 
   @media only screen and (max-width: 500px) {
     .card   {
@@ -514,8 +580,6 @@ footer {
 
   }
 
-  
-}
 
 .card {
   position: relative;
@@ -557,4 +621,3 @@ footer {
   border: white solid 2px;
   color: white;
   } 
-  
