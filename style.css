@@ -637,3 +637,38 @@ footer {
       background-color: black;
       border: none;
     }
+
+    .ikonok {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+    }
+  
+    .szivikon,
+    .szemikon {
+      width: 30px;
+      height: 30px; 
+      background-color: rgba(172, 172, 172, 0.6); 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; 
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .szivikon img,
+    .szemikon img {
+      width: 50%; 
+      height: 50%;
+      object-fit: contain;
+    }
+  
+  
+    .szivikon:hover,
+    .szemikon:hover {
+      background-color: #FF4852; 
+    }
