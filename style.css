@@ -95,11 +95,11 @@ h1 {
   .ruha {
   
   background-color: rgb(247, 244, 244);
-  padding-bottom: 15%;
+  padding-bottom: 8%;
 }
 
 .kep1 {
-  height: 200px;
+  height: 210px;
   width: 30%;
 }
 
@@ -624,7 +624,7 @@ footer {
       top: 0;
       left: 0;
       width: 100%;
-      height: 68%;
+      height: 8%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -688,7 +688,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 68%;
+  height: 71%;
   display: flex;
   align-items: center;
   justify-content: center;
