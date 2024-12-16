@@ -655,7 +655,7 @@ footer {
 .card {
   position: relative;
 
-  overflow: hidden;
+  overflow: visible;
   background-color: #fff;
   transition: 0.3s ease;
 }
@@ -798,4 +798,19 @@ footer {
 }
 .dropdown-content2 a:last-child{
   border-bottom: none;
+}
+
+.top-left {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  background-color: #FF4852;
+  color: white;
+  border-radius: 100%;
+  font-size: 1vw;
+  padding-left: 9px;
+  padding-right: 9px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  z-index: 1;
 }
