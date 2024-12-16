@@ -35,6 +35,7 @@ menu {
   font-size: 1.2vw;
   color: black;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .elso {
@@ -368,11 +369,12 @@ footer {
 
 .felnyil {
   color: #d3d3d3;
-  float: right;
-  margin-right: 8%;
   padding: 4px;
   font-size: 2vw;
   border: #d3d3d3 2px solid;
+  position: fixed;
+  bottom: 8vh;
+  right: 4vh;
 }
 
 .kep1:hover {
@@ -783,6 +785,9 @@ footer {
   display: block;
   text-align: left;
 }
+.dropdown-content1 a:hover{
+  color: #FF4852;
+}
 .dropdown-content1 a:last-child{
   border-bottom: none;
 }
@@ -795,6 +800,9 @@ footer {
   text-decoration: none;
   display: block;
   text-align: left;
+}
+.dropdown-content2 a:hover{
+  color: #FF4852;
 }
 .dropdown-content2 a:last-child{
   border-bottom: none;
