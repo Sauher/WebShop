@@ -184,6 +184,7 @@ h4 {
   width: 100%;
   text-align: right;
   color: #8d8d8d;
+  font-size: small;
 }
 
 .topratedflex {
@@ -404,12 +405,24 @@ footer {
   color: #FF4852;
 }
 
-
-@media only screen and (max-width: 900px) {
-  #price {
-    font-size: large;
-    right: 60%;
+@media only screen and (max-width: 935px) {
+  
+  .track {
+    width: 100%;
+    height: 4px;
+    background: #200f1b;
+    position: absolute;
+    border-radius: 20%;
+    z-index: -3;
+    top: 3px;
+  
+  
   }
+  
+
+}
+@media only screen and (max-width: 900px) {
+  
 
   footer {
     font-size: 1.5vw;
@@ -434,25 +447,10 @@ footer {
     font-size: 2vw;
   }
 
-  #minar {
-    margin-left: 40%;
-
-  }
+  
 }
 
-@media only screen and (max-width: 800px) {
-  #minar {
-    margin-left: 34%;
 
-  }
-}
-
-@media only screen and (max-width: 780px) {
-  #minar {
-    margin-left: 30%;
-
-  }
-}
 
 
 @media only screen and (max-width: 750px) {
@@ -468,23 +466,32 @@ footer {
 
 }
 
-@media only screen and (max-width: 730px) {
-  #price {
+
+
+@media only screen and (max-width: 770px) {
+  .tartalom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .jobboldal {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .filterarak {
     font-size: large;
-    right: 60%;
+    margin-top: 1%;
+
+  }
+  .container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
   }
 
-  #minar {
-    margin-left: 23%;
-    font-size: large;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  #minar {
-    margin-left: 20%;
-    font-size: large;
-  }
 }
 
 @media only screen and (max-width: 650px) {
