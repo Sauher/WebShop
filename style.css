@@ -551,7 +551,7 @@ footer {
 
   .topnav h1 {
     font-size: 3.5vw;
-
+    margin-left: 7.5%;
   }
 
   .topnav {
@@ -820,5 +820,4 @@ footer {
   padding-right: 9px;
   padding-top: 17px;
   padding-bottom: 17px;
-  z-index: 1;
 }
