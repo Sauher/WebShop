@@ -62,7 +62,7 @@ h1 {
 
 .melyikoldal {
   margin-top: 0px;
-  background-color: #FF4852;
+  background-color: #eb5e5f;
   color: white;
   display: flex;
   flex-direction: row;
@@ -105,13 +105,13 @@ h1 {
 
 .ar {
   margin-top: -10%;
-  color: #FF4852;
+  color: #eb5e5f;
   padding-right: 45px;
 }
 
 .ar2 {
 
-  color: #FF4852;
+  color: #eb5e5f;
 
 }
 
@@ -129,12 +129,13 @@ h4 {
 .alcim {
   border-bottom: 1px solid gray;
   font-size: 20px;
+  
   color: #515151;
 }
 
 .alcim::after {
   content: '';
-  border-bottom: 2px solid #FF4852;
+  border-bottom: 2px solid #eb5e5f;
   display: block;
   margin-bottom: -1px;
   max-width: 40px;
@@ -162,8 +163,9 @@ h4 {
 }
 
 .arak {
-  margin-top: 0px;
+  margin-top: 5px;
   color: #515151;
+  margin-bottom: 2px;
 }
 
 .pontok {
@@ -257,10 +259,11 @@ ul {
 
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  bottom: 1px;
   border-radius: 50%;
-  background: #FF4852;
+  background: #eb5e5f;
   pointer-events: all;
   cursor: pointer;
   position: relative;
@@ -274,7 +277,7 @@ ul {
 .slider-track {
   position: absolute;
   height: 5px;
-  background: #FF4852;
+  background: #eb5e5f;
   z-index: -2;
   top: 50%;
   transform: translateY(-50%);
@@ -289,17 +292,18 @@ ul {
   position: absolute;
   border-radius: 20%;
   z-index: -3;
-  top: 2.8px;
+  top: 30%;
 
 
 }
 
 input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
+  
   border-radius: 50%;
-  background: #FF4852;
+  background: #eb5e5f;
   pointer-events: all;
   cursor: pointer;
   position: relative;
@@ -389,6 +393,8 @@ footer {
 
 .category {
   text-decoration: none;
+  
+  margin-left: 5px;
   color: #525252;
 }
 
@@ -402,7 +408,7 @@ footer {
 }
 
 .menuitem:hover {
-  color: #FF4852;
+  color: #eb5e5f;
 }
 
 @media only screen and (max-width: 935px) {
