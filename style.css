@@ -36,6 +36,8 @@ menu {
   color: black;
   text-decoration: none;
   font-weight: bolder;
+  justify-content: center;
+  vertical-align:middle;
 }
 
 .elso {
@@ -81,7 +83,7 @@ h1 {
 
 .card {
   transition: 0.3s;
-  width: 30%;
+  width: 230px;
   background-color: rgb(247, 244, 244);
   margin-top: 30px;
 }
@@ -321,7 +323,6 @@ input[type="range"]::-moz-range-thumb {
 
 
 
-
 footer {
   display: flex;
   flex-direction: row;
@@ -339,39 +340,47 @@ footer {
 }
 
 .footer-section {
-  width: 30%;
+  width: 26%;
   margin: auto;
   margin-top: 0.2vw;
 }
 
 .footer-section h3 {
   color: white;
+  font-size: 1.2em;
+  font-weight: lighter;
   margin-bottom: 0px;
 }
 
 .footer-section h2 {
   color: white;
+  font-weight: lighter;
+  font-size: 1.2em;
 }
 
-.footer-section p,
-.footer-section small {
+.footer-section p {
   margin: 5px 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #847f8f;
 }
-
 .footer-section p i {
   margin-right: 8px;
   font-size: 1vw;
 }
 
 .footerelso {
-  margin-left: 9%;
+  margin-left: 10.5%;
   margin-right: auto;
+  line-height: 25px;
 }
 
 .shipszoveg {
-  text-indent: 4%;
+  text-indent: 10%;
 }
-
+.footerutso{
+  margin-right: 9.5%;
+}
 .felnyil {
   color: #d3d3d3;
   padding: 4px;
@@ -409,6 +418,10 @@ footer {
 
 .menuitem:hover {
   color: #eb5e5f;
+}
+.aaa{
+  margin-right: 4%;
+  color: #847f8f;
 }
 
 @media only screen and (max-width: 935px) {
@@ -701,7 +714,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 71%;
+  height: 72.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -730,6 +743,11 @@ footer {
   border: none;
 }
 
+.lenyil{
+  font-size: 0.6em;
+  font-weight: lighter;
+  
+}
 .ikonok {
   position: absolute;
   top: 10px;
