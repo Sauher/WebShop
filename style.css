@@ -83,7 +83,7 @@ h1 {
 
 .card {
   transition: 0.3s;
-  width: 230px;
+  width: 215px;
   background-color: rgb(247, 244, 244);
   margin-top: 30px;
 }
@@ -510,14 +510,16 @@ footer {
     margin: 0 auto;
 
   }
-
+  .card{
+    width: 260px;
+  }
+  
 }
 
 @media only screen and (max-width: 650px) {
   .card {
     width: 40%;
   }
-
   .footer-section {
     width: 100%;
     margin-left: 10%;
