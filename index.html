@@ -15,14 +15,25 @@
           <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
           <br>
           <div id="myLinks">
-            <a href="" class="az2">HOME</a>
-            <a href="" class="az2">SHOP</a>
-            <a href="" class="az2">MY ACCOUNT</a>
-            <a href="" class="az2">BLOG</a>
-            <a href="" class="az2">CONTACT US</a>
+            <div class="burgeritem"><a href="" class="az2">HOME</a></div>
+            <div class="dropdown3 burgeritem">
+              <a href="" class="az2">SHOP</a><i class="fa fa-plus pluszjel1"></i>
+              <div class="dropdown-content3">
+                <a href="#">ACCESSORIES</a>
+                <a href="#">CASUAL</a>
+                <a href="#">CLOTHING</a>
+                <a href="#">MEN</a>
+                <a href="">WOMEN</a>
+              </div>
+            </div>
+            
+            <div class="burgeritem"><a href="" class="az2">MY ACCOUNT</a></div>
+            <div class="burgeritem"><a href="" class="az2">BLOG</a></div>
+            <div class="burgeritem"><a href="" class="az2">CONTACT US</a></div>
           </div>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()" allow="autoplay">
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" id="menuikon1"></i>
+            <i class="fa fa-x" id="menuikon2"></i>
           </a>
         </div>
         <menu>

@@ -40,6 +40,14 @@ menu {
   justify-content: center;
   vertical-align:middle;
 }
+.dropdown-content3{
+  display: none;
+  min-width: 160px;
+  position: relative;
+}
+.dropdown3:hover .dropdown-content3 {
+  display: block;
+}
 
 .elso {
   margin-left: auto;
@@ -320,8 +328,18 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
 }
 
-
-
+.burgeritem{
+  padding: 5px;
+  border: 0.1px solid white;
+}
+.pluszjel1{
+  display: inline;
+  float: right;
+  color: white;
+}
+#menuikon2{
+display: none;
+}
 
 
 footer {
@@ -337,7 +355,7 @@ footer {
 }
 
 .az2 {
-  width: 100%;
+  margin-bottom: 10px;
 }
 
 .footer-section {
@@ -839,6 +857,7 @@ footer {
 .dropdown-content2 a:last-child{
   border-bottom: none;
 }
+
 
 .top-left {
   position: absolute;
