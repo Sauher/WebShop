@@ -40,13 +40,19 @@ menu {
   justify-content: center;
   vertical-align:middle;
 }
+
+.dropdown-content4{
+  display: none;
+  min-width: 160px;
+  width: 100%;
+  position: relative;
+}
+
 .dropdown-content3{
   display: none;
   min-width: 160px;
+  width: 100%;
   position: relative;
-}
-.dropdown3:hover .dropdown-content3 {
-  display: block;
 }
 
 .elso {
@@ -329,10 +335,16 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .burgeritem{
+  display: flex;
   padding: 5px;
   border: 0.1px solid white;
 }
 .pluszjel1{
+  display: inline;
+  float: right;
+  color: white;
+}
+.pluszjel2{
   display: inline;
   float: right;
   color: white;
@@ -356,6 +368,7 @@ footer {
 
 .az2 {
   margin-bottom: 10px;
+  width: 90%;
 }
 
 .footer-section {
@@ -642,7 +655,6 @@ footer {
     top: 0;
     right: 0;
     font-size: 2vh;
-    height: 100%;
     color: white;
     border: none;
     border-radius: 0px;
@@ -767,7 +779,7 @@ footer {
 .lenyil{
   font-size: 0.6em;
   font-weight: lighter;
-  
+  padding-left: 5px;
 }
 .ikonok {
   position: absolute;
@@ -810,7 +822,14 @@ footer {
   min-width: 160px;
   background-color: white;
 }
-
+.dropgomb2{
+  display: flex;
+  align-items: center;
+}
+.dropgomb1{
+  display: flex;
+  align-items: center;
+}
 .dropdown-content2 {
   display: none;
   position: absolute;

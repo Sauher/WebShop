@@ -59,6 +59,25 @@ function myFunction() {
     ikon2.style.display = "block";
   }
 }
+function dropFunction1(){
+  let x = document.getElementById("drop3");
+  
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+function dropFunction2(){
+  let x = document.getElementById("drop4");
+  
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 
 
 
