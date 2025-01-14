@@ -40,7 +40,11 @@ menu {
   justify-content: center;
   vertical-align:middle;
 }
-
+#kepdiv{
+  align-items: center;
+  justify-content: left;
+  gap: 6.5%;
+}
 .dropdown-content4{
   display: none;
   min-width: 160px;
@@ -91,7 +95,7 @@ h1 {
 #hol {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 10%;
+  margin-left: 9.4%;
   font-size: 1.2vw;
   padding: 8px;
 }
@@ -402,7 +406,7 @@ footer {
 }
 
 .footerelso {
-  margin-left: 10.5%;
+  margin-left: 10%;
   margin-right: auto;
   line-height: 25px;
 }
@@ -411,7 +415,7 @@ footer {
   text-indent: 10%;
 }
 .footerutso{
-  margin-right: 9.5%;
+  margin-right: 5.5%;
 }
 .felnyil {
   color: #d3d3d3;
