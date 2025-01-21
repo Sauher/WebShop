@@ -1,0 +1,28 @@
+#boritokep{
+    display: block;
+    width: 90%;
+    height: 529px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.kepflex{
+    display: flex;
+    
+    width: 60%;
+}
+.alsoresz{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.szovegflex{
+    width: 39%;
+}
+
+#flexkep{
+    width: 100%;
+}
