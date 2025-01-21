@@ -806,7 +806,15 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
+.droppos{
+  text-decoration: none;
+}
+.droppos:visited{
+  color: black;
+}
+.droppos:hover{
+  color: #eb5e5f;
+}
 .szivikon img,
 .szemikon img {
   width: 50%;
