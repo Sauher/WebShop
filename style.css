@@ -339,19 +339,31 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .burgeritem{
+  height: 40px;
   display: flex;
-  padding: 5px;
   border: 0.1px solid white;
+}
+.dropitem{
+  padding-bottom: 5px;
+  border: 1px solid #f1f1f1;
 }
 .pluszjel1{
   display: inline;
   float: right;
   color: white;
+  padding-top: 12px;
+  padding-left: 4%;
+  padding-right: 3%;
+  border-left: #f1f1f1 1px solid;
 }
 .pluszjel2{
   display: inline;
   float: right;
   color: white;
+  padding-top: 12px;
+  padding-left: 4%;
+  padding-right: 3%;
+  border-left: #f1f1f1 1px solid;
 }
 #menuikon2{
 display: none;
@@ -372,7 +384,7 @@ footer {
 
 .az2 {
   margin-bottom: 10px;
-  width: 90%;
+  width: 100%;
 }
 
 .footer-section {
@@ -636,19 +648,13 @@ footer {
 
   .topnav a {
     padding-left: 5px;
-    border: none;
-    border-radius: 0px;
     text-decoration: none;
     font-size: 2.5vw;
     display: block;
     font-weight: bolder;
     color: white;
     padding-top: 20px;
-    margin-left: 5%;
-  }
-
-  .topnav a:first-child {
-    padding-top: 5px;
+    padding-left: 5%;
   }
 
   .topnav a:last-child {
