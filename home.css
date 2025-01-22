@@ -9,20 +9,29 @@
 
 .kepflex{
     display: flex;
-    
+    margin-left: 5%;
     width: 60%;
 }
 .alsoresz{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    height: 400px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 .szovegflex{
-    width: 39%;
+    width: 35%;
 }
 
 #flexkep{
-    width: 100%;
+    width: 90%;
+    height: 400px;
+    margin: 10px;
+}
+#h1{
+    margin: 0;
 }
