@@ -57,3 +57,18 @@ a:visited{
     margin-left: 0px;
     margin-top: 20px;
   }
+
+  .balfent {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    
+  }
+  .vonal{
+    color: black;
+    height: 3px;
+    background-color: black;
+  }
+  .fszov{
+    color: white;
+  }

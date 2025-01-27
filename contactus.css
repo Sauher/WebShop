@@ -1,0 +1,55 @@
+.form{
+    font-size: larger;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 8px solid black;
+    margin-top: 5px;
+}
+.formcontainer{
+    width: 70%;
+    margin-bottom: 40px;
+}
+.elerhetoseg{
+    font-size: 1.7vw;
+    width: 30%;
+    margin: auto;
+}
+.mezo{
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    background-color: lightgray;
+}
+.kuldesgomb{
+    border: none;
+    padding: 4px;
+    font-size: 1.1vw;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    background-color: gray;
+    display: flex;
+    margin: auto;
+}
+.tartalom{
+    display: flex;
+    flex-direction: row;
+    margin-top: 51px;
+    margin-bottom: 36px;
+}
+.sor{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.ikon{
+    font-size: 2.7vw;
+}
+@media only screen and (max-width: 650px){
+    .tartalom{
+        flex-direction:  column;
+    }
+
+}
+    
