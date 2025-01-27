@@ -35,3 +35,33 @@
 #h1{
     margin: 0;
 }
+
+
+#kepszoveg{
+
+    position: absolute;
+    top: 475px;
+    left: 100px;
+    color: aliceblue;
+}
+#vasarlasgomb{
+    width: 300px;
+    height: 106px;
+    border-radius: 10%;
+    border: solid black;
+    background-color: #000000;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: bold;
+    
+}
+#kepgomb{
+    position: absolute;
+    top: 275px;
+    right: 100px;
+}
+.gombok{
+    height: 150px;
+    width:  150px;
+    background-color: #fff;
+}
