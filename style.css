@@ -472,257 +472,6 @@ footer {
   color: #847f8f;
 }
 
-@media only screen and (max-width: 935px) {
-  
-  .track {
-    width: 100%;
-    height: 4px;
-    background: #200f1b;
-    position: absolute;
-    border-radius: 20%;
-    z-index: -3;
-    top: 3px;
-  
-  
-  }
-  
-
-}
-@media only screen and (max-width: 900px) {
-  
-
-  footer {
-    font-size: 1.5vw;
-  }
-
-}
-
-@media only screen and (max-width: 850px) {
-  .card {
-    width: 45%;
-  }
-
-  .menuitem {
-    font-size: 1.6vw;
-  }
-
-  menu h1 {
-    font-size: 2vw;
-  }
-
-  #hol {
-    font-size: 2vw;
-  }
-
-  
-}
-
-
-
-
-@media only screen and (max-width: 750px) {
-  #price {
-    font-size: large;
-    right: 60%;
-  }
-
-  #minar {
-    margin-left: 30%;
-
-  }
-
-}
-
-
-
-@media only screen and (max-width: 770px) {
-  .tartalom {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .jobboldal {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .filterarak {
-    font-size: large;
-    margin-top: 1%;
-
-  }
-  .container {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-
-  }
-  .card{
-    width: 260px;
-  }
-  
-}
-
-@media only screen and (max-width: 650px) {
-  .card {
-    width: 40%;
-  }
-  .footer-section {
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
-  footer {
-    font-size: 3vw;
-    margin: auto;
-  }
-
-  .felnyil {
-    font-size: 5vw;
-  }
-
-  #hol {
-    font-size: 2.2vw;
-  }
-
-  .tartalom {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-  .jobboldal {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .container {
-    display: block;
-    width: 90%;
-    margin: 0 auto;
-
-  }
-
-  .filterarak {
-    font-size: large;
-    margin-top: 1%;
-
-  }
-
-  .melyikoldal {
-    display: none;
-  }
-
-  #minar {
-    margin-left: 0%;
-  }
-
-  menu {
-    display: none;
-  }
-
-  .topnav h1 {
-    font-size: 3.5vw;
-    margin-left: 7.5%;
-  }
-
-  .topnav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-    min-height: 4.1vh;
-  }
-
-  .topnav #myLinks {
-    display: none;
-    float: left;
-    background-color: #FF4852;
-    width: 100%;
-  }
-
-  .topnav a {
-    padding-left: 5px;
-    text-decoration: none;
-    font-size: 2.5vw;
-    display: block;
-    font-weight: bolder;
-    color: white;
-    padding-top: 20px;
-    padding-left: 5%;
-  }
-
-  .topnav a:last-child {
-    padding-bottom: 5px;
-  }
-
-  .topnav a.icon {
-    top: 0;
-    right: 0;
-    font-size: 2vh;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
-    padding-top: 1vh;
-    padding-left: 1vh;
-    padding-right: 1vh;
-    color: #FF4852;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .card {
-    width: 200px;
-  }
-    .cardb:hover {
-  
-      background-color: rgba(255, 72, 82, 0.6);
-    }
-    .card .cardb {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 8%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      background-color: rgba(255, 72, 82, 0.6);
-      transition: opacity 0.3s ease;
-    }
-    .card:hover .cardb {
-      opacity: 1;
-    }
-    .card .cardb button {
-      padding: 10px 20px;
-      border: 2px solid white;
-      background: none;
-      color: white;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s ease, border 0.3s ease;
-    }
-  
-    .card .cardb button:hover {
-      background-color: black;
-      border: none;
-    }
-
-
-}
-
-
 .card {
   position: relative;
 
@@ -910,5 +659,242 @@ footer {
   padding-right: 9px;
   padding-top: 17px;
   padding-bottom: 17px;
+}
+@media only screen and (max-width: 935px) {
+  
+  .track {
+    width: 100%;
+    height: 4px;
+    background: #200f1b;
+    position: absolute;
+    border-radius: 20%;
+    z-index: -3;
+    top: 3px;
+  
+  
+  }
+  
+
+}
+@media only screen and (max-width: 900px) {
+  
+
+  footer {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  .card {
+    width: 45%;
+  }
+
+  .menuitem {
+    font-size: 1.6vw;
+  }
+
+  menu h1 {
+    font-size: 2vw;
+  }
+
+  #hol {
+    font-size: 2vw;
+  }
+
+  
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+  #price {
+    font-size: large;
+    right: 60%;
+  }
+
+  #minar {
+    margin-left: 30%;
+
+  }
+
+}
+
+
+
+@media only screen and (max-width: 770px) {
+  .tartalom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .jobboldal {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .filterarak {
+    font-size: large;
+    margin-top: 1%;
+
+  }
+  .container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  .card{
+    width: 260px;
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+  #kepdiv{
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
+  }
+  .footer-section {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  footer {
+    font-size: 3vw;
+    margin: auto;
+  }
+
+  .felnyil {
+    font-size: 5vw;
+  }
+
+  #hol {
+    font-size: 2.2vw;
+  }
+
+  .tartalom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .jobboldal {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  .filterarak {
+    font-size: large;
+    margin-top: 1%;
+
+  }
+
+  .melyikoldal {
+    display: none;
+  }
+
+  #minar {
+    margin-left: 0%;
+  }
+
+  menu {
+    display: none;
+  }
+
+  .topnav h1 {
+    font-size: 3.5vw;
+    margin-left: 7.5%;
+  }
+
+  .topnav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    min-height: 4.1vh;
+  }
+
+  .topnav #myLinks {
+    display: none;
+    float: left;
+    background-color: #FF4852;
+    width: 100%;
+  }
+
+  .topnav a {
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    display: block;
+    font-weight: bolder;
+    color: white;
+    padding-top: 20px;
+    padding-left: 5%;
+  }
+
+  .topnav a:last-child {
+    padding-bottom: 5px;
+  }
+
+  .topnav a.icon {
+    top: 0;
+    right: 0;
+    font-size: 2vh;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin: 0px;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    color: #FF4852;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .kep1{
+    height: 400px;
+  }
+  .card {
+    width: 350px;
+  }
+  #kepdiv{
+    justify-content: center;
+  }
+  .card .cardb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: rgba(255, 72, 82, 0.6);
+  
+    transition: opacity 0.3s ease;
+  }
+
 }
 

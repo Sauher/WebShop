@@ -45,6 +45,7 @@ const button = document.getElementsByClassName(".button");
 function Filter(){
   console.log(`Keresett árak: ${range1.value} - ${range2.value}`)
 }
+//header
 function myFunction() {
   let x = document.getElementById("myLinks");
   let ikon1 = document.getElementById("menuikon1");
@@ -77,6 +78,31 @@ function dropFunction2(){
     x.style.display = "block";
   }
 }
+
+//Homekepváltozás
+let szamlalo =0;
+
+function kep1valtas(){
+  
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/ralphTop2.png')";
+  
+}
+function kep2valtas(){
+  
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/jordanbarrett.jpg')";
+  
+}
+function kep3valtas(){
+  
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/jordanbarrett.jpg')";
+  
+}
+function kepekvaltas(){
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/jordanbarrett.jpg')"
+  
+}
+
+//
 
 
 
