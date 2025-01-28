@@ -65,3 +65,11 @@
     width:  150px;
     background-color: #fff;
 }
+#boritokep{
+    background-image: url(./kepek/jordanbarrett.jpg);
+}
+.animate {
+    -webkit-transition: 2s;
+    transition: 2s;
+    opacity: 1;
+ }
