@@ -27,10 +27,12 @@
     width: 35%;
 }
 
+
 #flexkep{
-    width: 90%;
-    height: 400px;
+    width: 328px;
+    height: 492px;
     margin: 10px;
+    
 }
 #h1{
     margin: 0;
@@ -67,9 +69,6 @@
 }
 #boritokep{
     background-image: url(./kepek/jordanbarrett.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.animate {
-    -webkit-transition: 2s;
-    transition: 2s;
-    opacity: 1;
- }
