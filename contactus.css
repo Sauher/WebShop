@@ -4,30 +4,49 @@
     margin: auto;
     display: flex;
     flex-direction: column;
-    border: 8px solid black;
+    justify-content: center;
     margin-top: 5px;
+   
 }
 .formcontainer{
-
-    width: 67%;
-    margin-bottom: 40px;
+    background-image: url(Kepek/Ruhacontactus.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    width: 60%;
+    min-height: 500px;
+    background-position-x: center;
+    margin: auto;
 }
 .elerhetoseg{
-    font-size: 1.7vw;
     width: 27%;
     margin: auto;
-    text-indent: 15%;
+    margin-top: 0px;
     margin-right: 6%;
+}
+h1{
+    margin-left:0px ;
+    font-size: 2.8vw;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.sorok{
+    margin-top: 20%;
+    font-size: 1.7vw;
+    text-indent: 15%;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     background-color: #EEEEEE;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2)
 }
 .mezo{
-    margin: 5px;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 8px;
     border: none;
-    background-color: lightgray;
+    background-color: rgba(238, 238, 238, 1);
 }
 .kuldesgomb{
     border: none;
@@ -36,7 +55,7 @@
     padding-left: 25px;
     padding-right: 25px;
     color: white;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     margin: auto;
 }
@@ -45,6 +64,7 @@
     flex-direction: row;
     margin-top: 51px;
     margin-bottom: 33px;
+    min-height: 500px;
 }
 .sor{
     margin-top: 30px;
