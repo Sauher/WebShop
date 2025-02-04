@@ -43,7 +43,7 @@
 
     position: absolute;
     top: 475px;
-    left: 100px;
+    left: 8%;
     color: aliceblue;
 }
 #vasarlasgomb{
@@ -59,8 +59,8 @@
 }
 #kepgomb{
     position: absolute;
-    top: 275px;
-    right: 100px;
+    top: 28%;
+    right: 7%;
 }
 .gombok{
     height: 150px;
@@ -72,3 +72,54 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#kozepsokepszoveg{
+    display: flex;
+}
+
+@media only screen and (max-width: 1280px) {
+  
+    .szovegflex{
+        margin: 0 auto;
+        text-align: center;
+        width: 625px;
+    }
+   
+    .kepflex{
+        display: flex;
+        margin-left: 5%;
+        width: 90%;
+        
+    }
+    #kepszoveg{
+
+        position: absolute;
+        top: 475px;
+        left: 8%;
+        color: aliceblue;
+    }
+    #flexkep{
+        width: 328px;
+        height: 492px;
+        margin: 10px;
+        
+    }
+    #kepgomb{
+        position: absolute;
+        top: 30%;
+        right: 7%;
+    }
+    
+    .alsoresz{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 90%;
+        height: 100%;
+        
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 10%;
+    }
+  
+  }
