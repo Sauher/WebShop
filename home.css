@@ -42,15 +42,20 @@
 #kepszoveg{
 
     position: absolute;
-    top: 475px;
+    top: 450px;
     left: 8%;
     color: aliceblue;
+   
 }
+#ruhaszoveg{
+    -webkit-text-stroke: 1px black;
+}
+
 #vasarlasgomb{
     width: 300px;
     height: 106px;
-    border-radius: 10%;
-    border: solid black;
+    border-radius: 12px;
+    border: 6px solid rgb(0, 0, 0);
     background-color: #000000;
     color: aliceblue;
     font-size: 32px;
@@ -59,7 +64,7 @@
 }
 #kepgomb{
     position: absolute;
-    top: 28%;
+    top: 230px;
     right: 7%;
 }
 .gombok{
@@ -67,10 +72,19 @@
     width:  150px;
     background-color: #fff;
 }
+#gomb1{
+    background-color: #D8ABAB;
+}
+
+
+
+
 #boritokep{
     background-image: url(./kepek/jordanbarrett.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #kozepsokepszoveg{
@@ -94,7 +108,7 @@
     #kepszoveg{
 
         position: absolute;
-        top: 475px;
+        top: 430px;
         left: 8%;
         color: aliceblue;
     }
@@ -106,7 +120,7 @@
     }
     #kepgomb{
         position: absolute;
-        top: 30%;
+        top: 23%;
         right: 7%;
     }
     
