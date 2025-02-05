@@ -115,6 +115,13 @@ function kep3valtas(){
 
 
 
+//Contact us
+function Kiiras(){
+  let mezok = document.getElementsByClassName("mezo")
+
+  alert("Kedves " + mezok[0].value +"!\nÜzeneted rögzítésre került és hamarosan feldolgozzuk.")
+}
+
 //
 
 
