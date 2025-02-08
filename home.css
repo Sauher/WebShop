@@ -1,10 +1,15 @@
 #boritokep{
     display: block;
     width: 90%;
-    height: 529px;
+    height: 600px;
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 100px;
+    background-image: url(./kepek/Homekep3.png);
+    background-size: cover;
+    z-index: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .kepflex{
@@ -21,6 +26,19 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
+}
+
+#modellkep{
+    background-image: url(./kepek/HomeModel1.png);
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    height: 600px;
+    background-size: cover;
+    top: 200px;
+    right: 30%;
+    
+    
 }
 
 .szovegflex{
@@ -42,9 +60,10 @@
 #kepszoveg{
 
     position: absolute;
-    top: 450px;
+    top: 55%;
     left: 8%;
     color: aliceblue;
+    z-index: 2;
    
 }
 #ruhaszoveg{
@@ -64,8 +83,9 @@
 }
 #kepgomb{
     position: absolute;
-    top: 230px;
+    top: 27%;
     right: 7%;
+    z-index: 2;
 }
 .gombok{
     height: 150px;
@@ -79,13 +99,7 @@
 
 
 
-#boritokep{
-    background-image: url(./kepek/jordanbarrett.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 
 #kozepsokepszoveg{
     display: flex;
@@ -105,24 +119,14 @@
         width: 90%;
         
     }
-    #kepszoveg{
-
-        position: absolute;
-        top: 430px;
-        left: 8%;
-        color: aliceblue;
-    }
+    
     #flexkep{
         width: 328px;
         height: 492px;
         margin: 10px;
         
     }
-    #kepgomb{
-        position: absolute;
-        top: 23%;
-        right: 7%;
-    }
+    
     
     .alsoresz{
         display: flex;

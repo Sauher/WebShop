@@ -84,32 +84,37 @@ let szamlalo =0;
 
 function kep1valtas(){
   
-  document.getElementById('boritokep').style.backgroundImage="url('./kepek/ralphTop2.png')";
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep3.png')";
   document.getElementById('gomb1').style.backgroundColor= '#D8ABAB';
   document.getElementById('gomb2').style.backgroundColor= '#fff';
   document.getElementById('gomb3').style.backgroundColor= '#fff';
   document.getElementById('ruhaszoveg').innerHTML = "Szabadidők"
   document.getElementById('homear').innerHTML = "24.000Ft"
+  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel1.png')");
   
 }
 function kep2valtas(){
   
-  document.getElementById('boritokep').style.backgroundImage="url('./kepek/jordanbarrett.jpg')";
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep2.png')";
   document.getElementById('gomb1').style.backgroundColor= '#fff';
   document.getElementById('gomb2').style.backgroundColor= '#D8ABAB';
   document.getElementById('gomb3').style.backgroundColor= '#fff';
   document.getElementById('ruhaszoveg').innerHTML = "Melegítők"
   document.getElementById('homear').innerHTML = "30.000Ft"
+  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel2.png')");
+  
   
 }
 function kep3valtas(){
   
-  document.getElementById('boritokep').style.backgroundImage="url('./kepek/jordanbarrett.jpg')";
+  document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep1.png')";
   document.getElementById('gomb1').style.backgroundColor= '#fff';
   document.getElementById('gomb2').style.backgroundColor= '#fff';
   document.getElementById('gomb3').style.backgroundColor= '#D8ABAB';
   document.getElementById('ruhaszoveg').innerHTML = "Pizsomák"
   document.getElementById('homear').innerHTML = "21.000Ft"
+  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel3.png')");
+  
   
 }
 
