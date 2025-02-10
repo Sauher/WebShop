@@ -14,8 +14,10 @@
 
 .kepflex{
     display: flex;
-    margin-left: 5%;
-    width: 60%;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+   
 }
 .alsoresz{
     display: flex;
@@ -32,7 +34,7 @@
     background-image: url(./kepek/HomeModel1.png);
     position: absolute;
     z-index: 1;
-    width: 300px;
+    width: 400px;
     height: 600px;
     background-size: cover;
     top: 200px;
@@ -43,6 +45,7 @@
 
 .szovegflex{
     width: 35%;
+    
 }
 
 
@@ -50,6 +53,7 @@
     width: 328px;
     height: 492px;
     margin: 10px;
+    position: relative;
     
 }
 #h1{
@@ -115,8 +119,11 @@
    
     .kepflex{
         display: flex;
-        margin-left: 5%;
-        width: 90%;
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         
     }
     
@@ -139,5 +146,43 @@
         margin-right: 5%;
         margin-bottom: 10%;
     }
+    #modellkep{
+        
+        top: 20%;
+       
+    }
+    @media only screen and (max-width: 650px) {
+
+        #modellkep{
+        
+            top: 6%;
+           
+        }
+
+        #kepszoveg{
+
+            position: absolute;
+            top: 40%;
+            left: 8%;
+            color: aliceblue;
+            z-index: 2;
+           
+        }
+        #kepgomb{
+            position: absolute;
+            top: 12%;
+            right: 7%;
+            z-index: 2;
+        }
+        .szovegflex{
+            
+            text-align: center;
+            justify-content: center;
+            width: 80%;
+        }
+
+
+    }
+
   
   }
