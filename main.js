@@ -103,7 +103,7 @@ function kep2valtas(){
   document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
   document.getElementById('ruhaszoveg').innerHTML = "Melegítők"
   document.getElementById('homear').innerHTML = "30.000Ft"
-  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel2.png')");
+  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel2.png')");
   
   
 }
@@ -115,7 +115,7 @@ function kep3valtas(){
   document.getElementById('gomb3').style.borderLeftColor= "rgb(216, 170, 170)";
   document.getElementById('ruhaszoveg').innerHTML = "Pizsomák"
   document.getElementById('homear').innerHTML = "21.000Ft"
-  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel3.png')");
+  document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel3.png')");
   
   
 }
