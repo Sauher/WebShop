@@ -81,8 +81,8 @@ a:visited{
     }
     .flip-card {
       background-color: transparent;
-      width: 255px;
-      height: 255px;
+      width: 425px;
+      height: 325px;
       perspective: 1000px;
     }
     
@@ -90,16 +90,18 @@ a:visited{
   
   @media only screen and (max-width: 1200px) {
     .card{
-      width: 240px;
+      width: 300px;
     }
     
     .flip-card {
       background-color: transparent;
-      width: 255px;
-      height: 255px;
+      width:425px;
+      height: 325px;
       perspective: 1000px;
     }
   }
+
+  
 
   @media only screen and (max-width: 500px) {
     .kep1{
@@ -150,5 +152,5 @@ a:visited{
     background-color: #6b6b6b;
     color: white;
     transform: rotateY(180deg);
-    
+    padding: 20px;
   }
