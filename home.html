@@ -75,36 +75,44 @@
 <div class="melyikoldal">
 <p id="hol">Home / Shop</p>
 </div>
-<div id="Felsoresz">
-    <div id="kepszoveg">
-  <p  id="ruhaszoveg">Szabadidők</p>
-  <p id="kozepsokepszoveg" style="margin-top: 0px;" ><span style="font-size: 24px; margin-right: 2%; margin-top: 1%;">Csak</span> <span style="font-size: 40px;" id="homear">24.000Ft</span></p>
-  <button id="vasarlasgomb">Vásárlás most!</button>
 
+<div id="boritokep">
+  
+  
+  <span id="kepszoveg">
+  
+    <span id="ruhaszoveg">Szabadidők</span>
+    <div id="kozepsokepszoveg" style="margin-top: 0px;" >
+      <span id="csakar">Csak</span> 
+      <span  id="homear">24.000Ft</span>
+    </div>
+    <button id="vasarlasgomb">Vásárlás most!</button>
+  </span>
+  <div id="modellkepflex">
+    <div id="modellkep"></div>
   </div>
+
   <div id="kepgomb">
-    <p class="gombok" id="gomb1" onclick="kep1valtas()"  ></p>
-    <p class="gombok" id="gomb2" onclick="kep2valtas()" ></p>
-    <p class="gombok" id="gomb3" onclick="kep3valtas()" ></p>
+    
+    <div class="gombok" id="gomb1" onclick="kep1valtas()"></div>
+    <div class="gombok" id="gomb2" onclick="kep2valtas()"></div>
+    <div class="gombok" id="gomb3" onclick="kep3valtas()"></div>
   </div>
+  
 
-  <p id="modellkep"></p>
-
-
-  <p id="boritokep" ></p>
 </div>
 
 <div class="alsoresz">
     <div class="szovegflex">
         <h1 id="h1">Most Trendelnek!</h1>
         <hr>
-        <p id="Trendszoveg" >Kényelmes és divatos ruhák, megfelelő áron!</p>
+        <p id="Trendszoveg" >Kényelmes és divatos ruhák a legszebb kiegésítőkkel, megfelelő áron!</p>
     </div>
 
     <div class="kepflex">
-        <a href="index.html" ><img src="./kepek/Hometrendelnekruha1.jpg" alt="" srcset="" id="flexkep" ></a>
-        <a href="index.html"><img src="./kepek/Hometrendelnekruha2.jpg" alt="" srcset=""   id="flexkep" ></a>
-        <a href="index.html" ><img src="./kepek/Hometrendelnekruha3.jpg" alt="" srcset="" id="flexkep" ></a>
+        <a href="index.html" ><div id="flexkep" class="flexkep1"></div></a>
+        <a href="index.html"> <div id="flexkep" class="flexkep2"></div></a>
+        <a href="index.html" > <div id="flexkep" class="flexkep3"></div></a>
     </div>
 </div>
 
@@ -139,6 +147,8 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
+  <script src="./main.js">
+
+  </script>
 </body>
 </html>
