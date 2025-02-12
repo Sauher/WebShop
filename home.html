@@ -39,7 +39,7 @@
           <a href="#" class="dropitem">CHECKOUT</a>
           <a href="#" class="dropitem">WISHLIST</a>
         </div>
-      <div class="burgeritem"><a href="" class="az2">BLOG</a></div>
+      <div class="burgeritem"><a href="blog.html" class="az2">BLOG</a></div>
       <div class="burgeritem"><a href="contactus.html" class="az2">CONTACT US</a></div>
     </div>
     
@@ -67,7 +67,7 @@
         <a href="#">WISHLIST</a>
       </div>
       </div>
-      <a href="" class="menuitem">BLOG</a>
+      <a href="blog.html" class="menuitem">BLOG</a>
       <a href="contactus.html" class="menuitem utso">CONTACT US</a>
     </div>
   </menu>
@@ -76,33 +76,43 @@
 <p id="hol">Home / Shop</p>
 </div>
 
-<div id="kepszoveg">
-  <p style="font-size: 64px; margin: 0;" id="ruhaszoveg">Szabadidők</p>
-  <p id="kozepsokepszoveg" style="margin-top: 0px;" ><span style="font-size: 24px; margin-right: 2%; margin-top: 1%;">Csak</span> <span style="font-size: 40px;" id="homear">24.000Ft</span></p>
-  <button id="vasarlasgomb">Vásárlás most!</button>
+<div id="boritokep">
+  
+  
+  <span id="kepszoveg">
+  
+    <span id="ruhaszoveg">Szabadidők</span>
+    <div id="kozepsokepszoveg" style="margin-top: 0px;" >
+      <span id="csakar">Csak</span> 
+      <span  id="homear">24.000Ft</span>
+    </div>
+    <button id="vasarlasgomb">Vásárlás most!</button>
+  </span>
+  <div id="modellkepflex">
+    <div id="modellkep"></div>
+  </div>
+
+  <div id="kepgomb">
+    
+    <div class="gombok" id="gomb1" onclick="kep1valtas()"></div>
+    <div class="gombok" id="gomb2" onclick="kep2valtas()"></div>
+    <div class="gombok" id="gomb3" onclick="kep3valtas()"></div>
+  </div>
+  
 
 </div>
-<div id="kepgomb">
-  <p class="gombok" id="gomb1" onclick="kep1valtas()"  ></p>
-  <p class="gombok" id="gomb2" onclick="kep2valtas()" ></p>
-  <p class="gombok" id="gomb3" onclick="kep3valtas()" ></p>
-</div>
 
-<img src="" alt="" srcset="" id="modellkep">
-
-
-<img src="" alt="" srcset="" id="boritokep">
 <div class="alsoresz">
     <div class="szovegflex">
-        <h1 style="font-size: 64px;" id="h1">Most Trendelnek!</h1>
+        <h1 id="h1">Most Trendelnek!</h1>
         <hr>
-        <p style="font-size: 36px;">Kényelmes és divatos ruhák, megfelelő áron!</p>
+        <p id="Trendszoveg" >Kényelmes és divatos ruhák a legszebb kiegésítőkkel, megfelelő áron!</p>
     </div>
 
     <div class="kepflex">
-        <a href="index.html" ><img src="./kepek/jordanbarrett.jpg" alt="" srcset="" id="flexkep" ></a>
-        <a href="index.html"><img src="./kepek/jordanbarrett.jpg" alt="" srcset=""   id="flexkep" ></a>
-        <a href="index.html" ><img src="./kepek/jordanbarrett.jpg" alt="" srcset="" id="flexkep" ></a>
+        <a href="index.html" ><div id="flexkep" class="flexkep1"></div></a>
+        <a href="index.html"> <div id="flexkep" class="flexkep2"></div></a>
+        <a href="index.html" > <div id="flexkep" class="flexkep3"></div></a>
     </div>
 </div>
 
@@ -137,6 +147,8 @@
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
+  <script src="./main.js">
+
+  </script>
 </body>
 </html>
