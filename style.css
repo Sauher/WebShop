@@ -735,6 +735,19 @@ footer {
     width: 90%;
     margin: 0 auto;
   }
+  .top-left {
+    position: absolute;
+    top: -15px;
+    left: -20px;
+    background-color: #FF4852;
+    color: white;
+    border-radius: 100%;
+    font-size: 1.7vw;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
   .filterarak {
     font-size: large;
     margin-top: 1%;
@@ -872,6 +885,19 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+  .top-left {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    background-color: #FF4852;
+    color: white;
+    border-radius: 100%;
+    font-size: 2.5vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .kep1{
     height: 400px;
   }
