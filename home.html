@@ -146,9 +146,90 @@
       <p class="shipszoveg">100% money back guarantee</p>
     </div>
   </footer>
-  <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
-  <script src="./main.js">
+  <script>
+    let h=0
+    let i =0;
+    let j =0;
+    let kepek = []
+    let modellkepek =[]
+    let boritocimke = []
+    let boritoarak = []
+    
+    kepek[0] = "url('./kepek/Homekep3.png')"
+    kepek[1] = "url('./kepek/Homekep2.png')"
+    kepek[2] = "url('./kepek/Homekep1.png')"
 
+    modellkepek[0]= "url('./kepek/HomeModel1.png')"
+    modellkepek[1]= "url('./kepek/Homemodel2.png')"
+    modellkepek[2]= "url('./kepek/Homemodel3.png')"
+
+    boritocimke[0]= "Szabadidők"
+    boritocimke[1]= "Melegítők"
+    boritocimke[2]= "Pizsomák"
+
+    boritoarak[0]= "24.000Ft"
+    boritoarak[1]= "30.000Ft"
+    boritoarak[2]= "21.000Ft"
+
+    function kepvaltas(){
+      setTimeout("opacity()", 4000)
+      setTimeout("opacity()", 5000)
+      document.getElementById('boritokep').style.backgroundImage = kepek[i]
+      document.getElementById('modellkep').style.backgroundImage= modellkepek[i]
+      document.getElementById('ruhaszoveg').innerHTML = boritocimke[i]
+      document.getElementById('homear').innerHTML = boritoarak[i]
+      
+      if (i ==0) {
+        i++;
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(216, 170, 170)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+      }
+      else if(i ==1){
+        i++;
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(216, 170, 170)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+      }
+      else{
+        i=0
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(216, 170, 170)";
+      }
+
+      setTimeout("kepvaltas()", 5000);
+    }
+    function opacity(){
+      if(j ==0){
+        j++;
+        document.getElementById('boritokep').style.opacity = 0.9
+        
+      }
+      else{
+       
+        j=0
+        document.getElementById('boritokep').style.opacity = 1
+        
+      }
+    }
+    window.onload = kepvaltas();
+    function kepvaltas1(){
+      i=1
+      
+    }
+    function kepvaltas2(){
+      i=2
+      
+    }
+    function kepvaltas3(){
+      i=0
+    }
+
+
+    
   </script>
+  <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 </html>

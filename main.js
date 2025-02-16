@@ -85,7 +85,8 @@ function dropFunction2(){
 
 function kep1valtas(){
   
-  
+  opacity1()
+  setTimeout("opacity1()", 500)
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep3.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(216, 170, 170)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
@@ -93,10 +94,12 @@ function kep1valtas(){
   document.getElementById('ruhaszoveg').innerHTML = "Szabadidők"
   document.getElementById('homear').innerHTML = "24.000Ft"
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel1.png')");
+  i=1
   
 }
 function kep2valtas(){
-  
+  opacity1()
+  setTimeout("opacity1()", 500)
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep2.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(216, 170, 170)";
@@ -104,11 +107,12 @@ function kep2valtas(){
   document.getElementById('ruhaszoveg').innerHTML = "Melegítők"
   document.getElementById('homear').innerHTML = "30.000Ft"
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel2.png')");
-  
+  i=2
   
 }
 function kep3valtas(){
-  
+  opacity1()
+  setTimeout("opacity1()", 500)
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep1.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
@@ -117,10 +121,25 @@ function kep3valtas(){
   document.getElementById('homear').innerHTML = "21.000Ft"
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel3.png')");
   
-  
+  i=0
+}
+
+function opacity1(){
+  if(h ==0){
+    h++;
+    document.getElementById('boritokep').style.opacity = 0.9
+    
+  }
+  else{
+   
+    h=0
+    document.getElementById('boritokep').style.opacity = 1
+    
+  }
 }
 
 
+  
 
 //Contact us
 function Kiiras(){
