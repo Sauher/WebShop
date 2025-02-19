@@ -181,6 +181,19 @@
     border-left: 160px solid ;
     border-left-color:rgb(216, 170, 170) ;
 }
+#gomb1:hover{
+    cursor: pointer;
+}
+#gomb2:hover{
+    cursor: pointer;
+}
+#gomb3:hover{
+    cursor: pointer;
+}
+#vasarlasgomb:hover{
+    cursor: pointer;
+}
+
 
 #gomb2{
     
