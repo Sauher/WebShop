@@ -82,6 +82,92 @@ a:visited{
   text-align: left;
 
 }
+
+
+.like {
+  width: 100px;
+  height: 100px;
+  
+  position: relative;
+  transition: transform 0.2s ;
+  background-image: url(./Nolike.png);
+  background-size: cover;
+  z-index: 0;
+  background-color: #fff;
+  
+}
+.likelement{
+  
+  position: relative;
+  align-self: end;
+  justify-self: right;
+  
+  
+  margin: 5px;
+}
+
+.kartyacim{
+  margin: 6px;
+  
+  width: 1px;
+}
+.cimalahuzas{
+  margin: 0px;
+  height: 4px;
+  background-color: white;
+  border: none;
+  
+}
+.h1{
+  font-size: 30px;
+}
+.kartyaszoveg{
+  position: relative;
+  left: 5px;
+  height: 300px;
+  width: 100%;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;           
+  border-radius: 10px;
+  
+  font-weight: bold;
+  color: white;
+}
+.card-front {
+  
+  background-image: url(./kepek/silk.jpg);
+  background-size: cover;
+}
+.card-back {
+  display: flex;
+  flex-direction: column;
+  background-color: #858585;
+  border: solid 5px black;
+ 
+  transform: rotateY(180deg);
+}
   @media only screen and (max-width: 750px) {
     .card{
       width: 180px;
@@ -95,17 +181,12 @@ a:visited{
     
   }
   
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1280px) {
     .card{
-      width: 300px;
+      width: 400px;
     }
     
-    .flip-card {
-      background-color: transparent;
-      width:425px;
-      height: 325px;
-      perspective: 1000px;
-    }
+    
   }
 
   
