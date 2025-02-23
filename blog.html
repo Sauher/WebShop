@@ -38,12 +38,12 @@
           <a href="#" class="dropitem">CHECKOUT</a>
           <a href="#" class="dropitem">WISHLIST</a>
         </div>
-      <div class="burgeritem"><a href="" class="az2">BLOG</a></div>
+      <div class="burgeritem"><a href="blog.html" class="az2">BLOG</a></div>
       <div class="burgeritem"><a href="contactus.html" class="az2">CONTACT US</a></div>
     </div>
     
   </div>
-  <menu>
+  <menu style="z-index: 5;">
     <div class="flex-containeri">
       <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
       
@@ -66,7 +66,7 @@
         <a href="#">WISHLIST</a>
       </div>
       </div>
-      <a href="" class="menuitem">BLOG</a>
+      <a href="blog.html" class="menuitem">BLOG</a>
       <a href="contactus.html" class="menuitem utso">CONTACT US</a>
     </div>
   </menu>
@@ -78,9 +78,23 @@
   <div class="tartalom">
     <div class="container">
 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
       <div class="bal">
         
-        <div class="flex" id="kepdiv">
+        <div class="flex" id="kepdiv1">
           
           <div class="card">
             <div class="card-inner">
@@ -171,7 +185,9 @@
                         <div class="like" id="likeolas" onclick="startAnimation(this)"></div>
                     </span>
                 </div>
+                
             </div>
+            
           </div>
 
 
@@ -180,7 +196,32 @@
 
 
         </div> 
+        
       </div>   
+      <div class="jobboldal">
+        <div class="scontainer">
+  
+          <input type="text" placeholder="Search.." name="search" class="kereso">
+          <button type="submit" class="gomb"><i class="fa fa-search"></i></button>
+
+          <ul class="keresl">
+            <li>
+              <img src="./kepek/silk.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
+            </li>
+            
+            <li>
+                <img src="./kepek/runway.jpg" alt="" style="width: 300px; float: right; height: 160px;" class="kereskep">
+            </li>
+    
+            <li>
+                <img src="./kepek/ralphstore.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
+            </li>
+             
+          </ul>
+        </div>
+  
+        
+      </div>
     </div>
   </div>
 
@@ -188,39 +229,10 @@
 
 
 
-    <div class="jobboldal">
-      <div class="scontainer">
-
-        <input type="text" placeholder="Search.." name="search" class="kereso">
-        <button type="submit" class="gomb"><i class="fa fa-search"></i></button>
-      </div>
-
-      <ul class="keresl">
-        <li>
-          <img src="./kepek/silk.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
-        </li>
-        
-        <li>
-            <img src="./kepek/runway.jpg" alt="" style="width: 300px; float: right; height: 160px;" class="kereskep">
-        </li>
-
-        <li>
-            <img src="./kepek/ralphstore.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
-        </li>
-         
-      </ul>
-    </div>
-
+    
 
   </div>
   
-
-
-
-
-
-
-
     <footer>
         <div class="footer-section footerelso">
           <h2>Rólunk</h2>
@@ -242,24 +254,24 @@
         </div>
       </footer>
       <script>
-        let szamlal =0
         function startAnimation(element) {
-            
-            if (szamlal==0){
-                element.style.backgroundImage = "url(./likeframe3.png)"
-                setTimeout("opacity()", 4000)
-                szamlal++
-            }
-            else{
-                element.style.backgroundImage = "url(./Nolike.png)"
-                szamlal=0
-            }
-            
-            
-        }
-        function opacity(){
-        
-        }
+
+          if (!element.dataset.liked || element.dataset.liked === "false") {
+            element.style.backgroundImage = "url(./kepek/likeframe3.png)";
+            element.dataset.liked = "true";
+            element.parentElement.parentElement.style.background = "rgb(187,49,49)"
+            element.parentElement.parentElement.style.background = "linear-gradient(0deg, rgba(187,49,49,1) 0%, rgba(162,67,67,1) 15%, rgba(107,107,107,1) 100%"
+          }
+
+          else {
+            element.style.backgroundImage = "url(./kepek/Nolike.png)";
+            element.dataset.liked = "false";
+            element.parentElement.parentElement.style.background = "rgb(49,186,187)"
+            element.parentElement.parentElement.style.background = "linear-gradient(0deg, rgb(49, 120, 187) 0%, rgb(79, 115, 145) 15%, rgba(107,107,107,1) 100%)"
+          }
+
+
+}
     </script>
       <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
       <script src="./main.js"></script>
