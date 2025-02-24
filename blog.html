@@ -110,8 +110,12 @@
                         <hr class="cimalahuzas" style="width:300px;">                       
                     </span>
                     <p class="kartyaszoveg">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis omnis cupiditate, repellendus sint aliquid iure ut. Possimus, quae? Expedita asperiores tempora saepe exercitationem laborum mollitia ea voluptas eaque rem sequi.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, eligendi. Maiores accusantium repudiandae quia obcaecati ullam, laudantium eligendi id alias animi necessitatibus exercitationem corporis placeat vitae dolore facilis esse et!
+                      <span class="pontok">...</span>
+                      <span class="tobb rejtettszoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate culpa. Consequatur dolores dolor dolorem non voluptatum vero repudiandae itaque tempore explicabo est voluptatibus in facere, delectus magni soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </span>
                     </p>
+                  <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
                     <span class="likelement">
                         <div class="like" id="likeolas" onclick="startAnimation(this)"></div>
                     </span>
@@ -206,15 +210,15 @@
 
           <ul class="keresl">
             <li>
-              <img src="./kepek/silk.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
+              <img src="./kepek/silk.jpg" alt=""  class="kereskep">
             </li>
             
             <li>
-                <img src="./kepek/runway.jpg" alt="" style="width: 300px; float: right; height: 160px;" class="kereskep">
+                <img src="./kepek/runway.jpg" alt="" style="height: 160px;" class="kereskep">
             </li>
     
             <li>
-                <img src="./kepek/ralphstore.jpg" alt="" style="width: 300px; float: right;" class="kereskep">
+                <img src="./kepek/ralphstore.jpg" alt="" class="kereskep">
             </li>
              
           </ul>
@@ -269,9 +273,41 @@
             element.parentElement.parentElement.style.background = "rgb(49,186,187)"
             element.parentElement.parentElement.style.background = "linear-gradient(0deg, rgb(49, 120, 187) 0%, rgb(79, 115, 145) 15%, rgba(107,107,107,1) 100%)"
           }
+        }
+        function Showmore(gomb) {
+            let contentWrapper = gomb.previousElementSibling;
+            let pontok = contentWrapper.querySelector(".pontok")
+            let Tobbmutatas = contentWrapper.querySelector(".tobb")
+            let kartya = gomb.closest(".card")
+            
+            let kartyamerete = gomb.style.height
 
+            let Tulsokszoveg = Tobbmutatas.textContent.length
+            console.log(Tulsokszoveg)
+           
 
-}
+            if (Tobbmutatas.style.display === "none" || Tobbmutatas.style.display === "") {
+                pontok.style.display = "none"
+                Tobbmutatas.style.display = "inline"
+                
+                gomb.innerHTML = "Mutass kevesebbet"
+                if(Tulsokszoveg >= 600){
+                    kartya.style.height = "400px"
+                    likeelhelyezese.style.bottom = "100px"
+                }
+                else if(Tulsokszoveg >= 500){
+                    kartya.style.height = "350px"
+                    likeelhelyezese.style.bottom = "100px"
+                }
+               
+            } 
+            else {
+                pontok.style.display = "inline"
+                kartya.style.height = kartyamerete
+                Tobbmutatas.style.display = "none"
+                gomb.innerHTML = "Mutass többet"
+            }
+        }
     </script>
       <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
       <script src="./main.js"></script>

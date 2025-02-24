@@ -1,6 +1,8 @@
 
 .kereskep{
     padding-bottom: 35px;
+    width: 300px; 
+    float: right;
 }
 
 .card{
@@ -75,10 +77,10 @@
 }
 
 .like {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   
-  position: relative;
+  position: fixed;
   transition: transform 0.2s ;
   background-image: url(./kepek/Nolike.png);
   background-size: cover;
@@ -91,8 +93,8 @@
   position: relative;
   align-self: end;
   justify-self: right;
-  
-  
+  right: 50px;
+  bottom: 50px;
   margin: 5px;
 }
 
@@ -108,13 +110,22 @@
   border: none;
   
 }
+.rejtettszoveg {
+  display: none;
+}
+.toggleButton{
+  cursor: pointer;    
+  position: relative;
+  align-self: flex-start;
+  justify-self: left;
+}
 .h1{
   font-size: 30px;
 }
 .kartyaszoveg{
   position: relative;
   left: 5px;
-  height: 300px;
+  height: 100%;
   width: 100%;
 }
 
@@ -159,65 +170,72 @@
  
   transform: rotateY(180deg);
 }
-  @media only screen and (max-width: 890px) {
-    .tartalom {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
+@media only screen and (max-width: 1280px) {
+  .card{
+    width: 350px;
+  }
+  
+  
+}
+@media only screen and (max-width: 893px) {
+  .tartalom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     }
-    .jobboldal {
-      display: flex;
-      width: 100%;
-      
-      flex-wrap: wrap;
-      
-    
+  .jobboldal {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: space-around;
-
     }
-    .keresl {
-      list-style-type: none;
-      padding-left: 0px;
+
+  .keresl {
+    list-style-type: none;
+    padding-left: 0px;
       
   }
-    .kereso{
-    width: 70%;
+  .kereso{
+  width: 70%;
 
-    }
+  }
    
-    .container {
-      display: block;
-      width: 90%;
-      margin: 0 auto;
-  
-    }
-    .card{
-      width: 260px;
-    }
+  .container {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .card{
+    width: 400px;
+  }
 }
   
-  @media only screen and (max-width: 1280px) {
-    .card{
-      width: 400px;
-    }
-    
-    
-  }
+ 
 
   
 
   @media only screen and (max-width: 500px) {
-    .kep1{
-      height: 210px;
+  .kep1{
+    height: 210px;
+  }
+  .card {
+    width: 350px;
+  }
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .kereso{
+      width: 60%;
     }
-    .card {
-      width: 350px;
+    .kereskep{
+      width: 250px;
+      
     }
     
-    }
-  
+  }
   
   .flip-card {
     background-color: transparent;
