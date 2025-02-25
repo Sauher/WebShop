@@ -124,9 +124,11 @@
 }
 .kartyaszoveg{
   position: relative;
-  left: 5px;
   height: 100%;
-  width: 100%;
+  width: 95%;
+  text-align: left;
+  margin: 10px;
+  
 }
 
 .card {
@@ -158,8 +160,8 @@
 }
 .card-front {
   
-  background-image: url(./kepek/silk.jpg);
-  background-size: cover;
+  background-color: #6b6b6b;
+  background-size:cover;
 }
 .card-back {
   display: flex;
@@ -167,7 +169,6 @@
   background: rgb(49,186,187);
   background: linear-gradient(0deg, rgb(49, 120, 187) 0%, rgb(79, 115, 145) 15%, rgba(107,107,107,1) 100%);
   border: solid 5px black;
- 
   transform: rotateY(180deg);
 }
 @media only screen and (max-width: 1280px) {
@@ -248,7 +249,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
+   
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

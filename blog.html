@@ -98,7 +98,7 @@
           
           <div class="card">
             <div class="card-inner">
-                <div class="card-front">
+                <div class="card-front" style="background-image: url(./kepek/silk.jpg);">
                     <span class="kartyacim">
                         <span class="h1">Cím</span>
                         <hr class="cimalahuzas" style="width:200px;">
@@ -125,7 +125,7 @@
 
           <div class="card">
             <div class="card-inner">
-                <div class="card-front">
+                <div class="card-front" style="background-image: url(./kepek/runway.jpg);">
                     <span class="kartyacim">
                         <span class="h1">Cím</span>
                         <hr class="cimalahuzas" style="width:200px;">
@@ -137,8 +137,12 @@
                         <hr class="cimalahuzas" style="width:300px;">                       
                     </span>
                     <p class="kartyaszoveg">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis omnis cupiditate, repellendus sint aliquid iure ut. Possimus, quae? Expedita asperiores tempora saepe exercitationem laborum mollitia ea voluptas eaque rem sequi.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, eligendi. Maiores accusantium repudiandae quia obcaecati ullam, laudantium eligendi id alias animi necessitatibus exercitationem corporis placeat vitae dolore facilis esse et!
+                      <span class="pontok">...</span>
+                      <span class="tobb rejtettszoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate culpa. Consequatur dolores dolor dolorem non voluptatum vero repudiandae itaque tempore explicabo est voluptatibus in facere, delectus magni soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </span>
                     </p>
+                    <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
                     <span class="likelement">
                         <div class="like" id="likeolas" onclick="startAnimation(this)"></div>
                     </span>
@@ -148,7 +152,7 @@
 
           <div class="card">
             <div class="card-inner">
-                <div class="card-front">
+                <div class="card-front" style="background-image: url(./kepek/ralphstore.jpg); ">
                     <span class="kartyacim">
                         <span class="h1">Cím</span>
                         <hr class="cimalahuzas" style="width:200px;">
@@ -160,8 +164,12 @@
                         <hr class="cimalahuzas" style="width:300px;">                       
                     </span>
                     <p class="kartyaszoveg">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis omnis cupiditate, repellendus sint aliquid iure ut. Possimus, quae? Expedita asperiores tempora saepe exercitationem laborum mollitia ea voluptas eaque rem sequi.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, eligendi. Maiores accusantium repudiandae quia obcaecati ullam, laudantium eligendi id alias animi necessitatibus exercitationem corporis placeat vitae dolore facilis esse et!
+                      <span class="pontok">...</span>
+                      <span class="tobb rejtettszoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate culpa. Consequatur dolores dolor dolorem non voluptatum vero repudiandae itaque tempore explicabo est voluptatibus in facere, delectus magni soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </span>
                     </p>
+                  <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
                     <span class="likelement">
                         <div class="like" id="likeolas" onclick="startAnimation(this)"></div>
                     </span>
@@ -171,7 +179,7 @@
 
           <div class="card">
             <div class="card-inner">
-                <div class="card-front">
+                <div class="card-front" style="background-image: url(./kepek/silk.jpg);">
                     <span class="kartyacim">
                         <span class="h1">Cím</span>
                         <hr class="cimalahuzas" style="width:200px;">
@@ -183,8 +191,12 @@
                         <hr class="cimalahuzas" style="width:300px;">                       
                     </span>
                     <p class="kartyaszoveg">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis omnis cupiditate, repellendus sint aliquid iure ut. Possimus, quae? Expedita asperiores tempora saepe exercitationem laborum mollitia ea voluptas eaque rem sequi.
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, eligendi. Maiores accusantium repudiandae quia obcaecati ullam, laudantium eligendi id alias animi necessitatibus exercitationem corporis placeat vitae dolore facilis esse et!
+                      <span class="pontok">...</span>
+                      <span class="tobb rejtettszoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate culpa. Consequatur dolores dolor dolorem non voluptatum vero repudiandae itaque tempore explicabo est voluptatibus in facere, delectus magni soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      </span>
                     </p>
+                  <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
                     <span class="likelement">
                         <div class="like" id="likeolas" onclick="startAnimation(this)"></div>
                     </span>
@@ -281,12 +293,36 @@
             let kartya = gomb.closest(".card")
             
             let kartyamerete = gomb.style.height
+            let kartyawidth = gomb.style.width
 
             let Tulsokszoveg = Tobbmutatas.textContent.length
             console.log(Tulsokszoveg)
            
-
-            if (Tobbmutatas.style.display === "none" || Tobbmutatas.style.display === "") {
+            if(kartyawidth<"500px"){
+              if (Tobbmutatas.style.display === "none" || Tobbmutatas.style.display === "") {
+                pontok.style.display = "none"
+                Tobbmutatas.style.display = "inline"
+                
+                gomb.innerHTML = "Mutass kevesebbet"
+                if(Tulsokszoveg >= 400){
+                    kartya.style.height = "470px"
+                    likeelhelyezese.style.bottom = "100px"
+                }
+                else if(Tulsokszoveg >= 300){
+                    kartya.style.height = "400px"
+                    likeelhelyezese.style.bottom = "100px"
+                }
+               
+              } 
+              else {
+                  pontok.style.display = "inline"
+                  kartya.style.height = kartyamerete
+                  Tobbmutatas.style.display = "none"
+                  gomb.innerHTML = "Mutass többet"
+              }
+            }
+            else{
+              if (Tobbmutatas.style.display === "none" || Tobbmutatas.style.display === "") {
                 pontok.style.display = "none"
                 Tobbmutatas.style.display = "inline"
                 
@@ -300,13 +336,15 @@
                     likeelhelyezese.style.bottom = "100px"
                 }
                
-            } 
-            else {
-                pontok.style.display = "inline"
-                kartya.style.height = kartyamerete
-                Tobbmutatas.style.display = "none"
-                gomb.innerHTML = "Mutass többet"
+              } 
+              else {
+                  pontok.style.display = "inline"
+                  kartya.style.height = kartyamerete
+                  Tobbmutatas.style.display = "none"
+                  gomb.innerHTML = "Mutass többet"
+              }
             }
+            
         }
     </script>
       <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
