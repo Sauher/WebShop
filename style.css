@@ -311,7 +311,7 @@ ul {
   height: 4px;
   background: #200f1b;
   position: absolute;
-  border-radius: 20%;
+  border-radius: 5px;
   z-index: -3;
   top: 30%;
 
@@ -668,7 +668,7 @@ footer {
     height: 4px;
     background: #200f1b;
     position: absolute;
-    border-radius: 20%;
+    border-radius: 5px;
     z-index: -3;
     top: 3px;
   
@@ -755,13 +755,9 @@ footer {
 
 
 @media only screen and (max-width: 750px) {
-  #price {
-    font-size: large;
-    right: 60%;
-  }
-
+  
   #minar {
-    margin-left: 30%;
+    margin-left: 1px;
 
   }
 
