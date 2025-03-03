@@ -98,6 +98,7 @@ function kep1valtas(){
   document.getElementById('homear').innerHTML = "24.000Ft"
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/HomeModel1.png')");
   i=1
+  gombertek=0
   
 }
 function kep2valtas(){
@@ -111,6 +112,7 @@ function kep2valtas(){
   document.getElementById('homear').innerHTML = "30.000Ft"
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel2.png')");
   i=2
+  gombertek=1
   
 }
 function kep3valtas(){
@@ -125,6 +127,7 @@ function kep3valtas(){
   document.getElementById('modellkep').style.backgroundImage=("url('./kepek/Homemodel3.png')");
   
   i=0
+  gombertek=2
 }
 
 function opacity1(){
@@ -140,7 +143,23 @@ function opacity1(){
     
   }
 }
-
+//home/(adott helység)
+let cim = document.getElementById("hol")
+function Accesories(){
+    cim.innerHTML = "Home / Shop / Accesories"
+}
+function Casual(){
+    cim.innerHTML = "Home / Shop / Casual"
+}
+function Clothing(){
+    cim.innerHTML = "Home / Shop / Clothing"
+}
+function Man(){
+  cim.innerHTML = "Home / Shop / Man"
+}
+function Woman(){
+  cim.innerHTML = "Home / Shop / Woman"
+}
 
   
 
