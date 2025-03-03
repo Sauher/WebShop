@@ -118,10 +118,12 @@ h1 {
   background-color: rgb(247, 244, 244);
   padding-bottom: 8%;
 }
-
+h4{
+  font-weight:  bold;
+}
 .kep1 {
   height: 210px;
-  width: 30%;
+  width: 100%;
 }
 
 .ar {
@@ -174,7 +176,9 @@ h4 {
   margin-top: 17px;
   margin-bottom: 20px;
 }
-
+.athuz{
+  text-decoration: line-through;
+}
 .jobboldal {
   float: right;
   width: 375px;
