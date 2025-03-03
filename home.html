@@ -86,7 +86,7 @@
       <span id="csakar">Csak</span> 
       <span  id="homear">24.000Ft</span>
     </div>
-    <button id="vasarlasgomb">Vásárlás most!</button>
+    <button id="vasarlasgomb" onclick="homevasarlas(gombertek)">Vásárlás most!</button>
   </span>
   <div id="modellkepflex">
     <div id="modellkep"></div>
@@ -151,6 +151,7 @@
     let h=0
     let i =0;
     let j =0;
+    let gombertek =0;
     let kepek = []
     let modellkepek =[]
     let boritocimke = []
@@ -187,18 +188,25 @@
         document.getElementById('gomb1').style.borderLeftColor= "rgb(216, 170, 170)";
         document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
         document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+        gombertek=0
+        
       }
       else if(i ==1){
         i++;
         document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
         document.getElementById('gomb2').style.borderRightColor=  "rgb(216, 170, 170)";
         document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+        gombertek=1
+        
       }
       else{
         i=0
         document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
         document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
         document.getElementById('gomb3').style.borderLeftColor= "rgb(216, 170, 170)";
+        gombertek=2
+        
+        
       }
 
       setTimeout("kepvaltas()", 5000);
@@ -216,20 +224,35 @@
         
       }
     }
+    
     window.onload = kepvaltas();
     function kepvaltas1(){
       i=1
+      gombertek=1
       
     }
     function kepvaltas2(){
       i=2
+      gombertek=2
       
     }
     function kepvaltas3(){
       i=0
+      gombertek=0
     }
 
-
+    function homevasarlas(szam){
+        switch(szam){
+          case 0:
+            console.log("vásároltál egy Szabadidőt")
+            break;
+          case 1:
+            console.log("Vásároltál egy Melegítőt")
+            break;
+          case 2:
+            console.log("Vásároltál egy Pizsomát")
+        }
+    }
     
   </script>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>

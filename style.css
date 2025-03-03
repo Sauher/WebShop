@@ -443,16 +443,14 @@ footer {
   opacity: 0.3;
 }
 
-.category:visited {
-  text-decoration: none;
-  color: #525252;
-}
-
 .category {
   text-decoration: none;
   
   margin-left: 5px;
   color: #525252;
+}
+.category:hover {
+  cursor: pointer;
 }
 
 .menugomb {
