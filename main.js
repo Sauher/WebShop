@@ -42,9 +42,7 @@ range2.addEventListener("input", updateSlider);
 updateSlider();
 
 const button = document.getElementsByClassName(".button");
-function Filter(){
-  console.log(`Keresett árak: ${range1.value} - ${range2.value}`)
-}
+
 //header
 function myFunction() {
   let x = document.getElementById("myLinks");

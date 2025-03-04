@@ -3,13 +3,16 @@ Shirt = {name: "Collar T-Shirt",
     value: 30,
     img: "./kepek/ralph.png",
     osztaly: "Casual",
-    onsale: false},
+    onsale: false,
+    salevalue: 30
+    },
 
 GentsShirt = {name: "Gents T-Shirt",
     value: 49,
     img: "./kepek/ralphT.jpg",
     osztaly: "Casual",
-    onsale: false},
+    onsale: false,
+    salevalue: 49},
 
 Hat = {name: "Ladies Hat",
     value: 22,
@@ -128,6 +131,19 @@ function Feltoltes(TermekTomb){
         
     
     }
+}
+
+function Filter(){
+    for (let i = 0; i < CasualTomb.length; i++) {
+       if(CasualTomb[i].salevalue < range1.value || CasualTomb[i].salevalue > range2.value){
+            CasualTomb.pop(i);
+            
+       }
+       
+        
+    }
+    Feltoltes(CasualTomb)
+    console.log(range1.value , range2.value)
 }
 if(melyikoldal.className == "Casual"){
     Feltoltes(CasualTomb)
