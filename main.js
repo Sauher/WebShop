@@ -42,9 +42,7 @@ range2.addEventListener("input", updateSlider);
 updateSlider();
 
 const button = document.getElementsByClassName(".button");
-function Filter(){
-  console.log(`Keresett árak: ${range1.value} - ${range2.value}`)
-}
+
 //header
 function myFunction() {
   let x = document.getElementById("myLinks");
@@ -143,25 +141,7 @@ function opacity1(){
     
   }
 }
-//home/(adott helység)
-let cim = document.getElementById("hol")
-function Accesories(){
-    cim.innerHTML = "Home / Shop / Accesories"
-}
-function Casual(){
-    cim.innerHTML = "Home / Shop / Casual"
-}
-function Clothing(){
-    cim.innerHTML = "Home / Shop / Clothing"
-}
-function Man(){
-  cim.innerHTML = "Home / Shop / Man"
-}
-function Woman(){
-  cim.innerHTML = "Home / Shop / Woman"
-}
 
-  
 
 //Contact us
 function Kiiras(){

@@ -192,7 +192,22 @@ function Feltoltes(TermekTomb) {
 
     }
 }
-if (melyikoldal.className == "Casual") {
+//*if (melyikoldal.className == "Casual") {
+
+//function Filter(){
+    //for (let i = 0; i < CasualTomb.length; i++) {
+       //if(CasualTomb[i].salevalue < range1.value || CasualTomb[i].salevalue > range2.value){
+            //CasualTomb.pop(i);
+            
+      // }
+       
+        
+    //}
+    //Feltoltes(CasualTomb)
+    //console.log(range1.value , range2.value)
+//}
+//}
+if(melyikoldal.className == "Casual"){
     Feltoltes(CasualTomb)
 }
 if (melyikoldal.className == "Clothing") {
