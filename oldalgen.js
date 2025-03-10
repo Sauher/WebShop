@@ -96,6 +96,43 @@ let Tomb = [
         osztaly: "Clothing",
         onsale: false
     },
+    Accessory2 = {
+        name: "Diamond Jewelry Set",
+        value: 10000,
+        img: "./kepek/Accesoriesmodel1.png",
+        osztaly: "Accessory",
+        onsale: true,
+        salevalue: 9999
+    },
+    Accessory3 = {
+        name: "Sapphire Necklace",
+        value: 2200,
+        img: "./kepek/Accesoriesmodel2.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory4 = {
+        name: "Golden Bracelet",
+        value: 540,
+        img: "./kepek/Accesoriesmodel3.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory5 = {
+        name: "Classy Hat",
+        value: 220,
+        img: "./kepek/Accesoriesmodel4.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory6 = {
+        name: "Bucket hat",
+        value: 50,
+        img: "./kepek/Accesoriesmodel5.png",
+        osztaly: "Accessory",
+        onsale: true,
+        salevalue: 44
+    },
 ]
 let melyikoldal = document.getElementById("hol")
 let CasualTomb = []
