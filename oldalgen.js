@@ -194,19 +194,6 @@ function Feltoltes(TermekTomb) {
 }
 //*if (melyikoldal.className == "Casual") {
 
-//function Filter(){
-    //for (let i = 0; i < CasualTomb.length; i++) {
-       //if(CasualTomb[i].salevalue < range1.value || CasualTomb[i].salevalue > range2.value){
-            //CasualTomb.pop(i);
-            
-      // }
-       
-        
-    //}
-    //Feltoltes(CasualTomb)
-    //console.log(range1.value , range2.value)
-//}
-//}
 if(melyikoldal.className == "Casual"){
     Feltoltes(CasualTomb)
 }
@@ -223,3 +210,39 @@ if (melyikoldal.className == "Men") {
     Feltoltes(Ferfitomb)
 }
 
+function Filter(){
+    switch(melyikoldal.className){
+        case "Casual":
+            
+            Filterezes();
+
+
+            break;
+        case "Clothing":
+           
+            break;
+        case "Women":
+            
+            break;
+        case "Accessories":
+            
+            break;
+        case "Men":
+           
+            break;
+    }
+}
+function Filterezes(){
+    
+    for (let i = 0; i < CasualTomb.length; i++) {
+        if(CasualTomb[i].value < range1.value || CasualTomb[i].value > range2.value){
+                CasualTomb.pop(i);
+                
+        }
+           
+            
+    }
+    Feltoltes(CasualTomb)
+    console.log(range1.value , range2.value)
+    
+}
