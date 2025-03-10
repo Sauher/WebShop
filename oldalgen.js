@@ -96,6 +96,43 @@ let Tomb = [
         osztaly: "Clothing",
         onsale: false
     },
+    Accessory2 = {
+        name: "Diamond Jewelry Set",
+        value: 10000,
+        img: "./kepek/Accesoriesmodel1.png",
+        osztaly: "Accessory",
+        onsale: true,
+        salevalue: 9999
+    },
+    Accessory3 = {
+        name: "Sapphire Necklace",
+        value: 2200,
+        img: "./kepek/Accesoriesmodel2.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory4 = {
+        name: "Golden Bracelet",
+        value: 540,
+        img: "./kepek/Accesoriesmodel3.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory5 = {
+        name: "Classy Hat",
+        value: 220,
+        img: "./kepek/Accesoriesmodel4.png",
+        osztaly: "Accessory",
+        onsale: false
+    },
+    Accessory6 = {
+        name: "Bucket hat",
+        value: 50,
+        img: "./kepek/Accesoriesmodel5.png",
+        osztaly: "Accessory",
+        onsale: true,
+        salevalue: 44
+    },
 ]
 let melyikoldal = document.getElementById("hol")
 let CasualTomb = []
@@ -194,19 +231,6 @@ function Feltoltes(TermekTomb) {
 }
 //*if (melyikoldal.className == "Casual") {
 
-//function Filter(){
-    //for (let i = 0; i < CasualTomb.length; i++) {
-       //if(CasualTomb[i].salevalue < range1.value || CasualTomb[i].salevalue > range2.value){
-            //CasualTomb.pop(i);
-            
-      // }
-       
-        
-    //}
-    //Feltoltes(CasualTomb)
-    //console.log(range1.value , range2.value)
-//}
-//}
 if(melyikoldal.className == "Casual"){
     Feltoltes(CasualTomb)
 }
@@ -223,3 +247,39 @@ if (melyikoldal.className == "Men") {
     Feltoltes(Ferfitomb)
 }
 
+function Filter(){
+    switch(melyikoldal.className){
+        case "Casual":
+            
+            Filterezes();
+
+
+            break;
+        case "Clothing":
+           
+            break;
+        case "Women":
+            
+            break;
+        case "Accessories":
+            
+            break;
+        case "Men":
+           
+            break;
+    }
+}
+function Filterezes(){
+    
+    for (let i = 0; i < CasualTomb.length; i++) {
+        if(CasualTomb[i].value < range1.value || CasualTomb[i].value > range2.value){
+                CasualTomb.pop(i);
+                
+        }
+           
+            
+    }
+    Feltoltes(CasualTomb)
+    console.log(range1.value , range2.value)
+    
+}
