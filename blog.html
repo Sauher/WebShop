@@ -302,7 +302,7 @@
                         <hr class="cimalahuzas" style="width:200px;">
                     </span>
                 </div>
-                <div class="card-back">
+                <div class="card-back" onmouseleave="becsuk(this)" >
                     <span class="kartyacim">
                         <span class="h1">Fragrance</span>
                         <hr class="cimalahuzas" style="width:300px;">                       
@@ -313,7 +313,7 @@
                       <span class="tobb rejtettszoveg">Today, the brand’s portfolio of best-selling fragrances includes scents that conjure a distinctive mood: The World of Polo, Ralph’s Club, Romance, Lauren, Safari for Men, Polo Sport, and our most sustainable fragrance yet—POLO EARTH, the next generation of Ralph Lauren Fragrances.
                       </span>
                     </p>
-                  <span class="toggleButton" onclick="Showmore(this)" onmouseleave="becsuk(this)">Mutass többet</span>
+                  <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
                     <span class="likelement">
                         <div class="like" id="likeolas" onclick="startAnimation(this)" ></div>
                     </span>
@@ -323,21 +323,21 @@
 
           <div class="card">
             <div class="card-inner">
-                <div class="card-front" style="background-image: url(./kepek/silk.jpg);">
+                <div class="card-front" style="background-image: url(./kepek/tiz.jpg);">
                     <span class="kartyacim">
-                        <span class="h1">Cím</span>
+                        <span class="h1">Polo</span>
                         <hr class="cimalahuzas" style="width:200px;">
                     </span>
                 </div>
                 <div class="card-back">
                     <span class="kartyacim">
-                        <span class="h1">Cím</span>
+                        <span class="h1">Polo</span>
                         <hr class="cimalahuzas" style="width:300px;">                       
                     </span>
                     <p class="kartyaszoveg">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, eligendi. Maiores accusantium repudiandae quia obcaecati ullam, laudantium eligendi id alias animi necessitatibus exercitationem corporis placeat vitae dolore facilis esse et!
+                      Not that either stylist’s personal preferences—or the variation in aesthetic—should come as any surprise. That’s the Polo’s essential, mercurial nature coming through. After all, it’s a way of living; a canvas with which to express yourself however you choose.
                       <span class="pontok">...</span>
-                      <span class="tobb rejtettszoveg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, cupiditate culpa. Consequatur dolores dolor dolorem non voluptatum vero repudiandae itaque tempore explicabo est voluptatibus in facere, delectus magni soluta qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      <span class="tobb rejtettszoveg">That’s the key to longevity; to staying fresh. To quote the Polo’s inaugural 1972 ad campaign, “it gets better with age.” Marking 50 years as an enduring fashion staple is pretty strong proof. 
                       </span>
                     </p>
                   <span class="toggleButton" onclick="Showmore(this)">Mutass többet</span>
@@ -406,7 +406,7 @@
                   </li>
                   <li>
                     <a href="">
-                    <img src="./kepek/silk.jpg" alt=""  class="kereskep">
+                    <img src="./kepek/tiz.jpg" alt=""  class="kereskep">
                     </a>
                   </li>
                 </ul>
@@ -452,6 +452,19 @@
           let pontok = contentWrapper.querySelector(".pontok")
           let Tobbmutatas = contentWrapper.querySelector(".tobb")
           let kartya = gomb.closest(".card")
+          let kartyamerete = gomb.style.height
+          console.log("sikeresen lementlé")
+         
+
+          if (Tobbmutatas.style.display === "none" || Tobbmutatas.style.display === "") {
+            
+          }
+          else {
+            pontok.style.display = "inline"
+            kartya.style.height = kartyamerete
+            Tobbmutatas.style.display = "none"
+            gomb.innerHTML = "Mutass többet"
+          }
         }
         function startAnimation(element) {
 
