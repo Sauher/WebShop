@@ -133,6 +133,50 @@ let Tomb = [
         onsale: true,
         salevalue: 44
     },
+    Ferfi1 = {
+        name: "Wool Sweater",
+        value: 120,
+        img: "./kepek/Ferfi1.PNG",
+        osztaly: "Men",
+        onsale: false
+    },
+    Ferfi2 = {
+        name: "Black T-Shirt",
+        value: 50,
+        img: "./kepek/Ferfi2.PNG",
+        osztaly: "Men",
+        onsale: true,
+        salevalue: 44
+    },
+    Ferfi3 = {
+        name: "Yellowish T-Shirt",
+        value: 50,
+        img: "./kepek/Ferfi3.PNG",
+        osztaly: "Men",
+        onsale: false
+    },
+    Ferfi4 = {
+        name: "Green Shorts",
+        value: 70,
+        img: "./kepek/Ferfi4.jpg",
+        osztaly: "Men",
+        onsale: false
+    },
+    Ferfi5 = {
+        name: "White T-Shirt",
+        value: 60,
+        img: "./kepek/Ferfi5.jpg",
+        osztaly: "Men",
+        onsale: false
+    },
+    Ferfi6 = {
+        name: "Green Shirt",
+        value: 110,
+        img: "./kepek/Ferfi6.PNG",
+        osztaly: "Men",
+        onsale: true,
+        salevalue: 89
+    },
 ]
 let melyikoldal = document.getElementById("hol")
 let CasualTomb = []
@@ -162,7 +206,7 @@ for (let index = 0; index < Tomb.length; index++) {
 }
 for (let index = 0; index < Tomb.length; index++) {
     if (Tomb[index].osztaly == "Men") {
-        FerfitombTomb.push(Tomb[index])
+        Ferfitomb.push(Tomb[index])
     }
 }
 function Feltoltes(TermekTomb) {
