@@ -359,15 +359,13 @@ function Filter(){
 }
 function Filterezes(){
     
-    for (let i = 0; i < CasualTomb.length; i++) {
-        if(CasualTomb[i].value < range1.value || CasualTomb[i].value > range2.value){
-                CasualTomb.pop(i);
-                
-        }
-           
-            
-    }
-    Feltoltes(CasualTomb)
-    console.log(range1.value , range2.value)
+    const result = CasualTomb.filter(e=> {
+        if(e.salevalue){
+            return range1.value<e.salevalue && e.salevalue < range2.value 
+        } 
+        
+        return range1.value<e.value && e.value < range2.value
+    })
+    
     
 }
