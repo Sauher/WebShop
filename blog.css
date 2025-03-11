@@ -43,13 +43,15 @@
   .scontainer{
     position: sticky;
     top: 0;
-    padding-top: 70px;
+    padding-top: 10px;
     float: right;
     padding-bottom: 30px;
   }
   .scrollA {
-    width: 400px;
+    width: 350px;
     height: 450px;
+    
+    direction:rtl;
     overflow: auto;
   }
   
@@ -185,12 +187,14 @@
   background-size:cover;
 }
 .card-back {
+  
   display: flex;
   flex-direction: column;
   background: rgb(49,186,187);
   background: linear-gradient(0deg, rgb(49, 120, 187) 0%, rgb(79, 115, 145) 15%, rgba(107,107,107,1) 100%);
   border: solid 5px black;
   transform: rotateY(180deg);
+ 
 }
 @media only screen and (max-width: 1280px) {
   .card{
