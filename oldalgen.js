@@ -177,6 +177,50 @@ let Tomb = [
         onsale: true,
         salevalue: 89
     },
+    No1 = {
+        name: "White Sweater",
+        value: 100,
+        img: "./kepek/No1.jpg",
+        osztaly: "Women",
+        onsale: false
+    },
+    No2 = {
+        name: "Black Dress",
+        value: 170,
+        img: "./kepek/No2.jpg",
+        osztaly: "Women",
+        onsale: true,
+        salevalue: 149
+    },
+    No3 = {
+        name: "Pink Top",
+        value: 60,
+        img: "./kepek/No3.PNG",
+        osztaly: "Women",
+        onsale: false
+    },
+    No4 = {
+        name: "Flared Jeans",
+        value: 130,
+        img: "./kepek/No4.PNG",
+        osztaly: "Women",
+        onsale: false
+    },
+    No5 = {
+        name: "Grey Summer Dress",
+        value: 70,
+        img: "./kepek/No5.PNG",
+        osztaly: "Women",
+        onsale: false
+    },
+    No6 = {
+        name: "Crimson Plussize Dress",
+        value: 140,
+        img: "./kepek/No6.PNG",
+        osztaly: "Women",
+        onsale: true,
+        salevalue: 119
+    }
 ]
 let melyikoldal = document.getElementById("hol")
 let CasualTomb = []
