@@ -275,6 +275,7 @@ ul {
   height: 10px;
 }
 
+
 .range {
   -webkit-appearance: none;
   position: absolute;
@@ -325,7 +326,7 @@ ul {
 }
 
 input[type="range"]::-moz-range-thumb {
-  -webkit-appearance: none;
+  
   width: 15px;
   height: 15px;
   
@@ -336,7 +337,14 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   border: none;
 }
-
+input[type="range"]::-moz-range-thumb:hover{
+  scale: 125%;
+  transition: ease-in, 0.1s;
+}
+.range::-webkit-slider-thumb:hover{
+  scale: 125%;
+  transition: ease-in, 0.1s;
+}
 .tartalom {
   display: flex;
   flex-direction: row;

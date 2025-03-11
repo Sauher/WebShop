@@ -27,8 +27,8 @@ function updateSlider() {
   }
 
   
-  sliderTrack.style.left = `${(((range1.value) / sliderMaxValue)* 100)-1.3}%`;
-  sliderTrack.style.width = `${(((range2.value - range1.value) / sliderMaxValue) * 100)+2}%`;
+  
+  sliderTrack.style.width = `${((range2.value / sliderMaxValue) )}%`;
   minar.innerHTML = `${range1.value}$`;
   maxar.innerHTML = `${range2.value}$`;
 
