@@ -339,28 +339,27 @@ function Filter(){
     switch(melyikoldal.className){
         case "Casual":
             
-            Filterezes();
-
-
+            Filterezes(CasualTomb);
             break;
         case "Clothing":
-           
+            Filterezes(ClothingTomb);
             break;
         case "Women":
-            
+            Filterezes(Notomb);
             break;
         case "Accessories":
-            
+            Filterezes(Acctomb);
             break;
         case "Men":
-           
+            Filterezes(Ferfitomb);
             break;
     }
 }
-function Filterezes(){
+function Filterezes(Array){
     
-    const result = CasualTomb.filter(e=> {
+    const result = Array.filter(e=> {
         if(e.salevalue){
+            console.log(Array)
             return range1.value<e.salevalue && e.salevalue < range2.value 
         } 
         
