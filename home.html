@@ -73,7 +73,7 @@
   </menu>
 
 <div class="melyikoldal">
-<p id="hol">Home / Shop</p>
+<p id="hol">Home</p>
 </div>
 
 <div id="boritokep">
@@ -176,8 +176,7 @@
     
 
     function kepvaltas(){
-      setTimeout("opacity()", 4000)
-      setTimeout("opacity()", 5000)
+      
       document.getElementById('boritokep').style.backgroundImage = kepek[i]
       document.getElementById('modellkep').style.backgroundImage= modellkepek[i]
       document.getElementById('ruhaszoveg').innerHTML = boritocimke[i]
@@ -211,19 +210,7 @@
 
       setTimeout("kepvaltas()", 5000);
     }
-    function opacity(){
-      if(j ==0){
-        j++;
-        document.getElementById('boritokep').style.opacity = 0.9
-        
-      }
-      else{
-       
-        j=0
-        document.getElementById('boritokep').style.opacity = 1
-        
-      }
-    }
+    
     
     window.onload = kepvaltas();
     function kepvaltas1(){

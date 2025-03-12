@@ -86,8 +86,7 @@ function dropFunction2(){
 
 function kep1valtas(){
   
-  opacity1()
-  setTimeout("opacity1()", 500)
+  
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep3.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(216, 170, 170)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
@@ -100,8 +99,7 @@ function kep1valtas(){
   
 }
 function kep2valtas(){
-  opacity1()
-  setTimeout("opacity1()", 500)
+ 
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep2.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(216, 170, 170)";
@@ -114,8 +112,7 @@ function kep2valtas(){
   
 }
 function kep3valtas(){
-  opacity1()
-  setTimeout("opacity1()", 500)
+  
   document.getElementById('boritokep').style.backgroundImage="url('./kepek/Homekep1.png')";
   document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
   document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
