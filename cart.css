@@ -1,0 +1,27 @@
+.balra{
+width: 50%;
+margin-top: 3%;
+
+}
+.jobbra{
+    float: right;
+    margin-top: 8%;
+ 
+    
+}
+.flex-containeri{
+    justify-content: center;
+}
+
+.term1{
+    padding-bottom: 30px;
+    display: flex;
+
+}
+
+.term2{
+    display: flex;
+}
+.szov{ 
+    padding-left: 10px;
+}
