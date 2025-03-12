@@ -253,9 +253,10 @@ for (let index = 0; index < Tomb.length; index++) {
         Ferfitomb.push(Tomb[index])
     }
 }
+let kepekdiv = document.getElementById("kepdiv")
 function Feltoltes(TermekTomb) {
     for (let i = 0; i < TermekTomb.length; i++) {
-        let kepekdiv = document.getElementById("kepdiv")
+        
         let salediv = document.createElement("div")
         let carddiv = document.createElement("div")
         let cardbdiv = document.createElement("div")
@@ -368,4 +369,33 @@ function Filterezes(){
     })
     
     
+}
+sort = document.getElementById("sort")
+function Rendezes(){
+    $("#kepdiv").empty();
+    if(melyikoldal.className == "Casual"){
+        if(sort.value == "def" ){
+            Feltoltes(CasualTomb)
+        }
+        if(sort.value == "desc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+        }
+        if(sort.value == "asc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
+        }
+    }
+    if (melyikoldal.className == "Clothing") {
+        Feltoltes(ClothingTomb)
+    }
+    if (melyikoldal.className == "Women") {
+        Feltoltes(Notomb)
+    }
+    if (melyikoldal.className == "Accessories") {
+        Feltoltes(Acctomb)
+    }
+    if (melyikoldal.className == "Men") {
+        Feltoltes(Ferfitomb)
+    }
 }
