@@ -685,12 +685,13 @@ footer {
   color: white;
 }
 .felsocim{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: ease-in-out, 0.5s;
 }
 .felsocim:hover{
   font-size: 110%;
+  cursor: pointer;
   
 }
 @media only screen and (max-width: 935px) {
