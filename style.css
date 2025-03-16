@@ -269,6 +269,11 @@ ul {
   cursor: pointer;
 
 }
+.button:hover{
+  scale: 105%;
+  background-color: rgb(219, 219, 219);
+  transition: ease-in-out, 0.5s;
+}
 
 .filterszov {
   font-size: medium;

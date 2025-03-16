@@ -357,15 +357,18 @@ function Filter(){
     }
 }
 function Filterezes(Array){
-    
+    kepekdiv.innerHTML=""
     const result = Array.filter(e=> {
         if(e.salevalue){
             console.log(Array)
-            return range1.value<e.salevalue && e.salevalue < range2.value 
+            
+            return range1.value<=e.salevalue && e.salevalue <= range2.value 
         } 
         
-        return range1.value<e.value && e.value < range2.value
+        return range1.value<=e.value && e.value <= range2.value
     })
+
+    Feltoltes(result)
     
     
 }
