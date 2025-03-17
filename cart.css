@@ -24,4 +24,16 @@ margin-top: 3%;
 }
 .szov{ 
     padding-left: 10px;
+    width: 400px;
+}
+
+.kartygomb{
+    padding-top: 100px;
+    padding-right: 100px;
+}
+
+.contgomb{
+    
+    margin-top: 5%;
+    margin-left: 30%;
 }
