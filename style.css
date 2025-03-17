@@ -186,11 +186,12 @@ h4 {
 }
 .jobboldal {
   
-  float: right;
-  width: 375px;
+  width:375px ;
+  max-width: 200px;
   margin-right: 12%;
   margin-left: 0px;
   margin-top: 20px;
+  
 }
 
 .arak {
@@ -268,11 +269,6 @@ ul {
   color: #464646;
   cursor: pointer;
 
-}
-.button:hover{
-  scale: 105%;
-  background-color: rgb(219, 219, 219);
-  transition: ease-in-out, 0.5s;
 }
 
 .filterszov {
@@ -690,13 +686,12 @@ footer {
   color: white;
 }
 .felsocim{
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   transition: ease-in-out, 0.5s;
 }
 .felsocim:hover{
   font-size: 110%;
-  cursor: pointer;
   
 }
 @media only screen and (max-width: 935px) {
@@ -755,6 +750,8 @@ footer {
     display: block;
     width: 90%;
     margin: 0 auto;
+    max-width: none;
+      
   }
   .top-left {
     position: absolute;
@@ -844,6 +841,7 @@ footer {
     display: block;
     width: 90%;
     margin: 0 auto;
+    
   }
 
   .container {
