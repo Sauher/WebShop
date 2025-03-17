@@ -222,6 +222,8 @@ let Tomb = [
         salevalue: 119
     }
 ]
+let alcim = document.getElementById("alcim")
+let results = document.getElementById("res")
 let melyikoldal = document.getElementById("hol")
 let CasualTomb = []
 let ClothingTomb = []
@@ -253,9 +255,10 @@ for (let index = 0; index < Tomb.length; index++) {
         Ferfitomb.push(Tomb[index])
     }
 }
+let kepekdiv = document.getElementById("kepdiv")
 function Feltoltes(TermekTomb) {
     for (let i = 0; i < TermekTomb.length; i++) {
-        let kepekdiv = document.getElementById("kepdiv")
+        
         let salediv = document.createElement("div")
         let carddiv = document.createElement("div")
         let cardbdiv = document.createElement("div")
@@ -321,18 +324,33 @@ function Feltoltes(TermekTomb) {
 
 if(melyikoldal.className == "Casual"){
     Feltoltes(CasualTomb)
+    alcim.innerHTML = "Casual"
+    results.innerHTML = "Showing all "+ CasualTomb.length + " results"
 }
 if (melyikoldal.className == "Clothing") {
     Feltoltes(ClothingTomb)
+    alcim.innerHTML = "Clothing"
+    results.innerHTML = "Showing all "+ ClothingTomb.length + " results"
 }
 if (melyikoldal.className == "Women") {
     Feltoltes(Notomb)
+    alcim.innerHTML = "Women"
+    results.innerHTML = "Showing all "+ NoTomb.length + " results"
 }
 if (melyikoldal.className == "Accessories") {
     Feltoltes(Acctomb)
+    alcim.innerHTML = "Accessories"
+    results.innerHTML = "Showing all "+ AccTomb.length + " results"
 }
 if (melyikoldal.className == "Men") {
     Feltoltes(Ferfitomb)
+    alcim.innerHTML = "Men"
+    results.innerHTML = "Showing all "+ FerfiTomb.length + " results"
+}
+if (melyikoldal.className == "Shop") {
+    Feltoltes(Tomb)
+    alcim.innerHTML = "Shop"
+    results.innerHTML = "Showing all "+ Tomb.length + " results"
 }
 
 function Filter(){
@@ -353,18 +371,123 @@ function Filter(){
         case "Men":
             Filterezes(Ferfitomb);
             break;
+        case "Shop":
+            Filterezes(Tomb);
+            break;
     }
 }
 function Filterezes(Array){
-    
+    kepekdiv.innerHTML=""
     const result = Array.filter(e=> {
         if(e.salevalue){
             console.log(Array)
-            return range1.value<e.salevalue && e.salevalue < range2.value 
+            
+            return range1.value<=e.salevalue && e.salevalue <= range2.value 
         } 
         
-        return range1.value<e.value && e.value < range2.value
+        return range1.value<=e.value && e.value <= range2.value
     })
+
+    Feltoltes(result)
+    results.innerHTML = "Showing all "+ result.length + " results"
     
-    
+}
+sort = document.getElementById("sort")
+function Rendezes(){
+    $("#kepdiv").empty();
+    if(melyikoldal.className == "Casual"){
+        if(sort.value == "def" ){
+            Feltoltes(CasualTomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+    }
+    if (melyikoldal.className == "Clothing") {
+        if(sort.value == "def" ){
+            Feltoltes(ClothingTomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = ClothingTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = ClothingTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+    }
+    if (melyikoldal.className == "Women") {
+        Feltoltes(Notomb)
+        if(sort.value == "def" ){
+            Feltoltes(NoTomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = NoTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = NoTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+    }
+    if (melyikoldal.className == "Accessories") {
+        Feltoltes(Acctomb)
+        if(sort.value == "def" ){
+            Feltoltes(AccTomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = AccTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = AccTomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+    }
+    if (melyikoldal.className == "Men") {
+        Feltoltes(Ferfitomb)
+        if(sort.value == "def" ){
+            Feltoltes(Ferfitomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = Ferfitomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = Ferfitomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+    }
+    if(melyikoldal.className == "Shop"){
+        if(sort.value == "def" ){
+            Feltoltes(Tomb)
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "desc"){
+            var tempTomb = Tomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "asc"){
+            var tempTomb = Tomb.slice()
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+    }
+}
 }

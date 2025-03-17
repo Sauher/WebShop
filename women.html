@@ -27,7 +27,7 @@
       </div>
       <div class="dropdown-content3" id="drop3">
         <a href="accessories.html" class="dropitem">ACCESSORIES</a>
-        <a href="index.html" class="dropitem">CASUAL</a>
+        <a href="casual.html" class="dropitem">CASUAL</a>
         <a href="clothing.html" class="dropitem">CLOTHING</a>
         <a href="men.html" class="dropitem">MEN</a>
         <a href="women.html" class="dropitem">WOMEN</a>
@@ -37,7 +37,7 @@
         <a href="" class="az2">MY ACCOUNT</a><i class="fa fa-plus pluszjel2" onclick="dropFunction2()"></i>
       </div>
       <div class="dropdown-content4" id="drop4">
-        <a href="#" class="dropitem">CART</a>
+        <a href="cart.html" class="dropitem">CART</a>
         <a href="#" class="dropitem">CHECKOUT</a>
         <a href="#" class="dropitem">WISHLIST</a>
       </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="dropdown-content1">
           <a href="accessories.html">ACCESSORIES</a>
-          <a href="index.html">CASUAL</a>
+          <a href="casual.html">CASUAL</a>
           <a href="clothing.html">CLOTHING</a>
           <a href="men.html">MEN</a>
           <a href="women.html">WOMEN</a>
@@ -68,7 +68,7 @@
         <div class="dropgomb2"><a href="" class="droppos">MY ACCOUNT </a> <i class="fas fa-chevron-down lenyil"></i>
         </div>
         <div class="dropdown-content2">
-          <a href="#">CART</a>
+          <a href="cart.html">CART</a>
           <a href="#">CHECKOUT</a>
           <a href="#">WISHLIST</a>
         </div>
@@ -79,18 +79,20 @@
   </menu>
 
   <div class="melyikoldal">
-    <p id="hol" class="Women">Home / Shop / Women</p>
+    <p id="hol" class="Women"><a class="felsocim" href="home.html">Home</a> / Shop / Women</p>
   </div>
 
   <div class="tartalom">
     <div class="container">
 
       <div class="bal">
-        <h2 class="alcim">Casual</h2>
-        <select name="sort" id="sort">
+        <h2 id="alcim"></h2>
+        <select name="sort" id="sort" onchange="Rendezes()">
           <option value="def">Default sorting</option>
+          <option value="desc">Descending (Price)</option>
+          <option value="asc">Ascending (price)</option>
         </select>
-        <p class="res">Showing all 6 results</p>
+        <p id="res">Showing all 6 results</p>
         <div class="flex" id="kepdiv">
 
           
@@ -107,8 +109,8 @@
 
       <div class="slider-container">
         <div class="track"></div>
-        <input type="range" id="range1" class="range" min="1" max="75" value="17">
-        <input type="range" id="range2" class="range" min="1" max="75" value="75">
+        <input type="range" id="range1" class="range" min="1" max="170" value="17">
+        <input type="range" id="range2" class="range" min="1" max="170" value="75">
         <div class="slider-track"></div>
       </div>
 
@@ -131,15 +133,15 @@
       <h2 class="alcim">Product categories</h2>
 
       <ul class="jobboldali">
-        <li><a href="http://" class="category">Accessories</a> </li>
+        <li><a class="category" href="accessories.html">Accessories</a> </li>
         <hr class="pontok">
-        <li><a href="http://" class="category">Casual</a></li>
+        <li><a class="category" href="index.html">Casual</a></li>
         <hr class="pontok">
-        <li><a href="" class="category">Clothing</a></li>
+        <li><a class="category" href="clothing.html">Clothing</a></li>
         <hr class="pontok">
-        <li><a href="" class="category">Man</a></li>
+        <li><a class="category" href="men.html">Man</a></li>
         <hr class="pontok">
-        <li><a href="http://" class="category">Woman</a></li>
+        <li><a class="category" href="women.html">Woman</a></li>
 
       </ul>
       <h2 class="alcim">Top rated products</h2>

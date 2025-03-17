@@ -3,6 +3,11 @@ body {
   min-width: 100%;
   margin: 0;
   font-family: 'Barlow', sans-serif;
+ 
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 header {
@@ -149,14 +154,14 @@ h4 {
 }
 
 
-.alcim {
+#alcim {
   border-bottom: 1px solid gray;
   font-size: 20px;
   
   color: #515151;
 }
 
-.alcim::after {
+#alcim::after {
   content: '';
   border-bottom: 2px solid #eb5e5f;
   display: block;
@@ -181,11 +186,12 @@ h4 {
 }
 .jobboldal {
   
-  float: right;
-  width: 375px;
+  width:375px ;
+  max-width: 200px;
   margin-right: 12%;
   margin-left: 0px;
   margin-top: 20px;
+  
 }
 
 .arak {
@@ -232,7 +238,7 @@ h4 {
   color: #303030;
 }
 
-.res {
+#res {
   color: #8d8d8d;
 }
 
@@ -462,9 +468,11 @@ footer {
   
   margin-left: 5px;
   color: #525252;
+  transition: ease-in-out, 0.5s;
 }
 .category:hover {
   cursor: pointer;
+  font-size: 110%;
 }
 
 .menugomb {
@@ -673,6 +681,19 @@ footer {
   padding-top: 17px;
   padding-bottom: 17px;
 }
+.felsocim:visited{
+  text-decoration: none;
+  color: white;
+}
+.felsocim{
+  color: white;
+  text-decoration: none;
+  transition: ease-in-out, 0.5s;
+}
+.felsocim:hover{
+  font-size: 110%;
+  
+}
 @media only screen and (max-width: 935px) {
   
   .track {
@@ -729,6 +750,8 @@ footer {
     display: block;
     width: 90%;
     margin: 0 auto;
+    max-width: none;
+      
   }
   .top-left {
     position: absolute;
@@ -818,6 +841,7 @@ footer {
     display: block;
     width: 90%;
     margin: 0 auto;
+    
   }
 
   .container {
