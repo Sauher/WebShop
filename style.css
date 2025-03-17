@@ -154,14 +154,14 @@ h4 {
 }
 
 
-.alcim {
+#alcim {
   border-bottom: 1px solid gray;
   font-size: 20px;
   
   color: #515151;
 }
 
-.alcim::after {
+#alcim::after {
   content: '';
   border-bottom: 2px solid #eb5e5f;
   display: block;
@@ -237,7 +237,7 @@ h4 {
   color: #303030;
 }
 
-.res {
+#res {
   color: #8d8d8d;
 }
 
