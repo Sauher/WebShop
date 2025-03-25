@@ -74,6 +74,7 @@
     margin-right: 0px;
     margin-left: 0px;
     margin-top: 20px;
+    max-width: none;
   }
 
   .balfent {
@@ -82,6 +83,11 @@
     left: 16px;
     
   }
+  .bal {
+    width: 100%;
+    margin-right: 2%;
+  }
+  
   .vonal{
     color: black;
     height: 1px;
@@ -154,6 +160,13 @@
   text-align: left;
   margin: 10px;
   
+}
+.container {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .card {
