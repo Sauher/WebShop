@@ -90,8 +90,10 @@
         <h2 id="alcim"></h2>
         <select name="sort" id="sort" onchange="Rendezes()">
           <option value="def">Default sorting</option>
-          <option value="desc">Descending (Price)</option>
-          <option value="asc">Ascending (price)</option>
+          <option value="desc">Price (Descending)</option>
+          <option value="asc">Price (Ascending)</option>
+          <option value="Aasc">Alphabetical (Ascending)</option>
+          <option value="Adesc">Alphabetical (Descending)</option>
         </select>
         <p id="res">Showing all 6 results</p>
         <div class="flex" id="kepdiv">
@@ -104,14 +106,14 @@
 
 
 
-    <div id="jobboldal">
-      <h2 class="alcim">Filter by price</h2>
+    <div class="jobboldal">
+      <h2 id="alcim">Filter by price</h2>
 
 
       <div class="slider-container">
         <div class="track"></div>
-        <input type="range" id="range1" class="range" min="1" max="120" value="17">
-        <input type="range" id="range2" class="range" min="1" max="120" value="75">
+        <input type="range" id="range1" class="range" min="1" max="10000" value="17">
+        <input type="range" id="range2" class="range" min="1" max="10000" value="5000">
         <div class="slider-track"></div>
       </div>
 
@@ -131,7 +133,7 @@
       </div>
 
 
-      <h2 class="alcim">Product categories</h2>
+      <h2 id="alcim">Product categories</h2>
 
       <ul class="jobboldali">
         <li><a class="category" href="accessories.html">Accessories</a> </li>
@@ -143,6 +145,7 @@
         <li><a class="category" href="men.html">Man</a></li>
         <hr class="pontok">
         <li><a class="category" href="women.html">Woman</a></li>
+
       </ul>
       <h2 class="alcim">Top rated products</h2>
 
