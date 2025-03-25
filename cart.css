@@ -1,15 +1,20 @@
 .balra{
-width: 50%;
-margin-top: 3%;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 3%;
 
 }
 .jobbra{
-    float: right;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
     margin-top: 8%;
  
     
 }
-.flex-containeri{
+.flex-containercar{
     justify-content: center;
 }
 
@@ -50,3 +55,23 @@ margin-top: 3%;
     color: white;
     margin-top: 30px;
 }
+
+@media only screen and (max-width: 950px) {
+    .jobbra{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        max-width: none;
+        float: none;
+    }
+    .balra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .flex-containercar{
+        flex-direction: column;
+    }
+    
+  }
