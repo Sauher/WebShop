@@ -410,6 +410,16 @@ function Rendezes(){
             Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
+        if(sort.value == "Aasc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = CasualTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
     if (melyikoldal.className == "Clothing") {
         if(sort.value == "def" ){
@@ -423,8 +433,19 @@ function Rendezes(){
         }
         if(sort.value == "asc"){
             var tempTomb = ClothingTomb.slice()
-            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Aasc"){
+            var tempTomb = ClothingTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = ClothingTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
     if (melyikoldal.className == "Women") {
         Feltoltes(Notomb)
@@ -439,8 +460,19 @@ function Rendezes(){
         }
         if(sort.value == "asc"){
             var tempTomb = NoTomb.slice()
-            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Aasc"){
+            var tempTomb = NoTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = NoTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
     if (melyikoldal.className == "Accessories") {
         Feltoltes(Acctomb)
@@ -455,8 +487,19 @@ function Rendezes(){
         }
         if(sort.value == "asc"){
             var tempTomb = AccTomb.slice()
-            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
+            Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Aasc"){
+            var tempTomb = AccTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = AccTomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
     if (melyikoldal.className == "Men") {
         Feltoltes(Ferfitomb)
@@ -473,6 +516,16 @@ function Rendezes(){
             var tempTomb = Ferfitomb.slice()
             Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))}
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        if(sort.value == "Aasc"){
+            var tempTomb = Ferfitomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = Ferfitomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
     if(melyikoldal.className == "Shop"){
         if(sort.value == "def" ){
@@ -488,6 +541,17 @@ function Rendezes(){
             var tempTomb = Tomb.slice()
             Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
+            
+        }
+        if(sort.value == "Aasc"){
+            var tempTomb = Tomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
+        if(sort.value == "Adesc"){
+            var tempTomb = Tomb.slice()
+            Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
+            results.innerHTML = "Showing all "+ tempTomb.length + " results"
+        }
     }
-}
 }
