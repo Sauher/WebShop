@@ -340,7 +340,7 @@ if (melyikoldal.className == "Women") {
 if (melyikoldal.className == "Accessories") {
     Feltoltes(Acctomb)
     alcim.innerHTML = "Accessories"
-    results.innerHTML = "Showing all "+ AccTomb.length + " results"
+    results.innerHTML = "Showing all "+ Acctomb.length + " results"
 }
 if (melyikoldal.className == "Men") {
     Feltoltes(Ferfitomb)
@@ -477,26 +477,26 @@ function Rendezes(){
     if (melyikoldal.className == "Accessories") {
         Feltoltes(Acctomb)
         if(sort.value == "def" ){
-            Feltoltes(AccTomb)
+            Feltoltes(Acctomb)
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
         if(sort.value == "desc"){
-            var tempTomb = AccTomb.slice()
+            var tempTomb = Acctomb.slice()
             Feltoltes(tempTomb.sort(function (a,b){return b.value - a.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
         if(sort.value == "asc"){
-            var tempTomb = AccTomb.slice()
+            var tempTomb = Acctomb.slice()
             Feltoltes(tempTomb.sort(function (a,b){return a.value - b.value}))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
         if(sort.value == "Aasc"){
-            var tempTomb = AccTomb.slice()
+            var tempTomb = Acctomb.slice()
             Feltoltes(tempTomb.sort((a, b) => a.name.localeCompare(b.name)))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
         if(sort.value == "Adesc"){
-            var tempTomb = AccTomb.slice()
+            var tempTomb = Acctomb.slice()
             Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
             results.innerHTML = "Showing all "+ tempTomb.length + " results"
         }
