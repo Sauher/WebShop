@@ -7,8 +7,7 @@
 
 }
 .jobbra{
-    display: block;
-    width: 90%;
+    
     margin: 0 auto;
     margin-top: 8%;
  
@@ -56,6 +55,12 @@
     margin-top: 30px;
 }
 
+.gombcont{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+}
+
 @media only screen and (max-width: 950px) {
     .jobbra{
         display: block;
@@ -74,4 +79,40 @@
         flex-direction: column;
     }
     
+    hr{
+        margin-right: 300px;
+        width: 520px;
+    }
+
+    .checkB{
+        width: 520px;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .jobbra{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        max-width: none;
+        float: none;
+    }
+    .balra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .flex-containercar{
+        flex-direction: column;
+    }
+    
+    hr{
+        margin-right: 300px;
+        width: 520px;
+    }
+
+    .checkB{
+        width: 520px;
+    }
   }
