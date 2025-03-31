@@ -1,62 +1,56 @@
 <!DOCTYPE html>
-<html lang="hu">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <title>RuhiRuha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
 </head>
-
 <body>
+  
   <a href="fent" id="fent"></a>
   <div class="topnav">
-    <h1>RihiRuha webáruház <br>
-      <div class="kissz">Szép webdesign-al</div>
-    </h1>
+    <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()" allow="autoplay">
       <i class="fa fa-bars" id="menuikon1"></i>
       <i class="fa fa-x" id="menuikon2"></i>
     </a>
     <br>
     <div id="myLinks">
-      <div class="burgeritem"><a href="home.html" class="az2">HOME</a></div>
+      <div class="burgeritem"><a href="index.html" class="az2">HOME</a></div>
       <div class="burgeritem">
-        <a href="index.html" class="az2">SHOP </a><i class="fa fa-plus pluszjel1" onclick="dropFunction1()"></i>
+        <a href="shop.html" class="az2">SHOP </a><i class="fa fa-plus pluszjel1" onclick="dropFunction1()"></i> 
       </div>
       <div class="dropdown-content3" id="drop3">
-        <a href="accessories.html" class="dropitem">ACCESSORIES</a>
-        <a href="casual.html" class="dropitem">CASUAL</a>
-        <a href="clothing.html" class="dropitem">CLOTHING</a>
-        <a href="men.html" class="dropitem">MEN</a>
-        <a href="women.html" class="dropitem">WOMEN</a>
+        <a href="accessories.html">ACCESSORIES</a>
+          <a href="casual.html">CASUAL</a>
+          <a href="clothing.html">CLOTHING</a>
+          <a href="men.html">MEN</a>
+          <a href="women.html">WOMEN</a>
       </div>
-
+      
       <div class="burgeritem">
         <a href="" class="az2">MY ACCOUNT</a><i class="fa fa-plus pluszjel2" onclick="dropFunction2()"></i>
       </div>
-      <div class="dropdown-content4" id="drop4">
-        <a href="cart.html" class="dropitem">CART</a>
-        <a href="#" class="dropitem">CHECKOUT</a>
-        <a href="#" class="dropitem">WISHLIST</a>
-      </div>
+        <div class="dropdown-content4" id="drop4">
+          <a href="cart.html" class="dropitem">CART</a>
+          <a href="#" class="dropitem">CHECKOUT</a>
+          <a href="#" class="dropitem">WISHLIST</a>
+        </div>
       <div class="burgeritem"><a href="blog.html" class="az2">BLOG</a></div>
       <div class="burgeritem"><a href="contactus.html" class="az2">CONTACT US</a></div>
     </div>
-
+    
   </div>
-  <menu>
+  <menu style="z-index: 5;">
     <div class="flex-containeri">
-      <h1>RihiRuha webáruház <br>
-        <div class="kissz">Szép webdesign-al</div>
-      </h1>
-
-      <a href="home.html" class="menuitem elso">HOME</a>
+      <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
+      
+      <a href="index.html" class="menuitem elso">HOME</a>
       <div class="dropdown1 menuitem">
-        <div class="dropgomb1"><a href="index.html" class="droppos">SHOP</a> <i class="fas fa-chevron-down lenyil"></i>
-        </div>
+      <div class="dropgomb1"><a href="shop.html" class="droppos">SHOP</a>  <i class="fas fa-chevron-down lenyil"></i></div>
         <div class="dropdown-content1">
           <a href="accessories.html">ACCESSORIES</a>
           <a href="casual.html">CASUAL</a>
@@ -66,176 +60,73 @@
         </div>
       </div>
       <div class="dropdown2 menuitem">
-        <div class="dropgomb2"><a href="" class="droppos">MY ACCOUNT </a> <i class="fas fa-chevron-down lenyil"></i>
-        </div>
-        <div class="dropdown-content2">
-          <a href="cart.html">CART</a>
-          <a href="#">CHECKOUT</a>
-          <a href="#">WISHLIST</a>
-        </div>
+      <div class="dropgomb2"><a href="" class="droppos">MY ACCOUNT </a> <i class="fas fa-chevron-down lenyil"></i></div>
+      <div class="dropdown-content2">
+        <a href="cart.html">CART</a>
+        <a href="#">CHECKOUT</a>
+        <a href="#">WISHLIST</a>
+      </div>
       </div>
       <a href="blog.html" class="menuitem">BLOG</a>
       <a href="contactus.html" class="menuitem utso">CONTACT US</a>
     </div>
   </menu>
 
-  <div class="melyikoldal">
-    <p id="hol" class="Shop"><a class="felsocim" href="home.html">Home</a> / <span class="felsocim">Shop</span></p>
+<div class="melyikoldal">
+  <p  id="hol" class="felsocim" >Home</p>
+</div>
+
+<div id="boritokep">
+  
+  
+  <span id="kepszoveg">
+  
+    <span id="ruhaszoveg">Szabadidők</span>
+    <div id="kozepsokepszoveg" style="margin-top: 0px;" >
+      <span id="csakar">Csak</span> 
+      <span  id="homear">24.000Ft</span>
+    </div>
+    <button id="vasarlasgomb" onclick="homevasarlas(gombertek)">Vásárlás most!</button>
+  </span>
+  <div id="modellkepflex">
+    <div id="modellkep"></div>
   </div>
 
-  <div class="tartalom">
-    <div class="container">
-
-      <div class="bal">
-        <h2 id="alcim"></h2>
-        <select name="sort" id="sort" onchange="Rendezes()">
-          <option value="def">Default sorting</option>
-          <option value="desc">Price (Descending)</option>
-          <option value="asc">Price (Ascending)</option>
-          <option value="Aasc">Alphabetical (Ascending)</option>
-          <option value="Adesc">Alphabetical (Descending)</option>
-        </select>
-        <p id="res">Showing all 6 results</p>
-        <div class="flex" id="kepdiv">
-
-          
-        </div>
-
-      </div>
-    </div>
-
-
-
-    <div class="jobboldal">
-      <h2 id="alcim">Filter by price</h2>
-
-
-      <div class="slider-container">
-        <div class="track"></div>
-        <input type="range" id="range1" class="range" min="0" max="9999" value="17">
-        <input type="range" id="range2" class="range" min="0" max="9999" value="50">
-        <div class="slider-track"></div>
-      </div>
-
-      <br>
-
-
-      <div class="filterezes">
-        <button class="button" type="submit" onclick="Filter()"><b class="filterszov">Filter</b></button>
-        <div class="filterarak">
-          <span id="price">Price:</span>
-          <span id="minar">4$</span>
-          -
-          <span id="maxar">19$</span>
-        </div>
-
-
-      </div>
-
-
-      <h2 class="alcim">Product categories</h2>
-
-      <ul class="jobboldali">
-        <li><a class="category" href="accessories.html">Accessories</a> </li>
-        <hr class="pontok">
-        <li><a class="category" href="casual.html">Casual</a></li>
-        <hr class="pontok">
-        <li><a class="category" href="clothing.html">Clothing</a></li>
-        <hr class="pontok">
-        <li><a class="category" href="men.html">Man</a></li>
-        <hr class="pontok">
-        <li><a class="category" href="women.html">Woman</a></li>
-
-      </ul>
-      <h2 class="alcim">Top rated products</h2>
-
-      <ul>
-        <li>
-          <div class="topratedflex">
-
-            <div class="toparak">
-              <b>Jeans jacket</b>
-              <p class="arak">$59.00</p>
-            </div>
-            <div class="topkep">
-              <img src="./kepek/ralphHat.png" alt="" srcset="" style="width: 30px; float: right; ">
-            </div>
-
-
-          </div>
-
-
-        </li>
-        <hr class="pontok">
-
-        <li>
-          <div class="topratedflex">
-
-            <div class="toparak">
-              <b>Black shorts</b>
-              <p class="arak">$25.00</p>
-            </div>
-            <div class="topkep">
-              <img src="./kepek/ralph.png" alt="" srcset="" style="width: 30px; float: right; ">
-            </div>
-
-
-          </div>
-        </li>
-        <hr class="pontok">
-
-        <li>
-          <div class="topratedflex">
-
-            <div class="toparak">
-              <b>Leather jacket</b>
-              <p class="arak"><s class="athuz">$100.00</s> <span style="background-color: #fffac1;">$50.00</span></p>
-            </div>
-            <div class="topkep">
-              <img src="./kepek/ralphJack.png" alt="" srcset="" style="width: 30px; float: right; ">
-            </div>
-
-
-          </div>
-        </li>
-        <hr class="pontok">
-        <li>
-          <div class="topratedflex">
-
-            <div class="toparak">
-              <b>Women tops</b>
-              <p class="arak">$45.00</p>
-            </div>
-            <div class="topkep">
-              <img src="./kepek/ralphTop2.png" alt="" srcset="" style="width: 30px; float: right; ">
-            </div>
-
-
-          </div>
-        </li>
-        <hr class="pontok">
-        <li>
-          <div class="topratedflex">
-
-            <div class="toparak">
-              <b>Collar T-shirt</b>
-              <p class="arak">$35.00</p>
-            </div>
-            <div class="topkep">
-              <img src="./kepek/ralphT.jpg" alt="" srcset="" style="width: 30px; float: right; ">
-            </div>
-
-
-          </div>
-        </li>
-      </ul>
-    </div>
-
-
+  <div id="kepgomb">
+    
+    <div class="gombok" id="gomb1" onclick="kep1valtas()"></div>
+    <div class="gombok" id="gomb2" onclick="kep2valtas()"></div>
+    <div class="gombok" id="gomb3" onclick="kep3valtas()"></div>
   </div>
+  
+
+</div>
+
+<div class="alsoresz">
+    <div class="szovegflex">
+        <h1 id="h1">Most Trendelnek!</h1>
+        <hr>
+        <p id="Trendszoveg" >Kényelmes és divatos ruhák a legszebb kiegészítőkkel, megfelelő áron!</p>
+    </div>
+
+    <div class="kepflex">
+        <a href="index.html" ><div id="flexkep" class="flexkep1"></div></a>
+        <a href="index.html"> <div id="flexkep" class="flexkep2"></div></a>
+        <a href="index.html" > <div id="flexkep" class="flexkep3"></div></a>
+    </div>
+</div>
 
 
-  <footer>
+
+
+
+
+
+
+
+
+
+<footer>
     <div class="footer-section footerelso">
       <h2>Rólunk</h2>
       <p>Nunc et ornare tellus. Quisque imperdiet interdum commodo. Integer laoreet tristique neque quis laoreet. Duis
@@ -255,11 +146,105 @@
       <p class="shipszoveg">100% money back guarantee</p>
     </div>
   </footer>
+  <script>
+    
+    let h=0
+    let i =0;
+    let j =0;
+    let gombertek =0;
+    let kepek = []
+    let modellkepek =[]
+    let boritocimke = []
+    let boritoarak = []
+    
+    kepek[0] = "url('./kepek/Homekep3.png')"
+    kepek[1] = "url('./kepek/Homekep2.png')"
+    kepek[2] = "url('./kepek/Homekep1.png')"
+
+    modellkepek[0]= "url('./kepek/HomeModel1.png')"
+    modellkepek[1]= "url('./kepek/Homemodel2.png')"
+    modellkepek[2]= "url('./kepek/Homemodel3.png')"
+
+    boritocimke[0]= "Szabadidők"
+    boritocimke[1]= "Melegítők"
+    boritocimke[2]= "Pizsomák"
+
+    boritoarak[0]= "24.000Ft"
+    boritoarak[1]= "30.000Ft"
+    boritoarak[2]= "21.000Ft"
+
+    
+
+    function kepvaltas(){
+      
+      document.getElementById('boritokep').style.backgroundImage = kepek[i]
+      document.getElementById('modellkep').style.backgroundImage= modellkepek[i]
+      document.getElementById('ruhaszoveg').innerHTML = boritocimke[i]
+      document.getElementById('homear').innerHTML = boritoarak[i]
+      
+      if (i ==0) {
+        i++;
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(216, 170, 170)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+        gombertek=0
+        
+      }
+      else if(i ==1){
+        i++;
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(216, 170, 170)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(255, 255, 255)";
+        gombertek=1
+        
+      }
+      else{
+        i=0
+        document.getElementById('gomb1').style.borderLeftColor= "rgb(255, 255, 255)";
+        document.getElementById('gomb2').style.borderRightColor=  "rgb(255, 255, 255)";
+        document.getElementById('gomb3').style.borderLeftColor= "rgb(216, 170, 170)";
+        gombertek=2
+        
+        
+      }
+
+      setTimeout("kepvaltas()", 5000);
+    }
+    
+    
+    window.onload = kepvaltas();
+    function kepvaltas1(){
+      i=1
+      gombertek=1
+      
+    }
+    function kepvaltas2(){
+      i=2
+      gombertek=2
+      
+    }
+    function kepvaltas3(){
+      i=0
+      gombertek=0
+    }
+
+    function homevasarlas(szam){
+        switch(szam){
+          case 0:
+            console.log("vásároltál egy Szabadidőt")
+            break;
+          case 1:
+            console.log("Vásároltál egy Melegítőt")
+            break;
+          case 2:
+            console.log("Vásároltál egy Pizsomát")
+        }
+    }
+    
+  </script>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
   <script src="./main.js"></script>
-  <script src="./oldalgen.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
   <script src="cookie.js"></script>
 </body>
-
 </html>
