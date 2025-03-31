@@ -290,7 +290,7 @@ function Feltoltes(TermekTomb) {
 
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
-            console.log("cs");
+            alert("Termék hozzáadva a kosárhoz.");
         }
         carddiv.className = "card"
         cardbdiv.className = "cardb"
