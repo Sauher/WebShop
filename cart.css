@@ -60,6 +60,12 @@
     padding: 10px;
     border: none;
 }
+.tkep1{
+    width: 150px; height: 150px;
+}
+.tkep2{
+    width: 150px; height: 150px;
+}
 
 @media only screen and (max-width: 950px) {
     .jobbra{
@@ -109,10 +115,29 @@
     
     hr{
         margin-right: 300px;
-        width: 520px;
+        width: 100%;
     }
 
     .checkB{
-        width: 520px;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 530px) {
+    .term1{
+        flex-direction: column;
+    }
+    .term2{
+        flex-direction: column;
+    }
+    .tkep1{
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .tkep2{
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
     }
   }
