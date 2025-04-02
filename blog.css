@@ -3,6 +3,7 @@
     padding-bottom: 35px;
     width: 300px; 
     float: right;
+    z-index: 0;
 }
 
 .card{
@@ -22,8 +23,28 @@
     margin-top: 8px;
     font-size: 17px;
     border: none;
-    width: 80%;
+    width: 95%;
+    margin-bottom: 20px;
     
+  }
+  .Kartyakereses{
+    display: flex;
+    position: relative;
+  }
+  .Szovegkepen{
+    
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  a{
+    text-decoration: none;
   }
   .gomb{
     float: right;
@@ -215,6 +236,7 @@
   transform: rotateY(180deg);
  
 }
+
 @media only screen and (max-width: 1280px) {
   .card{
     width: 350px;
