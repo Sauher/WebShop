@@ -67,6 +67,13 @@
     width: 150px; height: 150px;
 }
 
+.alsosor{
+    padding-top: 20%; padding-left: 60%;
+}
+.kepp1{
+    width: 150px; height: 150px;
+}
+
 @media only screen and (max-width: 950px) {
     .jobbra{
         display: block;
