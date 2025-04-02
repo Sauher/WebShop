@@ -334,7 +334,7 @@ function Feltoltes(TermekTomb) {
 Feltoltes(CurrentT)
 results.innerHTML = "Showing all "+ CurrentT.length + " results"
 alcim.innerHTML = melyikoldal.className
-let resultT
+let resultT = CurrentT
 function Filter(){
     resultT = Filterezes(CurrentT)
 }
