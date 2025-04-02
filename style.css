@@ -73,6 +73,7 @@ menu {
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
+  z-index: 99;
 }
 
 h1 {
@@ -673,7 +674,7 @@ footer {
 .top-left {
   position: absolute;
   top: -10px;
-  z-index: 1;
+  z-index: 0;
   left: -20px;
   background-color: #FF4852;
   color: white;

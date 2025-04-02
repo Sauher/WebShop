@@ -1,3 +1,5 @@
+if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal"){
+let StringifyTomb = []
 let Tomb = [
     Shirt = {
         name: "Collar T-Shirt",
@@ -291,6 +293,9 @@ function Feltoltes(TermekTomb) {
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
             alert("Termék hozzáadva a kosárhoz.");
+            StringifyTomb.push(TermekTomb[i])
+            let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+            localStorage.setItem('Termekek', jsonString)
         }
         carddiv.className = "card"
         cardbdiv.className = "cardb"
@@ -337,7 +342,7 @@ function Feltoltes(TermekTomb) {
 Feltoltes(CurrentT)
 results.innerHTML = "Showing all "+ CurrentT.length + " results"
 alcim.innerHTML = melyikoldal.className
-let resultT
+let resultT = CurrentT
 function Filter(){
     resultT = Filterezes(CurrentT)
 }
@@ -386,5 +391,13 @@ function Rendezes(){
             Feltoltes(tempTomb.sort((a, b) => b.name.localeCompare(a.name)))
             results.innerHTML = "Showing all "+ resultT.length + " results"
         }
+}
+}
+function JsonGet(){
+    const jsonString = localStorage.getItem('Termekek') || '';
+    const objects = JSON.parse(jsonString)
+
+    console.log(objects)
+
 }
 
