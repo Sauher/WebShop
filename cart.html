@@ -10,7 +10,7 @@
 
     <title>Cart</title>
 </head>
-<body>
+<body onload="JsonGet()">
   <a href="fent" id="fent"></a>
   <div class="topnav">
     <h1>RihiRuha webáruház <br> <div class="kissz">Szép webdesign-al</div></h1>
@@ -87,28 +87,26 @@
   <div class="balra">
     
       <div class="term1">
-        <img style="width: 150px; height: 150px;" src="./kepek/cart1.png" alt="">
+        <img class="kepp1" src="./kepek/cart1.png" alt="">
         <div class="szov">Polo Ralph Lauren
           PULLOVER - Hosszú ujjú felső - refined navy
 
           <br>
           Price 25$
           
-          <div style="padding-top: 20%; padding-left: 60%;">
+          <div class="alsosor">
             Size: M <button>-</button> 0 <button>+</button>
           </div>
         </div>
-        
-    
       </div>
       <div class="term2">
-        <img style="width: 150px; height: 150px;" src="./kepek/cart2.png" alt="">
+        <img class="kepp1" src="./kepek/cart2.png" alt="">
         <div class="szov">Polo Ralph Lauren
           SLIM FIT - Pólóing - bianco
           <br>
           Price 30$
 
-          <div style="padding-top: 20%; padding-left: 60%;">
+          <div class="alsosor">
             Size: M <button>-</button> 0 <button>+</button>
           </div>
         </div>
@@ -133,7 +131,7 @@
       <hr>
       <div>Grand total: 60$</div>
     </div>
-    <button class="checkB" onclick="JsonGet()">PROCEED TO CHECKOUT</button>
+    <button class="checkB">PROCEED TO CHECKOUT</button>
   </div>
 </div>
 

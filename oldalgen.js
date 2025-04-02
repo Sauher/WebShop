@@ -292,7 +292,6 @@ function Feltoltes(TermekTomb) {
 
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
-            alert("Termék hozzáadva a kosárhoz.");
             StringifyTomb.push(TermekTomb[i])
             let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
             localStorage.setItem('Termekek', jsonString)
