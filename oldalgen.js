@@ -289,6 +289,9 @@ function Feltoltes(TermekTomb) {
         szivimg.src = "./kepek/sziv.png"
 
         button.innerHTML = "Add to Cart"
+        button.onclick=function addtocart(){
+            alert("Termék hozzáadva a kosárhoz.");
+        }
         carddiv.className = "card"
         cardbdiv.className = "cardb"
         ikondiv.className = "ikonok"
@@ -384,3 +387,4 @@ function Rendezes(){
             results.innerHTML = "Showing all "+ resultT.length + " results"
         }
 }
+
