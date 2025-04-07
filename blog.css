@@ -61,7 +61,7 @@
     background: #ccc;
   }
 
-  .scontainer{
+  #scontainer{
     position: sticky;
     top: 0;
     padding-top: 10px;
