@@ -292,7 +292,6 @@ function Feltoltes(TermekTomb) {
 
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
-            alert("Termék hozzáadva a kosárhoz.");
             StringifyTomb.push(TermekTomb[i])
             let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
             localStorage.setItem('Termekek', jsonString)
@@ -400,4 +399,20 @@ function JsonGet(){
     console.log(objects)
 
 }
+for (let index = 0; index < objects.length; index++) {
+    let termekdiv = document.createElement("div")
+    let kosarimg = document.createElement("img")
+    let szovegdiv = document.createElement("div")
+    let alsosordiv = document.createElement("div")
+    
+    termekdiv.className = "term1"
+    kosarimg.className="kepp1"
+    kosarimg.src = objects[i].img
+    szovegdiv.className = "szov1"
+    szovegdiv.innerHTML = objects[i].name
+    alsosordiv.className = "alsosor"
 
+    termekdiv.appendChild(kosarimg)
+    termekdiv.appendChild(szovegdiv)
+    szovegdiv.appendChild(alsosordiv)
+}
