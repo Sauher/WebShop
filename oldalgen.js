@@ -395,24 +395,29 @@ function Rendezes(){
 function JsonGet(){
     const jsonString = localStorage.getItem('Termekek') || '';
     const objects = JSON.parse(jsonString)
-
-    console.log(objects)
-
+    console.log(objects);
+    cartfelt(objects);
 }
-for (let index = 0; index < objects.length; index++) {
-    let termekdiv = document.createElement("div")
-    let kosarimg = document.createElement("img")
-    let szovegdiv = document.createElement("div")
-    let alsosordiv = document.createElement("div")
-    
-    termekdiv.className = "term1"
-    kosarimg.className="kepp1"
-    kosarimg.src = objects[i].img
-    szovegdiv.className = "szov1"
-    szovegdiv.innerHTML = objects[i].name
-    alsosordiv.className = "alsosor"
+function cartfelt(objects){
+    let bal = document.getElementsByClassName[0]
+    for (let i = 0; i < objects.length; i++) {
+        let termekdiv = document.createElement("div")
+        let kosarimg = document.createElement("img")
+        let szovegdiv = document.createElement("div")
+        let alsosordiv = document.createElement("div")
+        console.log(objects);
+        
+        termekdiv.className = "term1"
+        kosarimg.className="kepp1"
+        kosarimg.src = objects[i].img
+        szovegdiv.className = "szov1"
+        szovegdiv.innerHTML = objects[i].name
+        alsosordiv.className = "alsosor"
 
-    termekdiv.appendChild(kosarimg)
-    termekdiv.appendChild(szovegdiv)
-    szovegdiv.appendChild(alsosordiv)
+        bal.appendChild(termekdiv)
+        termekdiv.appendChild(kosarimg)
+        termekdiv.appendChild(szovegdiv)
+        szovegdiv.appendChild(alsosordiv)
+    }
+
 }
