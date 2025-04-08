@@ -395,23 +395,24 @@ function Rendezes(){
 function JsonGet(){
     const jsonString = localStorage.getItem('Termekek') || '';
     const objects = JSON.parse(jsonString)
-    console.log(objects);
-    cartfelt(objects);
+    let objlist = Object.entries(objects)
+    cartfelt(objlist);
 }
-function cartfelt(objects){
-    let bal = document.getElementsByClassName[0]
-    for (let i = 0; i < objects.length; i++) {
+let bal = document.getElementsByClassName("balra")[0]
+function cartfelt(list){
+    
+    for (let i = 0; i < list.length; i++) {
         let termekdiv = document.createElement("div")
         let kosarimg = document.createElement("img")
         let szovegdiv = document.createElement("div")
         let alsosordiv = document.createElement("div")
-        console.log(objects);
+        
         
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
-        kosarimg.src = objects[i].img
+        kosarimg.src = list[i][1].img
         szovegdiv.className = "szov1"
-        szovegdiv.innerHTML = objects[i].name
+        szovegdiv.innerHTML = list[i][1].name
         alsosordiv.className = "alsosor"
 
         bal.appendChild(termekdiv)
