@@ -1,12 +1,20 @@
+var jsonString = localStorage.getItem('Termekek') || '';
+var objects = JSON.parse(jsonString)
+var objlist = Object.entries(objects)
+StringifyTomb = []
+for (let index = 0; index < objlist.length; index++) {
+        StringifyTomb.push(objlist[index][1])
+}
 if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal"){
-let StringifyTomb = []
+
 let Tomb = [
     Shirt = {
         name: "Collar T-Shirt",
         value: 30,
         img: "./kepek/ralph.png",
         osztaly: "Casual",
-        onsale: false
+        onsale: false,
+        number: 0
     },
 
     GentsShirt = {
@@ -14,7 +22,8 @@ let Tomb = [
         value: 49,
         img: "./kepek/ralphT.jpg",
         osztaly: "Casual",
-        onsale: false
+        onsale: false,
+        number: 0
     },
 
     Hat = {
@@ -23,7 +32,8 @@ let Tomb = [
         img: "./kepek/ralphHat.png",
         osztaly: "Accessory",
         onsale: true,
-        salevalue: 16
+        salevalue: 16,
+        number: 0
     },
     Jacket1 = {
         name: "Leather Jacket",
@@ -31,21 +41,24 @@ let Tomb = [
         img: "./kepek/ralphJack.png",
         osztaly: "Clothing",
         onsale: true,
-        salevalue: 49
+        salevalue: 49,
+        number: 0
     },
     Top = {
         name: "Printed Tops",
         value: 75,
         osztaly: "Casual",
         img: "./kepek/ralphTop.png",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Top2 = {
         name: "Woman Tops",
         value: 45,
         osztaly: "Casual",
         img: "./kepek/ralphTop2.png",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Pulcsi = {
         name: "Men's Pullover",
@@ -53,21 +66,24 @@ let Tomb = [
         img: "./kepek/pulcsika.jpg",
         osztaly: "Casual",
         onsale: true,
-        salevalue: 49
+        salevalue: 49,
+        number: 0
     },
     Blackshirt = {
         name: "Black T-Shirt",
         value: 40,
         img: "./kepek/blackshirt.jpg",
         osztaly: "Casual",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     BlueShirt = {
         name: "Blue Shirt",
         value: 45,
         img: "./kepek/keking.jpg",
         osztaly: "Clothing",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Dress = {
         name: "Dress",
@@ -75,28 +91,32 @@ let Tomb = [
         img: "./kepek/dress.jpg",
         osztaly: "Clothing",
         onsale: true,
-        salevalue: 79
+        salevalue: 79,
+        number: 0
     },
     Zako = {
         name: "Black Coat",
         value: 150,
         img: "./kepek/zako.jpg",
         osztaly: "Clothing",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Legs = {
         name: "Stylish Leggings",
         value: 110,
         img: "./kepek/leggings.jpg",
         osztaly: "Clothing",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Jacket2 = {
         name: "Puffer Jacket",
         value: 80,
         img: "./kepek/puffer.png",
         osztaly: "Clothing",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Accessory2 = {
         name: "Diamond Jewelry Set",
@@ -104,28 +124,32 @@ let Tomb = [
         img: "./kepek/Accesoriesmodel1.png",
         osztaly: "Accessory",
         onsale: true,
-        salevalue: 9999
+        salevalue: 9999,
+        number: 0
     },
     Accessory3 = {
         name: "Sapphire Necklace",
         value: 2200,
         img: "./kepek/Accesoriesmodel2.png",
         osztaly: "Accessory",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Accessory4 = {
         name: "Golden Bracelet",
         value: 540,
         img: "./kepek/Accesoriesmodel3.png",
         osztaly: "Accessory",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Accessory5 = {
         name: "Classy Hat",
         value: 220,
         img: "./kepek/Accesoriesmodel4.png",
         osztaly: "Accessory",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Accessory6 = {
         name: "Bucket hat",
@@ -133,14 +157,16 @@ let Tomb = [
         img: "./kepek/Accesoriesmodel5.png",
         osztaly: "Accessory",
         onsale: true,
-        salevalue: 44
+        salevalue: 44,
+        number: 0
     },
     Ferfi1 = {
         name: "Wool Sweater",
         value: 120,
         img: "./kepek/Ferfi1.PNG",
         osztaly: "Men",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Ferfi2 = {
         name: "Black T-Shirt",
@@ -148,28 +174,32 @@ let Tomb = [
         img: "./kepek/Ferfi2.PNG",
         osztaly: "Men",
         onsale: true,
-        salevalue: 44
+        salevalue: 44,
+        number: 0
     },
     Ferfi3 = {
         name: "Yellowish T-Shirt",
         value: 50,
         img: "./kepek/Ferfi3.PNG",
         osztaly: "Men",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Ferfi4 = {
         name: "Green Shorts",
         value: 70,
         img: "./kepek/Ferfi4.jpg",
         osztaly: "Men",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Ferfi5 = {
         name: "White T-Shirt",
         value: 60,
         img: "./kepek/Ferfi5.jpg",
         osztaly: "Men",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     Ferfi6 = {
         name: "Green Shirt",
@@ -177,14 +207,16 @@ let Tomb = [
         img: "./kepek/Ferfi6.PNG",
         osztaly: "Men",
         onsale: true,
-        salevalue: 89
+        salevalue: 89,
+        number: 0
     },
     No1 = {
         name: "White Sweater",
         value: 100,
         img: "./kepek/No1.jpg",
         osztaly: "Women",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     No2 = {
         name: "Black Dress",
@@ -192,28 +224,32 @@ let Tomb = [
         img: "./kepek/No2.jpg",
         osztaly: "Women",
         onsale: true,
-        salevalue: 149
+        salevalue: 149,
+        number: 0
     },
     No3 = {
         name: "Pink Top",
         value: 60,
         img: "./kepek/No3.PNG",
         osztaly: "Women",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     No4 = {
         name: "Flared Jeans",
         value: 130,
         img: "./kepek/No4.PNG",
         osztaly: "Women",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     No5 = {
         name: "Grey Summer Dress",
         value: 70,
         img: "./kepek/No5.PNG",
         osztaly: "Women",
-        onsale: false
+        onsale: false,
+        number: 0
     },
     No6 = {
         name: "Crimson Plussize Dress",
@@ -221,7 +257,8 @@ let Tomb = [
         img: "./kepek/No6.PNG",
         osztaly: "Women",
         onsale: true,
-        salevalue: 119
+        salevalue: 119,
+        number: 0
     }
 ]
 let alcim = document.getElementById("alcim")
@@ -292,9 +329,17 @@ function Feltoltes(TermekTomb) {
 
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
-            StringifyTomb.push(TermekTomb[i])
-            let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
-            localStorage.setItem('Termekek', jsonString)
+            if(StringifyTomb.includes(TermekTomb[i])){
+                TermekTomb[i].number +=1
+            }
+            else{
+                TermekTomb[i].number++
+                StringifyTomb.push(TermekTomb[i])
+                let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+                localStorage.setItem('Termekek', jsonString)
+                
+            }
+            
         }
         carddiv.className = "card"
         cardbdiv.className = "cardb"
@@ -393,10 +438,7 @@ function Rendezes(){
 }
 }
 function JsonGet(){
-    const jsonString = localStorage.getItem('Termekek') || '';
-    const objects = JSON.parse(jsonString)
-    let objlist = Object.entries(objects)
-    cartfelt(objlist);
+    cartfelt(StringifyTomb);
 }
 let bal = document.getElementsByClassName("balra")[0]
 function cartfelt(list){
@@ -410,17 +452,17 @@ function cartfelt(list){
         
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
-        kosarimg.src = list[i][1].img
+        kosarimg.src = list[i].img
         szovegdiv.className = "szov1"
-        if (list[i][1].onsale==true) {
-            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].salevalue+'$'
+        if (list[i].onsale==true) {
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].salevalue*list[i].number+'$'
             
         }
         else{
-            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].value+'$'
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].value *list[i].number+'$'
         }
         alsosordiv.className = "alsosor"
-        alsosordiv.innerHTML='Size: M <button>-</button> 0 <button>+</button>'
+        alsosordiv.innerHTML='Size: M <button>-</button>'+ list[i].number +'<button>+</button>'
 
         bal.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
