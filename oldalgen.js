@@ -395,29 +395,51 @@ function Rendezes(){
 function JsonGet(){
     const jsonString = localStorage.getItem('Termekek') || '';
     const objects = JSON.parse(jsonString)
-    console.log(objects);
-    cartfelt(objects);
+    let objlist = Object.entries(objects)
+    cartfelt(objlist);
 }
-function cartfelt(objects){
-    let bal = document.getElementsByClassName[0]
-    for (let i = 0; i < objects.length; i++) {
+let bal = document.getElementsByClassName("balra")[0]
+function cartfelt(list){
+    
+    for (let i = 0; i < list.length; i++) {
         let termekdiv = document.createElement("div")
         let kosarimg = document.createElement("img")
         let szovegdiv = document.createElement("div")
         let alsosordiv = document.createElement("div")
-        console.log(objects);
+        
         
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
-        kosarimg.src = objects[i].img
+        kosarimg.src = list[i][1].img
         szovegdiv.className = "szov1"
-        szovegdiv.innerHTML = objects[i].name
+        if (list[i][1].onsale==true) {
+            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].salevalue+'$'
+            
+        }
+        else{
+            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].value+'$'
+        }
         alsosordiv.className = "alsosor"
+        alsosordiv.innerHTML='Size: M <button>-</button> 0 <button>+</button>'
 
         bal.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
     }
+    let contdiv = document.createElement("div")
+    let conta = document.createElement("a")
+    let contbutt = document.createElement("button")
+
+    contdiv.className="contgomb"
+    conta.href="./shop.html"
+    contbutt.className="gombcont"
+    contbutt.innerHTML='CONTINUE SHOPPING'
+
+    bal.appendChild(contdiv)
+    contdiv.appendChild(conta)
+    conta.appendChild(contbutt)
+
+
 
 }
