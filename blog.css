@@ -1,5 +1,7 @@
 
-
+.tartalom{
+  flex-direction: row-reverse;
+}
 .card{
     width: 45%;
 }
@@ -59,8 +61,7 @@
   #scontainer{
     position: sticky;
     top: 0;
-   
-    float: right;
+
     padding-bottom: 30px;
     top: 65px;
   }
@@ -86,7 +87,7 @@
   }
   
   .jobboldal {
-    float: right;
+    flex: 1;
     width: 375px;
     margin-right: 0px;
     margin-left: 0px;
@@ -103,6 +104,7 @@
   .bal {
     width: 100%;
     margin-right: 2%;
+    
   }
   
   .vonal{
@@ -255,11 +257,12 @@
 @media only screen and (max-width: 893px) {
   .tartalom {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     width: 100%;
     }
   .jobboldal {
+    
     display: flex;
     width: 100%;
     flex-wrap: wrap;
