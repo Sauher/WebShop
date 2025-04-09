@@ -412,13 +412,34 @@ function cartfelt(list){
         kosarimg.className="kepp1"
         kosarimg.src = list[i][1].img
         szovegdiv.className = "szov1"
-        szovegdiv.innerHTML = list[i][1].name
+        if (list[i][1].onsale==true) {
+            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].salevalue+'$'
+            
+        }
+        else{
+            szovegdiv.innerHTML = list[i][1].name+'<br> Price: '+list[i][1].value+'$'
+        }
         alsosordiv.className = "alsosor"
+        alsosordiv.innerHTML='Size: M <button>-</button> 0 <button>+</button>'
 
         bal.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
     }
+    let contdiv = document.createElement("div")
+    let conta = document.createElement("a")
+    let contbutt = document.createElement("button")
+
+    contdiv.className="contgomb"
+    conta.href="./shop.html"
+    contbutt.className="gombcont"
+    contbutt.innerHTML='CONTINUE SHOPPING'
+
+    bal.appendChild(contdiv)
+    contdiv.appendChild(conta)
+    conta.appendChild(contbutt)
+
+
 
 }
