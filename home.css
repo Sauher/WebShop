@@ -85,6 +85,7 @@
     background-image: url(./kepek/Hometrendelnekruha3.jpg);
     background-size: cover;
     animation: fade3 12s infinite;
+    transition: ease-in-out 0.5s;
 }
 @keyframes fade1{
     0%{
@@ -240,9 +241,6 @@
         width: 25%;
         
     }
-}
-@media only screen and (max-width: 1610px) {
-   
     #flexkep{
         width: 308px;
         height: 472px;
@@ -251,17 +249,37 @@
         
     }
 }
-@media only screen and (max-width: 1470px) {
+@media only screen and (max-width: 1610px) {
+    #flexkep{
+        width: 298px;
+        height: 462px;
+        margin: 5px;
+        
+        
+    }
    
+}
+@media only screen and (max-width: 1550px) {
     #flexkep{
         width: 288px;
         height: 452px;
+       
+        
+        
+    }
+   
+}
+@media only screen and (max-width: 1470px) {
+   
+    #flexkep{
+        width: 278px;
+        height: 442px;
         margin: 2px;
         
         
     }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1380px) {
    
     #flexkep{
         width: 258px;
@@ -270,13 +288,22 @@
         
         
     }
+    .szovegflex{
+        width: 25%;
+        
+    }
+    #h1{
+        font-size: 40px;
+    }
 }
 
 
 @media only screen and (max-width: 1280px) {
   
    
-
+    #h1{
+        font-size: 60px;
+    }
     .szovegflex{
         margin: 0 auto;
         text-align: center;
@@ -318,6 +345,29 @@
     #modellkep{
         left: 20px;
     }
+    #gomb2{
+    
+        border-top: 95px solid transparent;
+        border-bottom: 95px solid transparent;
+        border-right: 190px solid ;
+        border-right-color:rgb(255, 255, 255) ;
+       
+    }
+    #gomb3{
+        border-top: 75px solid transparent;
+        border-bottom: 75px solid transparent;
+        border-left: 150px solid ;
+        border-left-color:rgb(255, 255, 255) ;
+        
+    }
+    #gomb1{
+        border-top: 75px solid transparent;
+        border-bottom: 75px solid transparent;
+        border-left: 150px solid ;
+        border-left-color:rgb(255, 255, 255) ;
+        
+    }
+        
 }
 
 
