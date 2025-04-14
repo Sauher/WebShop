@@ -1,10 +1,19 @@
 var jsonString = localStorage.getItem('Termekek') || '';
-var objects = JSON.parse(jsonString)
+if (jsonString.length != 0) 
+{
+    StringifyTomb = []
+    var objects = JSON.parse(jsonString)
 var objlist = Object.entries(objects)
-StringifyTomb = []
 for (let index = 0; index < objlist.length; index++) {
-        StringifyTomb.push(objlist[index][1])
+    StringifyTomb.push(objlist[index][1])
 }
+
+}
+else{
+    StringifyTomb = []
+}
+
+
 if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal"){
 
 let Tomb = [
@@ -330,7 +339,7 @@ function Feltoltes(TermekTomb) {
         button.innerHTML = "Add to Cart"
         button.onclick=function addtocart(){
             if(StringifyTomb.includes(TermekTomb[i])){
-                TermekTomb[i].number +=1
+                TermekTomb[i].number++
             }
             else{
                 TermekTomb[i].number++
@@ -440,6 +449,12 @@ function Rendezes(){
 function JsonGet(){
     cartfelt(StringifyTomb);
 }
+let shippingdiv = document.getElementById("shippingcost")
+let subtotaldiv = document.getElementById("subtotalcost")
+let totaldiv = document.getElementById("totalcost")
+let total = 0
+let shipping = 10
+let subtotal = 0
 let bal = document.getElementsByClassName("balra")[0]
 function cartfelt(list){
     
@@ -456,18 +471,27 @@ function cartfelt(list){
         szovegdiv.className = "szov1"
         if (list[i].onsale==true) {
             szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].salevalue*list[i].number+'$'
-            
+            subtotal += list[i].salevalue*list[i].number
         }
         else{
             szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].value *list[i].number+'$'
+            subtotal += list[i].value*list[i].number
         }
         alsosordiv.className = "alsosor"
-        alsosordiv.innerHTML='Size: M <button>-</button>'+ list[i].number +'<button>+</button>'
+        alsosordiv.innerHTML='Size: M <br>Count: '+ list[i].number
 
         bal.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
+
+        if(subtotal >= 50){
+            shipping = 0
+        }
+        total = subtotal +shipping
+        shippingdiv.innerHTML = "Shipping: "+shipping+"$"
+        subtotaldiv.innerHTML = "Subtotal: "+subtotal+"$"
+        totaldiv.innerHTML = "Grand total: "+total+"$"
     }
     let contdiv = document.createElement("div")
     let conta = document.createElement("a")
