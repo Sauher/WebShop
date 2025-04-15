@@ -340,13 +340,14 @@ function Feltoltes(TermekTomb) {
         button.onclick=function addtocart(){
             if(StringifyTomb.includes(TermekTomb[i])){
                 TermekTomb[i].number++
+                alert("Termék a kosárhoz adva!")
             }
             else{
                 TermekTomb[i].number++
                 StringifyTomb.push(TermekTomb[i])
                 let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                 localStorage.setItem('Termekek', jsonString)
-                
+                alert("Termék a kosárhoz adva!")
             }
             
         }
