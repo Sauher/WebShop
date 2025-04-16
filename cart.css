@@ -19,14 +19,24 @@
 
 .term1{
     padding-bottom: 30px;
+    padding: 10px;
     display: flex;
-    background-color: rgba(70,70,70,0.2);
+    background-color: rgb(247, 244, 244);
+    border-radius: 10px;
     margin: 5px;
+    width: 80%;
+    transition: 300ms;
+}
+.term1:hover{
+    padding: 15px;
+    background-color: rgba(255, 72, 82, 0.6);
+    color: white;
 }
 
 .szov1{ 
     padding-left: 10px;
     width: 400px;
+    padding-right: 0;
 }
 
 .kartygomb{
@@ -46,9 +56,9 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 50px;
-    
+    cursor: pointer;
     border: none;
-    background-color:black;
+    background-color: #eb5e5f;
     color: white;
     margin-top: 30px;
 }
@@ -59,6 +69,10 @@
     border: none;
     cursor: pointer;
 }
+.gombcont:hover{
+    background-color: #eb5e5f;
+    color: white;
+}
 .tkep1{
     width: 150px; height: 150px;
 }
@@ -68,6 +82,8 @@
 
 .alsosor{
     padding-top: 20%; padding-left: 60%;
+    
+    text-align: right;
 }
 .kepp1{
     width: 150px;
