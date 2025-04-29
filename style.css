@@ -30,6 +30,12 @@ menu {
   z-index: 1;
 
 }
+#kozepsokepszoveg{
+  margin-top: 0;
+}
+.index5{
+  z-index: 5;
+}
 
 .menuitem {
   margin-left: 1vw;
