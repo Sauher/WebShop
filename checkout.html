@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="Checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>Checkout</title>
 </head>
 <body>
@@ -77,7 +82,28 @@
   <div class="melyikoldal">
     <p id="hol"><a class="felsocim" href="index.html">Home</a> / Contact us</p>
   </div>
+  <div class="kozepsoresz">
+    <div class="Vasarolt_targyak">
+      
+    </div>
+    <div class="Funkciok_Also">
+      <div class="bal_oldal">
+        <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext">
+        <input type="button" onclick="kuponellenorzes()" value=">" id="Kuponbutton">
 
+      </div>
+      <div class="jobb_oldal">
+        <p>Összesen: <span id="Osszesosszeg">ÁR</span></p>
+        <p>Plusz pénz kiszámítással</p>
+        <input type="button" value="Megvásárlás" onclick="Megvasarlas()">
+        <div class="Bankkartyaopcio">
+          <p> <span>Visa</span> <span>Mastercard</span> <span>Paypal</span></p>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+  
 
   <footer>
     <div class="footer-section footerelso">
@@ -99,5 +125,6 @@
       <p class="shipszoveg">100% money back guarantee</p>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
