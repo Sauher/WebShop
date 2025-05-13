@@ -1,0 +1,28 @@
+.balra{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 3%;
+
+}
+
+@media only screen and (max-width: 950px) {
+    .balra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    
+    .balra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+  }
