@@ -146,7 +146,16 @@ function Kiiras(){
   alert("Kedves " + mezok[0].value +"!\nÜzeneted rögzítésre került és hamarosan feldolgozzuk.")
 }
 
-//
+//Check_out
+
+function kuponellenorzes(){
+  let kupon = document.getElementById("Kupontext").value
+  alert("Hello "+ kupon);
+  document.getElementById("Kupontext").value = ""
+}
+function Megvasarlas(){
+  alert("Megvásároltad")
+}
 
 
 

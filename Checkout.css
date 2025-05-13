@@ -1,0 +1,25 @@
+.kozepsoresz{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 20px;
+}
+.bal_oldal{
+    flex: 1;
+
+
+}
+.Funkciok_Also{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 121px;
+}
+
+
+.jobb_oldal{
+    flex: 2;
+}
+.Vasarolt_targyak{
+    min-height: 400px;
+}
