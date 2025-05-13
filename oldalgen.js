@@ -463,9 +463,13 @@ function cartfelt(list){
         let termekdiv = document.createElement("div")
         let kosarimg = document.createElement("img")
         let szovegdiv = document.createElement("div")
+        let eltavolit = document.createElement("button")
         let alsosordiv = document.createElement("div")
+
         
-        
+        eltavolit.onclick = function Eltavolit(){
+            
+        }
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
         kosarimg.src = list[i].img
