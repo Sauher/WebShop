@@ -18,8 +18,33 @@
 
 
 .jobb_oldal{
-    flex: 2;
+    flex: 0;
+    
 }
 .Vasarolt_targyak{
     min-height: 400px;
+}
+#Vasarlas_gomb{
+    background-color:#6352FF;
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    height: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+#Vasarlas_gomb:hover{
+    cursor: pointer;
+    background-color:#6a37f7;
+    scale: 105%;
+    transition: ease-in-out, 0.2s;
+   
+    
+}
+#pluszpenz{
+    color: rgb(136, 136, 136);
+}
+#Kuponbutton{
+    cursor: pointer;
 }
