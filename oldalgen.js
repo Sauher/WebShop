@@ -447,6 +447,7 @@ function Rendezes(){
         }
 }
 }
+if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal"){
 function JsonGet(){
     cartfelt(StringifyTomb);
 }
@@ -508,6 +509,63 @@ function cartfelt(list){
     contbutt.innerHTML='CONTINUE SHOPPING'
 
     bal.appendChild(contdiv)
+    contdiv.appendChild(conta)
+    conta.appendChild(contbutt)
+
+
+
+}
+}
+function jsonget(){
+ wishfelt(StringifyTomb)
+}
+let bal2 = document.getElementById("wish")
+
+function wishfelt(list){
+    
+    for (let i = 0; i < list.length; i++) {
+        let termekdiv = document.createElement("div")
+        let kosarimg = document.createElement("img")
+        let szovegdiv = document.createElement("div")
+        let eltavolit = document.createElement("button")
+        let alsosordiv = document.createElement("div")
+
+        
+        eltavolit.onclick = function Eltavolit(){
+            
+        }
+        termekdiv.className = "term1"
+        kosarimg.className="kepp1"
+        kosarimg.src = list[i].img
+        szovegdiv.className = "szov1"
+        if (list[i].onsale==true) {
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].salevalue*list[i].number+'$'
+            
+        }
+        else{
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].value *list[i].number+'$'
+            
+        }
+        alsosordiv.className = "alsosor"
+        alsosordiv.innerHTML='Size: M <br>Count: '+ list[i].number
+
+        bal2.appendChild(termekdiv)
+        termekdiv.appendChild(kosarimg)
+        termekdiv.appendChild(szovegdiv)
+        szovegdiv.appendChild(alsosordiv)
+
+    
+    }
+    let contdiv = document.createElement("div")
+    let conta = document.createElement("a")
+    let contbutt = document.createElement("button")
+
+    contdiv.className="contgomb"
+    conta.href="./shop.html"
+    contbutt.className="gombcont"
+    contbutt.innerHTML='CONTINUE SHOPPING'
+
+    bal2.appendChild(contdiv)
     contdiv.appendChild(conta)
     conta.appendChild(contbutt)
 
