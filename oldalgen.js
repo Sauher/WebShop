@@ -447,10 +447,12 @@ function Rendezes(){
         }
 }
 }
-if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal"){
 function JsonGet(){
-    cartfelt(StringifyTomb);
+    if(document.getElementsByClassName("melyikoldal")[0].id == "cartoldal"){cartfelt(StringifyTomb)}
+    if(document.getElementsByClassName("melyikoldal")[0].id == "wisholdal"){wishfelt(StringifyTomb)}
 }
+
+
 let shippingdiv = document.getElementById("shippingcost")
 let subtotaldiv = document.getElementById("subtotalcost")
 let totaldiv = document.getElementById("totalcost")
@@ -458,6 +460,7 @@ let total = 0
 let shipping = 10
 let subtotal = 0
 let bal = document.getElementsByClassName("balra")[0]
+
 function cartfelt(list){
     subtotal = 0
     total = 0
@@ -531,10 +534,6 @@ function cartfelt(list){
 
 
 
-}
-}
-function jsonget(){
- wishfelt(StringifyTomb)
 }
 let bal2 = document.getElementById("wish")
 
