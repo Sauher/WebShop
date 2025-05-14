@@ -458,6 +458,17 @@ let shipping = 10
 let subtotal = 0
 let bal = document.getElementsByClassName("balra")[0]
 function cartfelt(list){
+    subtotal = 0
+    total = 0
+    if(!StringifyTomb.length){
+        shipping = 0
+        shippingdiv.innerHTML = "Shipping: "+shipping+"$"
+        subtotaldiv.innerHTML = "Subtotal: "+subtotal+"$"
+        totaldiv.innerHTML = "Grand total: "+total+"$"
+    }
+    
+    
+        
     
     for (let i = 0; i < list.length; i++) {
         let termekdiv = document.createElement("div")
@@ -465,11 +476,16 @@ function cartfelt(list){
         let szovegdiv = document.createElement("div")
         let eltavolit = document.createElement("button")
         let alsosordiv = document.createElement("div")
-
+        let eltavolitszam = i
         
         eltavolit.onclick = function Eltavolit(){
-            
+            StringifyTomb.splice(eltavolitszam,1)
+            let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+            localStorage.setItem('Termekek', jsonString)
+            $("#itemdiv").empty();
+            cartfelt(StringifyTomb)
         }
+        eltavolit.innerHTML = "X"
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
         kosarimg.src = list[i].img
@@ -489,10 +505,11 @@ function cartfelt(list){
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
-
+        szovegdiv.appendChild(eltavolit)
         if(subtotal >= 50){
             shipping = 0
         }
+
         total = subtotal +shipping
         shippingdiv.innerHTML = "Shipping: "+shipping+"$"
         subtotaldiv.innerHTML = "Subtotal: "+subtotal+"$"
