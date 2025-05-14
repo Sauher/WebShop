@@ -128,17 +128,17 @@ let Tomb = [
         number: 0
     },
     Accessory2 = {
-        name: "Diamond Jewelry Set",
-        value: 10000,
+        name: "Fake Diamond Jewelry Set",
+        value: 500,
         img: "./kepek/Accesoriesmodel1.png",
         osztaly: "Accessory",
         onsale: true,
-        salevalue: 9999,
+        salevalue: 250,
         number: 0
     },
     Accessory3 = {
         name: "Sapphire Necklace",
-        value: 2200,
+        value: 400,
         img: "./kepek/Accesoriesmodel2.png",
         osztaly: "Accessory",
         onsale: false,
