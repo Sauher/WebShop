@@ -135,6 +135,7 @@
   background-image: url(./kepek/Nolike.png);
   background-size: cover;
   z-index: 0;
+  cursor: pointer;
   
   
 }

@@ -147,10 +147,26 @@ function Kiiras(){
 }
 
 //Check_out
-
+let Kuponkodok = ["Rihi", "Ruha", "Alza", "Capuchino"]
+let Hasznaltkodok =[]
 function kuponellenorzes(){
   let kupon = document.getElementById("Kupontext").value
-  alert("Hello "+ kupon);
+  
+  if(Kuponkodok.includes(kupon)){
+    alert("Sikeres redeem")
+    let l = Kuponkodok.findIndex(kupon)
+    Hasznaltkodok.push(kupon)
+    Kuponkodok.splice(l)
+  }
+  else{
+    if(Hasznaltkodok.includes(kupon)){
+      alert("Ezt a kupont már felhasználtad")
+    }
+    else{
+      alert("nincs ilyen kód")
+    }
+  }
+  
   document.getElementById("Kupontext").value = ""
 }
 function Megvasarlas(){
