@@ -1,18 +1,22 @@
 .kozepsoresz{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 20px;
 }
 .bal_oldal{
     flex: 1;
-
-
+    
+}
+#kuponok{
+    border: solid 2px rgb(129, 129, 129);
+    width: 375px;
+    
 }
 .Funkciok_Also{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 121px;
 }
 
@@ -22,7 +26,7 @@
     
 }
 .Vasarolt_targyak{
-    min-height: 400px;
+    min-height: 307px;
 }
 #Vasarlas_gomb{
     background-color:#6352FF;
@@ -36,15 +40,28 @@
 }
 #Vasarlas_gomb:hover{
     cursor: pointer;
-    background-color:#6a37f7;
+    background-color:rgb(128, 91, 240);
     scale: 105%;
-    transition: ease-in-out, 0.2s;
-   
-    
+    transition: ease-in-out, 0.2s;  
+}
+#Kuponbutton{
+    border: none;
+    height: 54px;
+    width: 50px;
+    cursor: pointer;
+    background-color: white;
+    transition: ease-in-out, 0.2s;  
+    border-radius: 20px;
+}
+#Kuponbutton:hover{
+    background-color: #e2dfff;
 }
 #pluszpenz{
     color: rgb(136, 136, 136);
 }
-#Kuponbutton{
-    cursor: pointer;
+#Kupontext{
+    width: 300px;
+    height: 50px;
+   
+    border: none;
 }
