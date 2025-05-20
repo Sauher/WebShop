@@ -149,13 +149,16 @@ function Kiiras(){
 //Check_out
 
 function kuponellenorzes(){
-  let kupon = document.getElementById("Kupontext").value.toUpperCase()
-  //Minden kódot kidob redeem után
+  kupon = document.getElementById("Kupontext").value
+  Kedvezmenyezettar = document.getElementById("Osszesosszeg").textContent
+ 
+  
   if(Kuponkodok.includes(kupon)){
     alert("Sikeres redeem")
     
     Hasznaltkodok.push(`${kupon}`)
-    Kuponkodok.splice(`${kupon}`)
+    Kuponkodok.splice(kupon, 1)
+    document.getElementById("Osszesosszeg").innerHTML = `${Number(Kedvezmenyezettar)*0.9}`
     
   }
   else{
@@ -173,7 +176,8 @@ function kuponellenorzes(){
   document.getElementById("Kupontext").value = ""
 }
 function Megvasarlas(){
-  alert(`Megvásároltad`)
+  alert("Megvásároltad")
+  document.getElementById("Osszesosszeg").innerHTML = Eredetiosszeg
 }
 
 

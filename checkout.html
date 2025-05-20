@@ -89,7 +89,7 @@
     <div class="Funkciok_Also">
       <div class="bal_oldal">
         <div id="kuponok">
-          <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext">
+          <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext" onkeyup="this.value=this.value.toUpperCase();">
           <input type="button" value="📋" id="pasteButton" onclick="Kuponpaste()">
           <input type="button" onclick="kuponellenorzes()" value=">" id="Kuponbutton">
 
@@ -97,7 +97,7 @@
         
       </div>
       <div class="jobb_oldal" style="cursor: context-menu;">
-        <p>Összesen: <span id="Osszesosszeg">ÁR</span></p>
+        <p>Összesen: <span id="Osszesosszeg">15000</span>Ft</p>
         <p id="pluszpenz">Plusz pénz kiszámítással</p>
         <input type="button" value="Megvásárlás" onclick="Megvasarlas()" id="Vasarlas_gomb">
         <div class="Bankkartyaopcio">
@@ -130,13 +130,16 @@
     </div>
   </footer>
   <script>
+    let Eredetiosszeg = document.getElementById("Osszesosszeg").textContent
+    let kupon = document.getElementById("Kupontext").value
+    let Kedvezmenyezettar = document.getElementById("Osszesosszeg").textContent
     let Kuponkodok = ["RIHI", "RUHA", "ALZA", "CAPUCHINO"]
     let Hasznaltkodok =[]
     let paste = document.getElementById('#pasteButton');
     async function Kuponpaste() {
       try {
         const text = await navigator.clipboard.readText();
-        document.getElementById("Kupontext").value = text;
+        document.getElementById("Kupontext").value = text.toUpperCase();
         return text;
       } 
       catch (err) {
@@ -146,5 +149,8 @@
    
   </script>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+  
+  <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
 </body>
 </html>
