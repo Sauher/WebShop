@@ -98,6 +98,19 @@
     width: 170px;
     height: 200px;
 }
+#CountP{
+    display: inline;
+}
+.CountB{
+    background-color: #eb5e5f;
+    color: white;
+    font-weight: bold;
+    border: white 2px solid;
+    border-radius: 30px;
+    width: 20px;
+    margin: 4px;
+    cursor: pointer;
+}
 .total{
     padding-bottom: 10px;
 }
@@ -112,6 +125,7 @@
     border: white 2px solid;
     padding: 5px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 950px) {

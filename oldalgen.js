@@ -460,7 +460,7 @@ function updateCart() {
     let jsonString = JSON.stringify(StringifyTomb);
     localStorage.setItem('Termekek', jsonString);
 
-    $("#itemdiv").empty();  t
+    $("#itemdiv").empty();
     cartfelt(StringifyTomb);  
 }
 
@@ -493,14 +493,21 @@ function cartfelt(list){
         let PluszB = document.createElement("button")
         let MinuszB = document.createElement("button")
         let alsosordiv = document.createElement("div")
+        let Count = document.createElement("p")
         let eltavolitszam = i
+        
+        Count.id = "CountP"
         MinuszB.innerText= "-"
         MinuszB.onclick = function CountLe(){
             if(StringifyTomb[eltavolitszam].number > 1){
+            
             StringifyTomb[eltavolitszam].number--
+            
             updateCart()
             }
         }
+        MinuszB.className = "CountB"
+        PluszB.className = "CountB"
         PluszB.innerText = "+"
         PluszB.onclick = function CountFel(){
             StringifyTomb[eltavolitszam].number++
@@ -529,8 +536,9 @@ function cartfelt(list){
         }
         alsosordiv.className = "alsosor"
         alsosordiv.innerHTML='Size: M <br>Count: '
+        Count.innerHTML = list[i].number
         alsosordiv.appendChild(MinuszB)
-        alsosordiv.innerHTML+= list[i].number
+        alsosordiv.appendChild(Count)
         alsosordiv.appendChild(PluszB)
 
         bal.appendChild(termekdiv)
