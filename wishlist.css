@@ -1,12 +1,61 @@
 .balra{
-    display: block;
+    
     width: 90%;
-    margin: 0 auto;
-    width: 50%;
+    margin: 0;
+    padding-left: 30px;
+    padding-bottom: 30px;
     margin-top: 3%;
     min-height: 523px;
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
+.gombcont{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.gombcont:hover{
+    background-color: #eb5e5f;
+    color: white;
+}
+.alsosor{
+    padding-top: 20%; padding-left: 60%;
+    
+    text-align: right;
+}
+.term1{
+    padding-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    background-color: rgb(247, 244, 244);
+    border-radius: 10px;
+    margin: 5px;
+    width: 40%;
+    transition: 300ms;
+    flex: 0 0 calc(50% - 20px);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.term1:hover{
+    padding: 15px;
+    background-color: rgba(255, 72, 82, 0.6);
+    color: white;
+}
+
+.szov1{ 
+    padding-left: 10px;
+    width: 400px;
+    padding-right: 0;
+}
+.kepp1{
+    width: 150px;
+    height: 150px;
+}
+
+
 
 @media only screen and (max-width: 950px) {
     .balra{
@@ -27,3 +76,4 @@
     }
     
   }
+

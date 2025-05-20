@@ -90,6 +90,7 @@
       <div class="bal_oldal">
         <div id="kuponok">
           <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext">
+          <input type="button" value="📋" id="pasteButton" onclick="Kuponpaste()">
           <input type="button" onclick="kuponellenorzes()" value=">" id="Kuponbutton">
 
         </div>
@@ -128,6 +129,22 @@
       <p class="shipszoveg">100% money back guarantee</p>
     </div>
   </footer>
+  <script>
+    let Kuponkodok = ["RIHI", "RUHA", "ALZA", "CAPUCHINO"]
+    let Hasznaltkodok =[]
+    let paste = document.getElementById('#pasteButton');
+    async function Kuponpaste() {
+      try {
+        const text = await navigator.clipboard.readText();
+        document.getElementById("Kupontext").value = text;
+        return text;
+      } 
+      catch (err) {
+        console.error('Failed to read clipboard contents: ', err);
+      }
+    }
+   
+  </script>
   <script src="main.js"></script>
 </body>
 </html>

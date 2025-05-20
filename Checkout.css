@@ -29,7 +29,7 @@
     min-height: 307px;
 }
 #Vasarlas_gomb{
-    background-color:#6352FF;
+    background-color:#FF4852;
     border: none;
     border-radius: 10px;
     width: 350px;
@@ -40,7 +40,7 @@
 }
 #Vasarlas_gomb:hover{
     cursor: pointer;
-    background-color:rgb(128, 91, 240);
+    background-color:rgb(241, 47, 112);
     scale: 105%;
     transition: ease-in-out, 0.2s;  
 }
@@ -54,14 +54,20 @@
     border-radius: 20px;
 }
 #Kuponbutton:hover{
-    background-color: #e2dfff;
+    background-color: #ffdfe3;
 }
 #pluszpenz{
     color: rgb(136, 136, 136);
 }
 #Kupontext{
-    width: 300px;
+    width: 270px;
     height: 50px;
    
     border: none;
+}
+#pasteButton{
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    margin: 0px;
 }
