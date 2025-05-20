@@ -341,6 +341,9 @@ function Feltoltes(TermekTomb) {
             if(StringifyTomb.includes(TermekTomb[i])){
                 TermekTomb[i].number++
                 alert("Termék a kosárhoz adva!")
+                let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+                localStorage.setItem('Termekek', jsonString)
+                alert("Termék a kosárhoz adva!")
             }
             else{
                 TermekTomb[i].number++
@@ -479,9 +482,27 @@ function cartfelt(list){
         let kosarimg = document.createElement("img")
         let szovegdiv = document.createElement("div")
         let eltavolit = document.createElement("button")
+        let PluszB = document.createElement("button")
+        let MinuszB = document.createElement("button")
         let alsosordiv = document.createElement("div")
         let eltavolitszam = i
-        
+        MinuszB.innerText= "-"
+        PluszB.innerText = "+"
+        PluszB.onclick = function CountFel(){
+            StringifyTomb[eltavolitszam].number++
+            let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+            localStorage.setItem('Termekek', jsonString)
+            $("#itemdiv").empty();
+            cartfelt(StringifyTomb)
+        }
+        MinuszB.onclick = function CountLe(){
+            StringifyTomb[eltavolitszam].number = StringifyTomb[eltavolitszam].number - 1
+            let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
+            localStorage.setItem('Termekek', jsonString)
+            $("#itemdiv").empty();
+            cartfelt(StringifyTomb)
+        }
+
         eltavolit.onclick = function Eltavolit(){
             StringifyTomb.splice(eltavolitszam,1)
             let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
@@ -489,7 +510,9 @@ function cartfelt(list){
             $("#itemdiv").empty();
             cartfelt(StringifyTomb)
         }
-        eltavolit.innerHTML = "X"
+        eltavolit.innerHTML = "Eltávolít"
+        eltavolit.id = "XButton"
+        
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
         kosarimg.src = list[i].img
@@ -503,7 +526,10 @@ function cartfelt(list){
             subtotal += list[i].value*list[i].number
         }
         alsosordiv.className = "alsosor"
-        alsosordiv.innerHTML='Size: M <br>Count: '+ list[i].number
+        alsosordiv.innerHTML='Size: M <br>Count: '
+        alsosordiv.appendChild(MinuszB)
+        alsosordiv.innerHTML+= list[i].number
+        alsosordiv.appendChild(PluszB)
 
         bal.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
