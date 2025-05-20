@@ -1,5 +1,6 @@
 //slider js
-
+if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
+  {
 const range1 = document.getElementById("range1");
 const range2 = document.getElementById("range2");
 const sliderTrack = document.querySelector(".slider-track");
@@ -39,9 +40,8 @@ range2.addEventListener("input", updateSlider);
 
 
 updateSlider();
-
+  }
 const button = document.getElementsByClassName(".button");
-
 //header
 function myFunction() {
   let x = document.getElementById("myLinks");
