@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <title>Checkout</title>
 </head>
-<body style="cursor: context-menu;">
+<body style="cursor: context-menu;" onload="JsonGet()">
     <a href="fent" id="fent"></a>
   <div class="topnav">
     <h1>RihiRuha webáruház <br>
@@ -79,7 +79,7 @@
     </div>
   </menu>
 
-  <div class="melyikoldal">
+  <div class="melyikoldal" id="checkoldal">
     <p id="hol"><a class="felsocim" href="index.html">Home</a> / <span style="cursor: context-menu;">Contact us</span> </p>
   </div>
   <div class="kozepsoresz">
@@ -150,7 +150,7 @@
   </script>
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
-  
+  <script src="oldalgen.js"></script>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
 </body>
 </html>

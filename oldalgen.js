@@ -12,7 +12,12 @@ for (let index = 0; index < objlist.length; index++) {
 else{
     StringifyTomb = []
 }
+function JsonGet(){
+    if(document.getElementsByClassName("melyikoldal")[0].id == "cartoldal"){cartfelt(StringifyTomb)}
+    if(document.getElementsByClassName("melyikoldal")[0].id == "wisholdal"){wishfelt(StringifyTomb)}
+    if(document.getElementsByClassName("melyikoldal")[0].id == "checkoldal"){checkfeltolt(StringifyTomb)}
 
+}
 
 if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
 {
@@ -316,6 +321,7 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
     }
     }
     let kepekdiv = document.getElementById("kepdiv")
+    let Allcost = 0
     function Feltoltes(TermekTomb) {
         for (let i = 0; i < TermekTomb.length; i++) {
             
@@ -341,16 +347,29 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
             button.onclick=function addtocart(){
                 if(StringifyTomb.includes(TermekTomb[i])){
                     TermekTomb[i].number++
-                    alert("Termék a kosárhoz adva!")
+                    if (TermekTomb[i].onsale == true) {
+                        Allcost+= TermekTomb[i].salevalue
+                    }
+                    else{
+                        Allcost+= TermekTomb[i].value
+                    }
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
+                    localStorage.setItem('Cost',Allcost)
                     alert("Termék a kosárhoz adva!")
                 }
                 else{
                     TermekTomb[i].number++
+                    if (TermekTomb[i].onsale == true) {
+                        Allcost+= TermekTomb[i].salevalue
+                    }
+                    else{
+                        Allcost+= TermekTomb[i].value
+                    }
                     StringifyTomb.push(TermekTomb[i])
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
+                    localStorage.setItem('Cost',Allcost)
                     alert("Termék a kosárhoz adva!")
                 }
                 
@@ -451,10 +470,7 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
         }
     }
 }
-function JsonGet(){
-    if(document.getElementsByClassName("melyikoldal")[0].id == "cartoldal"){cartfelt(StringifyTomb)}
-    if(document.getElementsByClassName("melyikoldal")[0].id == "wisholdal"){wishfelt(StringifyTomb)}
-}
+
 
 function updateCart() {
     let jsonString = JSON.stringify(StringifyTomb);
@@ -569,7 +585,6 @@ function cartfelt(list){
     conta.appendChild(contbutt)
 
 
-
 }
 let bal2 = document.getElementById("wish")
 
@@ -581,10 +596,12 @@ function wishfelt(list){
         let szovegdiv = document.createElement("div")
         let eltavolit = document.createElement("button")
         let alsosordiv = document.createElement("div")
-
-        
+        let eltavolitszam = i
+        eltavolit.innerHTML = "Eltávolít"
+        eltavolit.id = "XButton"
         eltavolit.onclick = function Eltavolit(){
-            
+            StringifyTomb.splice(eltavolitszam,1)
+            updateCart()
         }
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
@@ -605,6 +622,7 @@ function wishfelt(list){
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
+        szovegdiv.appendChild(eltavolit)
 
     
     }
@@ -623,4 +641,43 @@ function wishfelt(list){
 
 
 
+}
+let kozep = document.getElementsByClassName("Vasarolt_targyak")[0]
+function checkfeltolt(list){
+    for (let i = 0; i < list.length; i++) {
+        let termekdiv = document.createElement("div")
+        let kosarimg = document.createElement("img")
+        let szovegdiv = document.createElement("div")
+        let eltavolit = document.createElement("button")
+        let alsosordiv = document.createElement("div")
+        let eltavolitszam = i
+        eltavolit.innerHTML = "Eltávolít"
+        eltavolit.id = "XButton"
+        eltavolit.onclick = function Eltavolit(){
+            StringifyTomb.splice(eltavolitszam,1)
+            updateCart()
+        }
+        termekdiv.className = "term1"
+        kosarimg.className="kepp1"
+        kosarimg.src = list[i].img
+        szovegdiv.className = "szov1"
+        if (list[i].onsale==true) {
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].salevalue*list[i].number+'$'
+            
+        }
+        else{
+            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].value *list[i].number+'$'
+            
+        }
+        alsosordiv.className = "alsosor"
+        alsosordiv.innerHTML='Size: M <br>Count: '+ list[i].number
+
+        kozep.appendChild(termekdiv)
+        termekdiv.appendChild(kosarimg)
+        termekdiv.appendChild(szovegdiv)
+        szovegdiv.appendChild(alsosordiv)
+        szovegdiv.appendChild(eltavolit)
+
+    
+    }
 }

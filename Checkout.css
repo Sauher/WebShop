@@ -71,3 +71,13 @@
     background-color: white;
     margin: 0px;
 }
+#XButton{
+    float: right;
+    background-color: #eb5e5f;
+    color: white;
+    font-weight: bold;
+    border: white 2px solid;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
