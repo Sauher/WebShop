@@ -71,3 +71,14 @@
     background-color: white;
     margin: 0px;
 }
+#Bankkartyaicon{
+    cursor: pointer;
+    font-size: 50px;
+    color: #ff1c27;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+i:hover{
+    scale: 110%;
+}
