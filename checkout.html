@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="Checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Checkout</title>
 </head>
 <body style="cursor: context-menu;" onload="JsonGet()">
@@ -101,7 +102,9 @@
         <p id="pluszpenz">Plusz pénz kiszámítással</p>
         <input type="button" value="Megvásárlás" onclick="Megvasarlas()" id="Vasarlas_gomb">
         <div class="Bankkartyaopcio">
-          <p> <span>Visa</span> <span>Mastercard</span> <span>Paypal</span></p>
+          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard"></i> 
+            <i class="fab fa-cc-paypal"></i> 
+            <i class="fab fa-cc-visa"></i></p>
       </div>
       
       </div>
@@ -133,7 +136,7 @@
     let Eredetiosszeg = document.getElementById("Osszesosszeg").textContent
     let kupon = document.getElementById("Kupontext").value
     let Kedvezmenyezettar = document.getElementById("Osszesosszeg").textContent
-    let Kuponkodok = ["RIHI", "RUHA", "ALZA", "CAPUCHINO"]
+    let Kuponkodok = ["RIHI", "RUHA", "ALZA", "SZÉPWEBDESIGN"]
     let Hasznaltkodok =[]
     let paste = document.getElementById('#pasteButton');
     async function Kuponpaste() {

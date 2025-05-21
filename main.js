@@ -157,7 +157,7 @@ function kuponellenorzes(){
     alert("Sikeres redeem")
     
     Hasznaltkodok.push(`${kupon}`)
-    Kuponkodok.splice(kupon, 1)
+    Kuponkodok.splice(Kuponkodok.indexOf(kupon), 1)
     document.getElementById("Osszesosszeg").innerHTML = `${Number(Kedvezmenyezettar)*0.9}`
     
   }
