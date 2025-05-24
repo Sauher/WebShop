@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <link rel="stylesheet" href="Checkout.css">
+    <link rel="stylesheet" href="Checkout_alert.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Checkout</title>
@@ -100,16 +101,113 @@
       <div class="jobb_oldal" style="cursor: context-menu;">
         <p>Összesen: <span id="Osszesosszeg">15000</span>Ft</p>
         <p id="pluszpenz">Plusz pénz kiszámítással</p>
-        <input type="button" value="Megvásárlás" onclick="Megvasarlas()" id="Vasarlas_gomb">
+        <input type="button" value="Megvásárlás" onclick="showPaymentAlert();Megvasarlas()" id="Vasarlas_gomb">
         <div class="Bankkartyaopcio">
-          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard"></i> 
-            <i class="fab fa-cc-paypal"></i> 
-            <i class="fab fa-cc-visa"></i></p>
+          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard" onclick="showPaymentAlert()"></i> 
+            <i class="fab fa-cc-paypal" onclick="showPaymentAlert()"></i> 
+            <i class="fab fa-cc-visa" onclick="showPaymentAlert()"></i></p>
       </div>
       
       </div>
     </div>
   </div>
+  <!-- Alert -->
+   
+
+    <div class="payment-overlay" id="paymentAlert">
+        <div class="payment-box">
+            <div class="payment-header">
+                <span>Vásárlási Információ</span>
+                <button class="Vasarlas_bezaras" onclick="Kilepes_alert()">&times;</button>
+            </div>
+            <div class="payment-content">
+                <div class="payment-card-preview" id="cardPreview">
+                    <div class="Vasarlas-kartya-chip"></div>
+                    <div class="Vasarlas-kartya-logo" id="cardLogo"></div>
+                    <div class="Vasarlas-kartya-szam" id="previewCardNumber">•••• •••• •••• ••••</div>
+                    <div class="Vasarlas-kartya-reszletek">
+                        <div class="Vasarlas-kartya-nev" id="previewCardName">Kártyatulajdonos neve</div>
+                        <div class="Vasarlas-kartya-lejarat" id="previewCardExpiry">••/••</div>
+                    </div>
+                </div>
+                
+                <form id="paymentForm">
+                    <div class="payment-form-group">
+                        <label class="payment-form-label" for="cardNumber">Kártya szám</label>
+                        <input type="text" class="payment-form-input" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                        <div class="Vasarlasi_hiba" id="cardNumberError">Kérem egy érvényes bankkártyát adjon meg</div>          
+                    </div>
+                    
+                    <div class="payment-form-group">
+                        <label class="payment-form-label" for="cardName">Kártyatulajdonos neve</label>
+                        <input type="text" class="payment-form-input" id="cardName" placeholder="John Doe">
+                        <div class="Vasarlasi_hiba" id="cardNameError">Kérem írja le a teljes nevét</div>
+                    </div>
+                    
+                    <div class="payment-form-row">
+                        <div class="payment-form-col">
+                            <div class="payment-form-group">
+                                <label class="payment-form-label" for="cardExpiry">Lejárati dátum</label>
+                                <input type="text" class="payment-form-input" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+                                <div class="Vasarlasi_hiba" id="cardExpiryError">Kérem egy helyes lejárati dátumot írjon be</div>
+                            </div>
+                        </div>
+                        <div class="payment-form-col">
+                            <div class="payment-form-group">
+                                <label class="payment-form-label" for="cardCvv">CVV</label>
+                                <input type="password" class="payment-form-input" id="cardCvv" placeholder="•••" maxlength="3">
+                                <div class="Vasarlasi_hiba" id="cardCvvError">Kérem egy helyes Cvv számot írjon be</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="payment-form-col">
+                        <div class="phone-input-container">
+                            <div class="flag-dropdown" id="flagDropdown">
+                                <div class="selected-flag">
+                                    <img src="https://flagcdn.com/w20/hu.png" class="flag-icon" id="selectedFlag">
+                                    <span class="country-code" id="countryCode">+36</span>
+                                    <span class="arrow">▼</span>
+                                </div>
+                                <div class="flag-options" id="flagOptions">
+                                    
+                                </div>
+                            </div>
+                            <input  type="tel" class="phone-input" id="phoneInput" placeholder="12 345 6890" maxlength="11">
+                            
+                        </div>
+                        <div class="Vasarlasi_hiba" id="cardPhoneError">Kérem teljesen töltse ki a mezőt</div>
+                    </div>
+                    <div class="payment-form-group">
+                        <label class="payment-form-label" for="cardName">Település neve</label>
+                        <input type="text" class="payment-form-input" id="Placeinput">
+                        <div class="Vasarlasi_hiba" id="cardPlaceError">Kérem írjon be egy települést</div>
+                    </div>
+                    <div class="payment-form-row">
+                        <div class="payment-form-group">
+                            <label class="payment-form-label" for="cardName">Címsor</label>
+                            <input type="text" class="payment-form-input" id="Streetinput">
+                            <div class="Vasarlasi_hiba" id="cardStreetError">Kérem írjon be egy címsort</div>
+                        </div>
+                        
+                        <div class="payment-form-group">
+                            <label class="payment-form-label" for="cardName">Irányítószám</label>
+                            <input type="text" class="payment-form-input" id="Placenumberinput" maxlength="4">
+                            <div class="Vasarlasi_hiba" id="cardPlacenumberError">Kérem írjon be egy Irányítószámot</div>
+                        </div>
+
+                       
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+            <div class="Vasarlas_footer">
+                <button class="Alert__gombok Cancel_button" onclick="Kilepes_alert()">Mégse</button>
+                <button class="Alert__gombok Vasarlas_button" onclick="Vasarlas_elfogadas()">Vásárlás</button>
+            </div>
+        </div>
+    </div>
   
 
   <footer>
@@ -152,6 +250,7 @@
    
   </script>
   <script src="main.js"></script>
+  <script src="Checkout_alert.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
   <script src="oldalgen.js"></script>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>

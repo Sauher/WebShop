@@ -1,0 +1,297 @@
+.payment-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(228, 228, 228, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: ease-in-out, 0.2s;
+            overflow-y: scroll
+        }
+        
+        .payment-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .payment-box {
+            background-color: white;
+            border-radius: 12px;
+           
+            width: 100%;
+            max-width: 520px;
+            overflow: hidden;
+            transform: translateY(20px);
+            transition: ease-in-out, 0.2s;
+        }
+        
+        .payment-overlay.active .payment-box {
+            transform: translateY(0);
+        }
+        
+        .payment-header {
+            padding: 18px 25px;
+            background-color: #f15b7b;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .Vasarlas_bezaras {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            transition: ease-in-out, 0.2s;
+        }
+        .Vasarlas_bezaras:hover {
+            font-size: 28px;
+        }
+        
+        .payment-content {
+            padding: 25px;
+        }
+        
+        .Vasarlas_footer {
+            padding: 15px 25px;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .Alert__gombok {
+            padding: 10px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: ease-in-out, 0.2s;
+        }
+        
+        .Vasarlas_button {
+            background-color: #e0574d;
+            color: white;
+        }
+        
+        .Vasarlas_button:hover {
+            scale: 105%;
+            background-color: #f12447;
+        }
+        
+        .Cancel_button {
+            background-color: #e0e0e0;
+            color: #333;
+            transition: ease-in-out, 0.2s;
+        }
+        
+        .Cancel_button:hover {
+            background-color: #919191;
+            scale: 105%;
+        }
+        
+       
+        .payment-form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .payment-form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        
+        .payment-form-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 15px;
+            box-sizing: border-box;
+            transition: ease-in-out, 0.2s;
+        }
+        
+        .payment-form-input:focus {
+            outline: none;
+            border-color: #fc4554;
+            box-shadow: 0 0 0 2px rgba(177, 26, 51, 0.2);
+        }
+        
+        .payment-form-input.error {
+            border-color: #e74c3c;
+        }
+        
+        .Vasarlasi_hiba {
+            color: #e74c3c;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+        
+        
+        .payment-form-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .payment-form-col {
+            flex: 1;
+        }
+        
+        .payment-security-note {
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+      
+        
+        
+        .payment-card-preview {
+            background: linear-gradient(135deg, #ff3d5e, #cf2069);
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .Vasarlas-kartya-szam {
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            word-spacing: 8px;
+        }
+        
+        .Vasarlas-kartya-reszletek {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .Vasarlas-kartya-nev {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        
+        .Vasarlas-kartya-lejarat {
+            text-align: right;
+        }
+        
+        .Vasarlas-kartya-chip {
+            width: 40px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+        
+        .Vasarlas-kartya-logo {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: 60px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+         .phone-input-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            width: 300px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+        
+        .flag-dropdown {
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        
+        .selected-flag {
+            display: flex;
+            align-items: center;
+        }
+        
+        .flag-icon {
+            width: 24px;
+            height: 16px;
+            margin-right: 8px;
+        }
+        
+        .country-code {
+            color: #555;
+        }
+        
+        .flag-options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 1000;
+            width: 250px;
+            display: none;
+        }
+        
+        .flag-option {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        
+        .flag-option:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .phone-input {
+            flex-grow: 1;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        .arrow {
+            margin-left: 8px;
+            transition: ease-in-out, 0.2s;
+        }
+        
+        .flag-dropdown.open .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .flag-dropdown.open .flag-options {
+            display: block;
+        }
