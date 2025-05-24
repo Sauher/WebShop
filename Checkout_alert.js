@@ -7,6 +7,7 @@
         const Placeinput = document.getElementById('Placeinput');
         const Streetinput = document.getElementById('Streetinput');
         const Placenumberinput = document.getElementById('Placenumberinput');
+        const Vasarlaskartyachip = document.getElementById('Vasarlas-kartya-chip')
        
         const cardPreview = document.getElementById('cardPreview');
         const previewCardNumber = document.getElementById('previewCardNumber');
@@ -182,15 +183,41 @@
 
             return isValid;
         }
-        
-        
+        cardNumberInput.addEventListener('input', function () {
+            this.value = this.value.replace(/\D/g, ''); 
+        });
+        cardCvvInput.addEventListener('input', function () {
+            this.value = this.value.replace(/\D/g, ''); 
+        });
+        cardExpiryInput.addEventListener('input', function () {
+            let value = this.value.replace(/[^0-9]/g, '');
+            if (value.length > 2) {
+                value = value.slice(0, 2) + '/' + value.slice(2, 4);
+            }
+            this.value = value.slice(0, 5); 
+        });
+        function Mastervasarlas() {
+
+            cardNumberInput.value = '54'; 
+            cardNumberInput.dispatchEvent(new Event('input')); 
+    
+        }
+        function Paypalvasarlas(){
+            Vasarlaskartyachip.style.backgroundImage = 'url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paypal.svg")';
+            Vasarlaskartyachip.style.backgroundSize = 'cover';
+            Vasarlaskartyachip.style.backgroundPosition = 'center';
+        }
+        function Visavasarlas(){
+            cardNumberInput.value = '4'; 
+            cardNumberInput.dispatchEvent(new Event('input')); 
+            
+        }
         function resetForm() {
             paymentForm.reset();
             previewCardNumber.textContent = '•••• •••• •••• ••••';
-            previewCardName.textContent = 'CARDHOLDER NAME';
+            previewCardName.textContent = 'Telejes név';
             previewCardExpiry.textContent = '••/••';
-            cardLogo.style.backgroundImage = 'none';
-            
+            Vasarlaskartyachip.style.backgroundImage = 'none';
             
             document.querySelectorAll('.payment-form-input').forEach(input => {
                 input.classList.remove('error');
@@ -242,6 +269,11 @@
             else if (/^3[47]/.test(cardNumber)) {
                 return 'amex';
             }
+            else if (cardNumber === 'paypal') {
+                return 'paypal';
+            }
+
+            
             
             return null;
         }
@@ -274,21 +306,37 @@
             
             
             const cardType = detectCardType(this.value);
-            [visaIcon, mastercardIcon, amexIcon].forEach(icon => {
-                icon.classList.remove('active');
-            });
+            
             
             if (cardType === 'visa') {
-                visaIcon.classList.add('active');
-                cardLogo.style.backgroundImage = 'url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visa/visa-original.svg")';
-            } else if (cardType === 'mastercard') {
-                mastercardIcon.classList.add('active');
-                cardLogo.style.backgroundImage = 'url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mastercard/mastercard-original.svg")';
-            } else if (cardType === 'amex') {
-                amexIcon.classList.add('active');
-                cardLogo.style.backgroundImage = 'url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/americanexpress/americanexpress-original.svg")';
-            } else {
-                cardLogo.style.backgroundImage = 'none';
+                
+                Vasarlaskartyachip.style.backgroundImage = 'url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/visa.svg")';
+                Vasarlaskartyachip.style.backgroundSize = 'cover';
+                Vasarlaskartyachip.style.backgroundPosition = 'center';
+                
+               
+            } 
+            else if (cardType === 'mastercard') {
+                
+                Vasarlaskartyachip.style.backgroundImage = 'url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mastercard.svg")';
+                Vasarlaskartyachip.style.backgroundSize = 'cover';
+                Vasarlaskartyachip.style.backgroundPosition = 'center';
+                
+            } 
+            else if (cardType === 'amex') {
+                
+                Vasarlaskartyachip.style.backgroundImage = 'url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/americanexpress.svg")';
+                Vasarlaskartyachip.style.backgroundSize = 'cover';
+                Vasarlaskartyachip.style.backgroundPosition = 'center';
+            }
+            else if (cardType === 'paypal') {
+                Vasarlaskartyachip.style.backgroundImage = 'url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paypal.svg")';
+                Vasarlaskartyachip.style.backgroundSize = 'cover';
+                Vasarlaskartyachip.style.backgroundPosition = 'center';
+        
+            } 
+            else {
+                Vasarlaskartyachip.style.backgroundImage = 'none';
             }
         });
         

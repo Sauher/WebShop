@@ -103,9 +103,9 @@
         <p id="pluszpenz">Plusz pénz kiszámítással</p>
         <input type="button" value="Megvásárlás" onclick="showPaymentAlert();Megvasarlas()" id="Vasarlas_gomb">
         <div class="Bankkartyaopcio">
-          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard" onclick="showPaymentAlert()"></i> 
-            <i class="fab fa-cc-paypal" onclick="showPaymentAlert()"></i> 
-            <i class="fab fa-cc-visa" onclick="showPaymentAlert()"></i></p>
+          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard" onclick="showPaymentAlert();Megvasarlas();Mastervasarlas()"></i> 
+            <i class="fab fa-cc-paypal" onclick="showPaymentAlert();Megvasarlas();Paypalvasarlas()"></i> 
+            <i class="fab fa-cc-visa" onclick="showPaymentAlert();Megvasarlas();Visavasarlas()"></i></p>
       </div>
       
       </div>
@@ -122,11 +122,11 @@
             </div>
             <div class="payment-content">
                 <div class="payment-card-preview" id="cardPreview">
-                    <div class="Vasarlas-kartya-chip"></div>
+                    <div id="Vasarlas-kartya-chip"></div>
                     <div class="Vasarlas-kartya-logo" id="cardLogo"></div>
                     <div class="Vasarlas-kartya-szam" id="previewCardNumber">•••• •••• •••• ••••</div>
                     <div class="Vasarlas-kartya-reszletek">
-                        <div class="Vasarlas-kartya-nev" id="previewCardName">Kártyatulajdonos neve</div>
+                        <div class="Vasarlas-kartya-nev" id="previewCardName">Telejes név</div>
                         <div class="Vasarlas-kartya-lejarat" id="previewCardExpiry">••/••</div>
                     </div>
                 </div>

@@ -37,7 +37,7 @@
         
         .payment-header {
             padding: 18px 25px;
-            background-color: #f15b7b;
+            background-color: #eb5e5f;
             color: white;
             font-size: 20px;
             font-weight: bold;
@@ -82,7 +82,7 @@
         }
         
         .Vasarlas_button {
-            background-color: #e0574d;
+            background-color: #eb5e5f;
             color: white;
         }
         
@@ -128,16 +128,16 @@
         
         .payment-form-input:focus {
             outline: none;
-            border-color: #fc4554;
+            border-color: #eb5e5f;
             box-shadow: 0 0 0 2px rgba(177, 26, 51, 0.2);
         }
         
         .payment-form-input.error {
-            border-color: #e74c3c;
+            border-color: #eb5e5f;
         }
         
         .Vasarlasi_hiba {
-            color: #e74c3c;
+            color: #eb5e5f;
             font-size: 12px;
             margin-top: 5px;
             display: none;
@@ -166,7 +166,7 @@
         
         
         .payment-card-preview {
-            background: linear-gradient(135deg, #ff3d5e, #cf2069);
+            background: linear-gradient(135deg, #eb5e5f, #cf2069);
             border-radius: 10px;
             padding: 20px;
             color: white;
@@ -202,11 +202,13 @@
             text-align: right;
         }
         
-        .Vasarlas-kartya-chip {
+        #Vasarlas-kartya-chip {
             width: 40px;
             height: 30px;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(0, 0, 0, 0.2);
             border-radius: 5px;
+            filter: invert(1);
+            
         }
         
         .Vasarlas-kartya-logo {
@@ -225,7 +227,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             padding: 8px;
-            width: 300px;
+            width: 95%;
             font-family: Arial, sans-serif;
             margin-bottom: 10px;
         }
@@ -250,7 +252,7 @@
         .country-code {
             color: #555;
         }
-        
+       
         .flag-options {
             position: absolute;
             top: 100%;
