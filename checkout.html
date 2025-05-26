@@ -87,27 +87,28 @@
   <div class="kozepsoresz">
     <div class="Vasarolt_targyak">
       
-    </div>
-    <div class="Funkciok_Also">
-      <div class="bal_oldal">
-        <div id="kuponok">
-          <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext" onkeyup="this.value=this.value.toUpperCase();">
-          <input type="button" value="📋" id="pasteButton" onclick="Kuponpaste()">
-          <input type="button" onclick="kuponellenorzes()" value=">" id="Kuponbutton">
+      </div>
+      <div class="Funkciok_Also">
+        <div class="bal_oldal">
+          <div id="kuponok">
+            <input type="text" placeholder="Kuponok, promóciók kódok" name="" id="Kupontext" onkeyup="this.value=this.value.toUpperCase();">
+            <input type="button" value="📋" id="pasteButton" onclick="Kuponpaste()">
+            <input type="button" onclick="kuponellenorzes()" value=">" id="Kuponbutton">
 
+          </div>
+          
+        </div>
+        <div class="jobb_oldal" style="cursor: context-menu;">
+          <p>Összesen: <span id="Osszesosszeg">0</span>$</p>
+          <p id="pluszpenz">Plusz pénz kiszámítással</p>
+          <input type="button" value="Megvásárlás" onclick="Megvasarlas();showPaymentAlert();" id="Vasarlas_gomb">
+          <div class="Bankkartyaopcio">
+            <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard" onclick="showPaymentAlert();Megvasarlas();Mastervasarlas()"></i> 
+              <i class="fab fa-cc-paypal" onclick="showPaymentAlert();Megvasarlas();Paypalvasarlas()"></i> 
+              <i class="fab fa-cc-visa" onclick="showPaymentAlert();Megvasarlas();Visavasarlas()"></i></p>
         </div>
         
-      </div>
-      <div class="jobb_oldal" style="cursor: context-menu;">
-        <p>Összesen: <span id="Osszesosszeg">15000</span>Ft</p>
-        <p id="pluszpenz">Plusz pénz kiszámítással</p>
-        <input type="button" value="Megvásárlás" onclick="showPaymentAlert();Megvasarlas()" id="Vasarlas_gomb">
-        <div class="Bankkartyaopcio">
-          <p id="Bankkartyaicon"> <i class="fab fa-cc-mastercard" onclick="showPaymentAlert();Megvasarlas();Mastervasarlas()"></i> 
-            <i class="fab fa-cc-paypal" onclick="showPaymentAlert();Megvasarlas();Paypalvasarlas()"></i> 
-            <i class="fab fa-cc-visa" onclick="showPaymentAlert();Megvasarlas();Visavasarlas()"></i></p>
-      </div>
-      
+        </div>
       </div>
     </div>
   </div>
@@ -204,7 +205,7 @@
             </div>
             <div class="Vasarlas_footer">
                 <button class="Alert__gombok Cancel_button" onclick="Kilepes_alert()">Mégse</button>
-                <button class="Alert__gombok Vasarlas_button" onclick="Vasarlas_elfogadas()">Vásárlás</button>
+                <button class="Alert__gombok Vasarlas_button" onclick="Vasarlas_elfogadas();Cartteljestorles()">Vásárlás</button>
             </div>
         </div>
     </div>
@@ -230,13 +231,22 @@
       <p class="shipszoveg">100% money back guarantee</p>
     </div>
   </footer>
+  
+  <script src="main.js"></script>
+  <script src="Checkout_alert.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+  <script src="oldalgen.js"></script>
   <script>
-    let Eredetiosszeg = document.getElementById("Osszesosszeg").textContent
+
+   
+    
+    
     let kupon = document.getElementById("Kupontext").value
     let Kedvezmenyezettar = document.getElementById("Osszesosszeg").textContent
     let Kuponkodok = ["RIHI", "RUHA", "ALZA", "SZÉPWEBDESIGN"]
     let Hasznaltkodok =[]
     let paste = document.getElementById('#pasteButton');
+
     async function Kuponpaste() {
       try {
         const text = await navigator.clipboard.readText();
@@ -249,10 +259,6 @@
     }
    
   </script>
-  <script src="main.js"></script>
-  <script src="Checkout_alert.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
-  <script src="oldalgen.js"></script>
   <script src="https://kit.fontawesome.com/17f03cf2f3.js" crossorigin="anonymous"></script>
 </body>
 </html>

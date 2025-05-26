@@ -176,8 +176,8 @@ function kuponellenorzes(){
   document.getElementById("Kupontext").value = ""
 }
 function Megvasarlas(){
-  document.getElementById("Osszesosszeg").innerHTML = Eredetiosszeg
-  
+  //document.getElementById("Osszesosszeg").innerHTML = Eredetiosszeg
+  document.getElementsByClassName("Vasarolt_targyak").innerHTML = ""
 }
 
 

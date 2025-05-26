@@ -597,12 +597,13 @@ function wishfelt(list){
         let eltavolit = document.createElement("button")
         let alsosordiv = document.createElement("div")
         let eltavolitszam = i
-        eltavolit.innerHTML = "Eltávolít"
-        eltavolit.id = "XButton"
+        
         eltavolit.onclick = function Eltavolit(){
             StringifyTomb.splice(eltavolitszam,1)
             updateCart()
         }
+        eltavolit.innerHTML = "Eltávolít"
+        eltavolit.id = "XButton"
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
         kosarimg.src = list[i].img
@@ -642,8 +643,12 @@ function wishfelt(list){
 
 
 }
+//checkout
 let kozep = document.getElementsByClassName("Vasarolt_targyak")[0]
+let vegsoosszeg = 0;
 function checkfeltolt(list){
+    vegsoosszeg = 0; 
+    kozep.innerHTML = "";
     for (let i = 0; i < list.length; i++) {
         let termekdiv = document.createElement("div")
         let kosarimg = document.createElement("img")
@@ -653,31 +658,47 @@ function checkfeltolt(list){
         let eltavolitszam = i
         eltavolit.innerHTML = "Eltávolít"
         eltavolit.id = "XButton"
-        eltavolit.onclick = function Eltavolit(){
-            StringifyTomb.splice(eltavolitszam,1)
-            updateCart()
-        }
+        
         termekdiv.className = "term1"
         kosarimg.className="kepp1"
         kosarimg.src = list[i].img
         szovegdiv.className = "szov1"
         if (list[i].onsale==true) {
-            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].salevalue*list[i].number+'$'
-            
+            szovegdiv.innerHTML = list[i].name+'<br> Price: <span class="Itemar">'+list[i].salevalue*list[i].number+'</span>$'
+            vegsoosszeg+= list[i].salevalue*list[i].number
         }
         else{
-            szovegdiv.innerHTML = list[i].name+'<br> Price: '+list[i].value *list[i].number+'$'
-            
+            szovegdiv.innerHTML = list[i].name+'<br> Price: <span class="Itemar">'+list[i].value *list[i].number+'</span>$'
+            vegsoosszeg+= list[i].value*list[i].number
         }
         alsosordiv.className = "alsosor"
         alsosordiv.innerHTML='Size: M <br>Count: '+ list[i].number
-
+        eltavolit.onclick = function Eltavolit(){
+           StringifyTomb.splice(eltavolitszam, 1); 
+            localStorage.setItem('Termekek', JSON.stringify(StringifyTomb));
+            
+         checkfeltolt(StringifyTomb);
+         vegsoosszeg = 0; 
+            
+            
+        }
         kozep.appendChild(termekdiv)
         termekdiv.appendChild(kosarimg)
         termekdiv.appendChild(szovegdiv)
         szovegdiv.appendChild(alsosordiv)
         szovegdiv.appendChild(eltavolit)
-
-    
+       
+        
     }
+      
+    document.getElementById("Osszesosszeg").innerHTML = vegsoosszeg;
+        
+}
+function Cartteljestorles(){
+    StringifyTomb = []
+    localStorage.setItem('Termekek', JSON.stringify(StringifyTomb));
+    localStorage.setItem('Cost', 0);
+    document.getElementById("Osszesosszeg").innerHTML = 0;
+    kozep.innerHTML = "";
+    alert("Sikeres Vásárlás! Köszönjük, hogy minket választottál!")
 }
