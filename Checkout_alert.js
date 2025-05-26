@@ -101,6 +101,7 @@
             if (cardNumber == "1111111111111111") {
                 cardNumberInput.classList.remove('error');
                 cardNumberError.style.display = 'none';
+                alert("Ez egy teszt kártyaszám, nem lehet vele vásárolni.");
             }
             else if (!cardNumber || !luhnCheck(cardNumber)){
                 cardNumberInput.classList.add('error');
