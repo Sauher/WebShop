@@ -356,7 +356,6 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
                     localStorage.setItem('Cost',Allcost)
-                    alert("Termék a kosárhoz adva!")
                 }
                 else{
                     TermekTomb[i].number++
@@ -370,7 +369,6 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
                     localStorage.setItem('Cost',Allcost)
-                    alert("Termék a kosárhoz adva!")
                 }
                 
             }
