@@ -27,6 +27,7 @@
 }
 .Vasarolt_targyak{
     min-height: 307px;
+    margin-bottom: 50px;
 }
 #Vasarlas_gomb{
     background-color:#FF4852;
@@ -91,4 +92,7 @@
 }
 i:hover{
     scale: 110%;
+}
+.term1{
+    width: 30%;
 }

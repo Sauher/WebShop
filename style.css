@@ -255,7 +255,12 @@ h4 {
   float: right;
   width: 25%;
   height: 30px;
-  color: #8d8d8d;
+  border: none;
+  color: white;
+  background-color: #eb5e5f;
+}
+option:hover{
+  background-color: #ec5454;
 }
 
 ul {
@@ -509,6 +514,9 @@ footer {
   background-color: #fff;
   transition: 0.3s ease;
 }
+.card:hover{
+ transform: scale(1.05);
+}
 
 .kep1:hover {
   background-color: rgba(255, 0, 0, 0.1);
@@ -557,12 +565,13 @@ footer {
   color: white;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease, border 0.3s ease;
+  transition: 300ms ease
 }
 
 .card .cardb button:hover {
-  background-color: black;
+  background-color: rgba(30, 30, 30, 0.8);
   border: none;
+  border-radius: 30px;
 }
 
 .lenyil{

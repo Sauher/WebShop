@@ -12,7 +12,6 @@
     list-style-type: none;
     padding-left: 70px;
 }
-
   .kereso {
     border: 1px solid #ccc;  
     padding: 6px;
@@ -138,6 +137,27 @@
   cursor: pointer;
   
   
+}
+.scrollA::-webkit-scrollbar {
+  height: 3px; /* vízszintes scrollbar */
+  width: 10px;
+  
+}
+
+.scrollA::-webkit-scrollbar-track {
+  background: #eb5e5f;
+  border-radius: 10px;
+
+}
+
+.scrollA::-webkit-scrollbar-thumb {
+  background: #f51d1d;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.scrollA::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }
 .Kartyakereses{
   height: 150px;
