@@ -29,6 +29,8 @@
 .term1{
     display: flex;
     flex-wrap: wrap;
+    margin-right: 5px;
+    margin-left: 5px;
     flex-direction: column;
     border: #eb5e5f solid;
     width: 300px;
