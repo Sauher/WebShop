@@ -374,7 +374,7 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
                 }
                 
             }
-            szivimg.onclick = function(){
+            szivikon.onclick = function(){
                 if(Wishtomb.includes(TermekTomb[i])){
                     alert("A termék már a wishlisteden van!")
                 }
