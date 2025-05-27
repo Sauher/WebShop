@@ -1,4 +1,5 @@
 var jsonString = localStorage.getItem('Termekek') || '';
+var WishString = localStorage.getItem('Wishtermek') || '';
 if (jsonString.length != 0) 
 {
     StringifyTomb = []
@@ -12,9 +13,23 @@ for (let index = 0; index < objlist.length; index++) {
 else{
     StringifyTomb = []
 }
+
+if (WishString.length != 0) 
+{
+    Wishtomb = []
+    var objects2 = JSON.parse(WishString)
+var objlist2 = Object.entries(objects2)
+for (let index = 0; index < objlist2.length; index++) {
+    Wishtomb.push(objlist2[index][1])
+}
+
+}
+else{
+    Wishtomb = []
+}
 function JsonGet(){
     if(document.getElementsByClassName("melyikoldal")[0].id == "cartoldal"){cartfelt(StringifyTomb)}
-    if(document.getElementsByClassName("melyikoldal")[0].id == "wisholdal"){wishfelt(StringifyTomb)}
+    if(document.getElementsByClassName("melyikoldal")[0].id == "wisholdal"){wishfelt(Wishtomb)}
     if(document.getElementsByClassName("melyikoldal")[0].id == "checkoldal"){checkfeltolt(StringifyTomb)}
 
 }
@@ -321,7 +336,6 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
     }
     }
     let kepekdiv = document.getElementById("kepdiv")
-    let Allcost = 0
     function Feltoltes(TermekTomb) {
         for (let i = 0; i < TermekTomb.length; i++) {
             
@@ -355,7 +369,7 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
                     }
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
-                    localStorage.setItem('Cost',Allcost)
+
                 }
                 else{
                     TermekTomb[i].number++
@@ -368,10 +382,22 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
                     StringifyTomb.push(TermekTomb[i])
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
-                    localStorage.setItem('Cost',Allcost)
+
                 }
                 
             }
+            szivimg.onclick = function(){
+                if(Wishtomb.includes(TermekTomb[i])){
+                    alert("A termék már a wishlisteden van!")
+                }
+                else{
+                    Wishtomb.push(TermekTomb[i])
+                    let WishString = JSON.stringify(Object.assign({},Wishtomb))
+                    localStorage.setItem('Wishtermek', WishString)
+
+                }
+            }
+
             carddiv.className = "card"
             cardbdiv.className = "cardb"
             ikondiv.className = "ikonok"
@@ -476,6 +502,13 @@ function updateCart() {
 
     $("#itemdiv").empty();
     cartfelt(StringifyTomb);  
+}
+function updateWish(){
+    let WishString = JSON.stringify(Wishtomb);
+    localStorage.setItem('Wishtermek', WishString);
+
+    $("#itemdiv").empty();
+    wishfelt(Wishtomb)
 }
 
 let shippingdiv = document.getElementById("shippingcost")
@@ -597,8 +630,8 @@ function wishfelt(list){
         let eltavolitszam = i
         
         eltavolit.onclick = function Eltavolit(){
-            StringifyTomb.splice(eltavolitszam,1)
-            updateCart()
+            Wishtomb.splice(eltavolitszam,1)
+            updateWish()
         }
         eltavolit.innerHTML = "Eltávolít"
         eltavolit.id = "XButton"
