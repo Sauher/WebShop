@@ -361,24 +361,12 @@ if(document.getElementsByClassName("melyikoldal")[0].id == "shopoldal")
             button.onclick=function addtocart(){
                 if(StringifyTomb.includes(TermekTomb[i])){
                     TermekTomb[i].number++
-                    if (TermekTomb[i].onsale == true) {
-                        Allcost+= TermekTomb[i].salevalue
-                    }
-                    else{
-                        Allcost+= TermekTomb[i].value
-                    }
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
 
                 }
                 else{
                     TermekTomb[i].number++
-                    if (TermekTomb[i].onsale == true) {
-                        Allcost+= TermekTomb[i].salevalue
-                    }
-                    else{
-                        Allcost+= TermekTomb[i].value
-                    }
                     StringifyTomb.push(TermekTomb[i])
                     let jsonString = JSON.stringify(Object.assign({},StringifyTomb))
                     localStorage.setItem('Termekek', jsonString)
