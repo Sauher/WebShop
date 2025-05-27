@@ -495,7 +495,7 @@ function updateWish(){
     let WishString = JSON.stringify(Wishtomb);
     localStorage.setItem('Wishtermek', WishString);
 
-    $("#itemdiv").empty();
+    $("#wish").empty();
     wishfelt(Wishtomb)
 }
 
